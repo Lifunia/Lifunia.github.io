@@ -3,44 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sauna Timerは、Garmin Instinct 2・3向けにサウナ、水風呂、休憩の時間を計測・記録するアプリです。">
+    <meta name="description" content="Sauna Timerは、対応するGarmin Instinctシリーズでサウナ、水風呂、休憩の時間を計測・記録するアプリです。">
     <title>Sauna Timer | Lifunia</title>
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header site-header-with-tabs">
       <div class="container">
-        <a class="site-name" href="../" aria-label="Lifunia トップページ">Lifunia</a>
+        <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+        <nav class="section-tabs" aria-label="Sauna Timerページ内メニュー">
+          <a href="#overview">アプリ概要</a>
+          <a href="#notes">注意事項</a>
+          <a href="#how-to-use">使い方</a>
+          <a href="#faq">FAQ</a>
+        </nav>
       </div>
     </header>
 
     <main>
       <article class="page-content">
         <div class="container content-container">
-          <a class="back-link" href="../">← トップページへ戻る</a>
           <header class="page-heading">
-            <p class="eyebrow">Garmin App</p>
-            <h1>Sauna Timer</h1>
-            <p class="lead">サウナ、水風呂、休憩の時間を計測し、セッションのログを記録するGarmin Instinct 2・3向けアプリです。</p>
+            <p class="eyebrow" lang="en" translate="no">Garmin App</p>
+            <h1 translate="no">Sauna Timer</h1>
+            <p class="lead">サウナ、水風呂、休憩の時間を計測し、セッションのログを記録する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
           </header>
 
           <aside class="warning-box" aria-label="重要な注意事項">
-            <strong>高温下でのスマートウォッチの使用は推奨されておりません。故障・破損については一切の責任を負いません。</strong>
+            <strong>高温環境でのスマートウォッチの使用は推奨されていません。使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong>
           </aside>
-
-          <nav class="page-nav" aria-label="ページ内メニュー">
-            <p class="page-nav-title">このページの内容</p>
-            <ul>
-              <li><a href="#overview">アプリ概要</a></li>
-              <li><a href="#notes">注意事項</a></li>
-              <li><a href="#how-to-use">使い方</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </nav>
 
           <section class="content-section" id="overview">
             <h2>アプリ概要</h2>
-            <p>Sauna Timerは、サウナで過ごす時間を計測し、各セットのログを記録するためのタイマーアプリです。サウナ、水風呂、休憩の3つを1セットとして、セッション全体を分かりやすく管理できます。</p>
+            <p><span translate="no">Sauna Timer</span>は、サウナで過ごす時間を計測し、各セットのログを記録するためのタイマーアプリです。サウナ、水風呂、休憩の3つを1セットとして、セッション全体を分かりやすく管理できます。</p>
 
             <h3>1セットの流れ</h3>
             <ol class="session-flow">
@@ -54,55 +49,92 @@
                 <strong>休憩</strong>
               </li>
             </ol>
-            <p>サウナ、水風呂、休憩では、それぞれに設定した時間をカウントダウンします。残り時間が0になると、バイブレーションで次のタイミングをお知らせします。</p>
+            <p>サウナ、水風呂、休憩では、それぞれに設定した時間をカウントダウンします。残り時間が0になるとウォッチが振動し、現在のフェーズが終了したことを知らせます。</p>
 
             <h3>主な機能</h3>
             <dl class="feature-list">
               <div>
                 <dt>セットごとのスコア表示</dt>
-                <dd>各セットの終了時に、独自の計算方法による「TotonoiScore」を表示します。</dd>
+                <dd>各セットの終了時に、独自の計算方法による「<span translate="no">TotonoiScore</span>」を表示します。</dd>
               </div>
               <div>
                 <dt>全セットの振り返り</dt>
                 <dd>セッション終了時に、完了したすべてのセットのスコアをまとめて確認できます。</dd>
               </div>
               <div>
-                <dt>Garmin Connectへのログ送信</dt>
-                <dd>設定を有効にすると、計測したログをGarmin Connectへ送信できます。</dd>
+                <dt><span translate="no">Garmin Connect</span>へのログ送信</dt>
+                <dd><span translate="no">FIT Save</span>をONにすると、計測したログを<span translate="no">Garmin Connect</span>へ送信できます。</dd>
               </div>
             </dl>
 
             <aside class="notice-box" aria-label="Garmin Connectへの保存に関する注意">
-              <h3>Garmin Connectへ保存する場合</h3>
+              <h3><span translate="no">Garmin Connect</span>へ保存する場合</h3>
               <p>ログはワークアウトとして保存されます。運動量や消費カロリーを厳密に管理している場合は、ログ送信設定をオフにすることを推奨します。</p>
-              <p>また、Garminの計算上の仕様により、実際よりも消費カロリーが大幅に多く表示される場合があります。表示された数値を確認する際はご注意ください。</p>
+              <p>また、<span translate="no">Garmin</span>の計算仕様により、実際の消費量よりも消費カロリーが大幅に多く表示される場合があります。表示された数値を確認する際はご注意ください。</p>
             </aside>
           </section>
 
           <section class="content-section" id="notes">
             <h2>注意事項</h2>
-            <ul class="notes-list">
-              <li>本アプリはGarmin Instinct 2・3向けです。</li>
-              <li>初代Garmin Instinctでも動作する場合がありますが、使用中に意図せず終了する可能性があり、安定した動作は保証していません。</li>
+            <h3>対応機種</h3>
+            <p>現在、次の機種に対応しています。</p>
+            <ul class="notes-list" translate="no">
+              <li>Instinct 2 / Solar / Dual Power / dezl Edition</li>
+              <li>Instinct 2S / Solar / Dual Power</li>
+              <li>Instinct 2X Solar</li>
+              <li>Instinct 3 Solar 45mm / 50mm</li>
+              <li>Instinct E 40mm / 45mm</li>
             </ul>
-            <p class="critical-note"><strong>高温下でのスマートウォッチの使用は推奨されておりません。故障・破損については一切の責任を負いません。</strong></p>
+            <p>初代<span translate="no">Garmin Instinct</span>には対応していません。</p>
+            <p class="critical-note"><strong>高温環境でのスマートウォッチの使用は推奨されていません。使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong></p>
+
+            <h3>使用上の注意</h3>
+            <p><span translate="no">Sauna Timer</span>は、サウナ時間の管理を補助するためのアプリです。</p>
+            <p>体調不良、めまい、息苦しさ、強い動悸などを感じた場合は、アプリの表示や通知に関係なく、ただちに利用を中止してください。</p>
+            <p>サウナ施設のルールに従い、水分補給と休憩を十分に取りながら、無理のない範囲で使用してください。</p>
+            <p>本アプリは医療機器ではありません。表示される心拍数やスコアは、診断・治療・安全判断を目的としたものではありません。</p>
+
+            <h3>ウォッチが振動するタイミング</h3>
+            <p><span translate="no">Sauna Timer</span>は、次のタイミングでウォッチを振動させて通知します。</p>
+            <dl class="feature-list notification-list">
+              <div>
+                <dt>フェーズ終了時</dt>
+                <dd>サウナ、水風呂、休憩の残り時間が0になったときに、ウォッチが振動します。</dd>
+              </div>
+              <div>
+                <dt>フェーズ終了30秒前</dt>
+                <dd><span translate="no">30sec Alert</span>がONの場合、残り時間が30秒になったときにウォッチが短く振動します。</dd>
+              </div>
+              <div>
+                <dt>タイマーの停止が続いているとき</dt>
+                <dd><span translate="no">Stop Alert</span>がONの場合、タイマーが停止したままであることを2分ごとに通知します。</dd>
+              </div>
+              <div>
+                <dt>アウフグースモード中</dt>
+                <dd>経過時間が10分に達した後、5分ごとの区切りでウォッチが振動します。</dd>
+              </div>
+              <div>
+                <dt>心拍数や温度が一定以上になったとき</dt>
+                <dd>デバイスやセンサーから情報を取得できた場合に通知します。取得状況によって動作は異なります。</dd>
+              </div>
+            </dl>
           </section>
 
           <section class="content-section" id="how-to-use">
             <h2>使い方</h2>
-            <p>Garminウォッチの物理ボタンを使って操作します。はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
+            <p><span translate="no">Garmin</span>ウォッチの物理ボタンを使って操作します。はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
 
             <nav class="guide-index" aria-label="使い方の目次">
               <a href="#buttons">ボタン</a>
               <a href="#top-screen">起動画面</a>
               <a href="#run-screen">タイマー動作中</a>
-              <a href="#timer-menu">Timer Menu</a>
-              <a href="#aufguss-mode">Aufguss</a>
-              <a href="#main-menu">Main Menu</a>
-              <a href="#preset-timer">Preset Timer</a>
-              <a href="#timer-edit">Timer Edit</a>
-              <a href="#settings">Setting</a>
-              <a href="#history">History</a>
+              <a href="#timer-menu" translate="no">Timer Menu</a>
+              <a href="#aufguss-mode" translate="no">Aufguss</a>
+              <a href="#main-menu" translate="no">Main Menu</a>
+              <a href="#preset-timer" translate="no">Preset Timer</a>
+              <a href="#timer-edit" translate="no">Timer Edit</a>
+              <a href="#settings" translate="no">Setting</a>
+              <a href="#history" translate="no">History</a>
               <a href="#exit-menu">終了確認</a>
             </nav>
 
@@ -142,7 +174,7 @@
                     <li><kbd>DOWN</kbd> メインメニューを開きます。</li>
                     <li><kbd>BACK</kbd> タイマー開始前であれば、アプリをすぐに終了します。</li>
                   </ul>
-                  <p class="guide-note">最後に選択したプリセット、またはTimer Editで保存した設定が読み込まれます。</p>
+                  <p class="guide-note">最後に選択したプリセット、または<span translate="no">Timer Edit</span>で保存した設定が読み込まれます。</p>
                 </div>
               </div>
             </section>
@@ -157,14 +189,14 @@
                 <div>
                   <p>現在のフェーズと残り時間を確認しながら、セッションを進める画面です。</p>
                   <ul class="operation-list">
-                    <li><kbd>ENTER</kbd> Timer Menuを開きます。メニューを開いている間、タイマーは停止します。</li>
+                    <li><kbd>ENTER</kbd> <span translate="no">Timer Menu</span>を開きます。このメニューを開いている間、タイマーは停止します。</li>
                     <li><kbd>DOWN</kbd> メインメニューを開きます。メニューを開いている間もタイマーは動き続けます。</li>
-                    <li><kbd>UP</kbd> 現在のフェーズを延長します。Sauna・Restは1分ずつ、最大5分まで延長できます。WB（水風呂）は30秒ずつ、最大2分まで延長できます。</li>
-                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。Sauna・Restは30秒ずつ、WBは10秒ずつ短縮できます。</li>
+                    <li><kbd>UP</kbd> 現在のフェーズを延長します。サウナと休憩は1分ずつ、最大5分まで延長できます。水風呂は30秒ずつ、最大2分まで延長できます。</li>
+                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。サウナと休憩は30秒ずつ、水風呂は10秒ずつ短縮できます。</li>
                     <li><kbd>BACK</kbd> を素早く2回押すと、タイマーを止めずに終了確認画面を開きます。</li>
                   </ul>
                   <div class="guide-note">
-                    <p>短縮できる最小残り時間は、Sauna・Restが30秒、WBが10秒です。</p>
+                    <p>短縮後の最小残り時間は、サウナと休憩が30秒、水風呂が10秒です。</p>
                     <p>タイマー停止中と、フェーズ終了直後の待機中は短縮できません。</p>
                   </div>
                 </div>
@@ -181,27 +213,27 @@
             </section>
 
             <section class="guide-section" id="timer-menu">
-              <h3>Timer Menu</h3>
+              <h3 translate="no">Timer Menu</h3>
               <div class="guide-layout">
                 <figure class="screen-figure">
                   <img src="../assets/images/Timermenu.png" alt="Resume、Next Timer、Aufgussを表示したTimer Menu画面" width="377" height="501" loading="lazy">
                   <figcaption>Timer Menu</figcaption>
                 </figure>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。Timer Menuを開いている間、タイマーは停止します。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<span translate="no">Timer Menu</span>を開いている間、タイマーは停止します。</p>
                   <p><kbd>BACK</kbd>でタイマーを再開し、タイマー画面に戻ります。</p>
                   <dl class="menu-list">
                     <div>
-                      <dt>Resume</dt>
+                      <dt translate="no">Resume</dt>
                       <dd>タイマーを再開して、タイマー画面に戻ります。</dd>
                     </div>
                     <div>
-                      <dt>Next Timer</dt>
-                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。たとえばSauna中に選択すると、WBへ進みます。</dd>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。たとえば、サウナ中に選択すると水風呂へ進みます。</dd>
                     </div>
                     <div>
-                      <dt>Aufguss</dt>
-                      <dd>Aufgussモードのオン・オフを切り替えます。Saunaフェーズ中だけ表示されます。</dd>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>アウフグースモードのON／OFFを切り替えます。この項目は、サウナのフェーズ中だけ表示されます。</dd>
                     </div>
                   </dl>
                 </div>
@@ -209,29 +241,29 @@
             </section>
 
             <section class="guide-section" id="aufguss-mode">
-              <h3>Aufgussモード</h3>
+              <h3><span translate="no">Aufguss</span>モード</h3>
               <div class="guide-layout">
                 <figure class="screen-figure">
                   <img src="../assets/images/AUFmode.png" alt="AUF Saunaと経過時間を表示したAufgussモード画面" width="379" height="505" loading="lazy">
                   <figcaption>Aufgussモード</figcaption>
                 </figure>
                 <div>
-                  <p>AufgussモードはSaunaフェーズ中だけ使用できます。通常のカウントダウンに代わり、Sauna開始からの経過時間をカウントアップして表示します。</p>
-                  <p><kbd>ENTER</kbd>を素早く2回押すか、Timer Menuで再度「Aufguss」を選ぶと通常モードへ戻ります。</p>
+                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。このモードでは通常のカウントダウンを行いません。サウナを開始してからの経過時間を、0から増やして表示します。</p>
+                  <p><kbd>ENTER</kbd>を素早く2回押すか、<span translate="no">Timer Menu</span>で再度「<span translate="no">Aufguss</span>」を選ぶと、通常モードへ戻ります。</p>
                   <ul>
                     <li>設定時間が残っている場合は、その残り時間からカウントダウンを再開します。</li>
                     <li>設定時間を過ぎている場合は、残り5秒からカウントダウンを再開します。</li>
                   </ul>
                   <div class="guide-note">
                     <p>設定が7分の場合、経過時間6分で解除すると残り1分、経過時間10分で解除すると残り5秒から再開します。</p>
-                    <p>経過時間が10分に達した後は、5分ごとの区切りでバイブレーションが鳴動します。</p>
+                    <p>経過時間が10分に達した後は、5分ごとの区切りでウォッチが振動します。</p>
                   </div>
                 </div>
               </div>
             </section>
 
             <section class="guide-section" id="main-menu">
-              <h3>Main Menu</h3>
+              <h3 translate="no">Main Menu</h3>
               <div class="guide-images guide-images-two">
                 <figure class="screen-figure">
                   <img src="../assets/images/menu.png" alt="Preset TimerとTimer Editを表示したMain Menu画面" width="379" height="503" loading="lazy">
@@ -245,26 +277,26 @@
               <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<kbd>BACK</kbd>でタイマー画面に戻ります。</p>
               <dl class="menu-list">
                 <div>
-                  <dt>Preset Timer</dt>
+                  <dt translate="no">Preset Timer</dt>
                   <dd>用意されているプリセットからタイマー設定を選びます。</dd>
                 </div>
                 <div>
-                  <dt>Timer Edit</dt>
-                  <dd>Sauna・WB・Restの時間を個別に設定します。保存した値は「Edit Timer」プリセットとして選択できます。</dd>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>サウナ、水風呂、休憩の時間を個別に設定します。保存した値は「<span translate="no">Edit Timer</span>」プリセットとして選択できます。</dd>
                 </div>
                 <div>
-                  <dt>Setting</dt>
-                  <dd>通知、省電力、FIT保存に関する設定を変更します。</dd>
+                  <dt translate="no">Setting</dt>
+                  <dd>通知、省電力、<span translate="no">FIT</span>ファイルの保存に関する設定を変更します。</dd>
                 </div>
                 <div>
-                  <dt>History</dt>
+                  <dt translate="no">History</dt>
                   <dd>過去のセッション結果を確認します。</dd>
                 </div>
               </dl>
             </section>
 
             <section class="guide-section" id="preset-timer">
-              <h3>Preset Timer</h3>
+              <h3 translate="no">Preset Timer</h3>
               <div class="guide-layout">
                 <figure class="screen-figure">
                   <img src="../assets/images/PresetTimer.png" alt="Preset 1を表示したPreset Timer画面" width="379" height="502" loading="lazy">
@@ -275,23 +307,23 @@
                   <div class="table-scroll" tabindex="0" role="region" aria-label="プリセットタイマー一覧">
                     <table>
                       <thead>
-                        <tr><th>プリセット</th><th>Sauna</th><th>WB</th><th>Rest</th></tr>
+                        <tr><th>プリセット</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
                       </thead>
                       <tbody>
-                        <tr><th>Preset 1</th><td>7分</td><td>30秒</td><td>7分</td></tr>
-                        <tr><th>Preset 2</th><td>10分</td><td>60秒</td><td>8分</td></tr>
-                        <tr><th>Preset 3</th><td>5分</td><td>20秒</td><td>10分</td></tr>
-                        <tr><th>Edit Timer</th><td colspan="3">Timer Editで最後に保存した値</td></tr>
+                        <tr><th translate="no">Preset 1</th><td>7分</td><td>30秒</td><td>7分</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10分</td><td>60秒</td><td>8分</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5分</td><td>20秒</td><td>10分</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3"><span translate="no">Timer Edit</span>で最後に保存した値</td></tr>
                       </tbody>
                     </table>
                   </div>
-                  <p class="guide-note">Edit Timerの初期値はPreset 1と同じです。最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
+                  <p class="guide-note"><span translate="no">Edit Timer</span>の初期値は<span translate="no">Preset 1</span>と同じです。最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
                 </div>
               </div>
             </section>
 
             <section class="guide-section" id="timer-edit">
-              <h3>Timer Edit</h3>
+              <h3 translate="no">Timer Edit</h3>
               <div class="guide-layout">
                 <figure class="screen-figure">
                   <img src="../assets/images/EditTimer.png" alt="Saunaの時間を編集中のTimer Edit画面" width="380" height="506" loading="lazy">
@@ -299,16 +331,16 @@
                 </figure>
                 <div>
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で表示中の値を増減し、<kbd>ENTER</kbd>で次の項目へ進みます。<kbd>BACK</kbd>を押すと編集をキャンセルして前の画面に戻ります。</p>
-                  <p>設定項目は「Sauna → WBath → Rest」の順に切り替わります。Restで<kbd>ENTER</kbd>を押すと値を保存し、タイマー画面へ戻ります。</p>
+                  <p>設定項目は、サウナ、水風呂、休憩の順に切り替わります。休憩の時間を設定した後に<kbd>ENTER</kbd>を押すと、設定値を保存してタイマー画面へ戻ります。</p>
                   <div class="table-scroll" tabindex="0" role="region" aria-label="タイマー設定可能範囲">
                     <table>
                       <thead>
                         <tr><th>項目</th><th>設定範囲</th><th>単位</th></tr>
                       </thead>
                       <tbody>
-                        <tr><th>Sauna</th><td>1～15分</td><td>1分</td></tr>
-                        <tr><th>WBath</th><td>10～120秒</td><td>10秒</td></tr>
-                        <tr><th>Rest</th><td>1～15分</td><td>1分</td></tr>
+                        <tr><th translate="no">Sauna</th><td>1～15分</td><td>1分</td></tr>
+                        <tr><th translate="no">WBath</th><td>10～120秒</td><td>10秒</td></tr>
+                        <tr><th translate="no">Rest</th><td>1～15分</td><td>1分</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -317,7 +349,7 @@
             </section>
 
             <section class="guide-section" id="settings">
-              <h3>Setting</h3>
+              <h3 translate="no">Setting</h3>
               <div class="guide-layout">
                 <figure class="screen-figure">
                   <img src="../assets/images/Setting.png" alt="30sec Alert、Stop Alert、Power Saveを表示した設定画面" width="381" height="503" loading="lazy">
@@ -327,32 +359,32 @@
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<kbd>BACK</kbd>で前の画面に戻ります。設定した値は次回起動時にも引き継がれます。</p>
                   <dl class="menu-list">
                     <div>
-                      <dt>30sec Alert</dt>
+                      <dt translate="no">30sec Alert</dt>
                       <dd>各フェーズの終了30秒前に、短いバイブレーションで通知します。</dd>
                     </div>
                     <div>
-                      <dt>Stop Alert</dt>
+                      <dt translate="no">Stop Alert</dt>
                       <dd>タイマーの停止状態が続いている場合、2分ごとにバイブレーションで通知します。</dd>
                     </div>
                     <div>
-                      <dt>Power Save</dt>
+                      <dt translate="no">Power Save</dt>
                       <dd>操作していないときの画面更新頻度を抑えます。タイマーの内部カウントと通知は継続します。</dd>
                     </div>
                     <div>
-                      <dt>FIT Save</dt>
-                      <dd>セッションをFIT形式のアクティビティとして保存します。初期設定はOFFです。</dd>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期設定はOFFです。</dd>
                     </div>
                   </dl>
                   <div class="guide-note">
-                    <p>WBを30秒以下で開始した場合、30sec Alertは鳴動しません。ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
-                    <p>FIT Saveはタイマー開始前だけ変更できます。タイマー開始後は設定を変更できません。</p>
+                    <p>水風呂を30秒以下で開始した場合、<span translate="no">30sec Alert</span>はウォッチを振動させません。ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
+                    <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。タイマーを開始した後は設定を変更できません。</p>
                   </div>
                 </div>
               </div>
             </section>
 
             <section class="guide-section" id="history">
-              <h3>History</h3>
+              <h3 translate="no">History</h3>
               <div class="guide-images guide-images-three">
                 <figure class="screen-figure">
                   <img src="../assets/images/History.png" alt="保存済みセッションを表示したHistory一覧画面" width="384" height="504" loading="lazy">
@@ -368,13 +400,13 @@
                 </figure>
               </div>
               <p>過去のセッション結果を最大10件まで確認できます。新しい履歴が追加されると、古い履歴から順に上書きされます。</p>
-              <p>FIT SaveがOFFでも、アプリ内のHistoryは保存されます。</p>
+              <p><span translate="no">FIT Save</span>がOFFでも、アプリ内の履歴は保存されます。ただし、<span translate="no">Garmin Connect</span>には送信されません。</p>
               <ul class="operation-list">
                 <li><kbd>UP</kbd>／<kbd>DOWN</kbd> 履歴や詳細ページを移動します。</li>
                 <li><kbd>ENTER</kbd> 選択した履歴の詳細を開きます。詳細画面では履歴の削除確認を開きます。</li>
                 <li><kbd>BACK</kbd> 前の画面へ戻ります。</li>
               </ul>
-              <p>履歴の詳細では、開始日時、全体のTotonoiScore、セット数、Sauna・WB・Restの平均心拍数、各セットのTotonoiScoreを確認できます。</p>
+              <p>履歴の詳細では、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数、サウナ・水風呂・休憩の平均心拍数、各セットの<span translate="no">TotonoiScore</span>を確認できます。</p>
             </section>
 
             <section class="guide-section" id="exit-menu">
@@ -388,21 +420,21 @@
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<kbd>BACK</kbd>でタイマー画面へ戻ります。</p>
                   <dl class="menu-list">
                     <div>
-                      <dt>NO</dt>
+                      <dt translate="no">NO</dt>
                       <dd>終了をキャンセルし、タイマー画面へ戻ります。</dd>
                     </div>
                     <div>
-                      <dt>YES</dt>
-                      <dd>セッションを終了します。保存条件を満たしている場合はHistoryを保存し、FIT SaveがONであればFITも保存します。</dd>
+                      <dt translate="no">YES</dt>
+                      <dd>セッションを終了します。保存条件を満たしている場合はアプリ内の履歴を保存し、<span translate="no">FIT Save</span>がONであれば<span translate="no">FIT</span>ファイルも保存します。</dd>
                     </div>
                     <div>
-                      <dt>RESULT</dt>
+                      <dt translate="no">RESULT</dt>
                       <dd>現在までのセッション結果を表示します。アプリは終了しません。</dd>
                     </div>
                   </dl>
                   <div class="guide-note">
-                    <p>Saunaを60秒以上実行し、Restへ到達した有効なセットがない場合、FITとHistoryは保存されません。</p>
-                    <p>フェーズ終了後やタイマー停止後の待機状態が10分続くと、アプリは自動で終了します。自動終了時は、アプリ内のHistoryには保存されません。</p>
+                    <p>サウナを60秒以上実行して休憩に到達したセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
+                    <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。自動終了した場合は、アプリ内の履歴を保存しません。</p>
                   </div>
                 </div>
               </div>
@@ -414,7 +446,7 @@
             <p class="coming-soon">準備中です。</p>
           </section>
 
-          <!-- 対応機種、インストール方法、更新履歴は情報の準備ができ次第追加します。 -->
+          <!-- インストール方法、更新履歴は情報の準備ができ次第追加します。 -->
         </div>
       </article>
     </main>
