@@ -128,6 +128,7 @@
               <a href="#buttons">ボタン</a>
               <a href="#top-screen">起動画面</a>
               <a href="#run-screen">タイマー動作中</a>
+              <a href="#results">リザルト</a>
               <a href="#timer-menu" translate="no">Timer Menu</a>
               <a href="#aufguss-mode" translate="no">Aufguss</a>
               <a href="#main-menu" translate="no">Main Menu</a>
@@ -210,6 +211,36 @@
                 <li><span class="legend-mark legend-timer"></span><strong>緑枠</strong> 現在のタイマー残り時間</li>
                 <li><span class="legend-mark legend-clock"></span><strong>黄色枠</strong> 現在時刻</li>
               </ul>
+            </section>
+
+            <section class="guide-section" id="results">
+              <h3>リザルト画面</h3>
+
+              <h4>セットリザルト</h4>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../assets/images/Result_set.png" alt="セットのTotonoiScoreと各フェーズの最大・最小心拍数を表示したセットリザルト画面" width="380" height="504" loading="lazy">
+                  <figcaption>セットリザルト（表示値はサンプル）</figcaption>
+                </figure>
+                <div>
+                  <p>セットが終わり、次のセットを開始する際に、そのセットの<span translate="no">TotonoiScore</span>と各フェーズの最大・最小心拍数が表示されます。</p>
+                  <p>10秒経過するか、何かキーを押すと元の画面に戻ります。</p>
+                </div>
+              </div>
+
+              <h4>全体リザルト</h4>
+              <div class="guide-images guide-images-two">
+                <figure class="screen-figure">
+                  <img src="../assets/images/Result_all.png" alt="トータルTotonoiScoreを表示した全体リザルト画面" width="380" height="504" loading="lazy">
+                  <figcaption>全体リザルト（トータル）</figcaption>
+                </figure>
+                <figure class="screen-figure">
+                  <img src="../assets/images/Result.png" alt="各セットのTotonoiScoreとフェーズごとの最大・最小心拍数を表示した全体リザルト画面" width="380" height="504" loading="lazy">
+                  <figcaption>全体リザルト（セット詳細）</figcaption>
+                </figure>
+              </div>
+              <p>アプリを終了する際に、今回のリザルトを表示します。トータル<span translate="no">TotonoiScore</span>、各セットの<span translate="no">TotonoiScore</span>、各フェーズの最大・最小心拍数を確認できます。</p>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>キーでページを切り替えられます。自動では終了しないため、確認が終わったら<kbd>ENTER</kbd>または<kbd>BACK</kbd>キーを押してください。</p>
             </section>
 
             <section class="guide-section" id="timer-menu">
@@ -418,6 +449,7 @@
                 </figure>
                 <div>
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<kbd>BACK</kbd>でタイマー画面へ戻ります。</p>
+                  <p>画面上部には、当日のセットの<span translate="no">TotonoiScore</span>の平均が表示されます。<span translate="no">TotonoiScore</span>算出前に終了メニューを開くと、<span translate="no">N/A</span>と表示されます。</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">NO</dt>
@@ -433,6 +465,7 @@
                     </div>
                   </dl>
                   <div class="guide-note">
+                    <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻ることができます。</p>
                     <p>サウナを60秒以上実行して休憩に到達したセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
                     <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。自動終了した場合は、アプリ内の履歴を保存しません。</p>
                   </div>
