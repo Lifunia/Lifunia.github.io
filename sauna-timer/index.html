@@ -21,21 +21,24 @@
     </header>
 
     <main>
-      <article class="page-content">
+      <section class="sauna-timer-hero" aria-labelledby="page-title">
         <div class="container content-container">
-          <header class="page-heading">
-            <p class="eyebrow" lang="en" translate="no">Garmin App</p>
-            <h1 translate="no">Sauna Timer</h1>
-            <p class="lead">サウナ、水風呂、休憩の時間を計測し、セッションのログを記録する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
-          </header>
-
+          <p class="eyebrow" lang="en" translate="no">Garmin App</p>
+          <h1 id="page-title" translate="no">Sauna Timer</h1>
+          <p class="lead">サウナ、水風呂、休憩の時間を計測し、セッションのログを記録する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
+        </div>
+      </section>
+      <article class="page-content sauna-timer-page">
+        <div class="container content-container">
           <aside class="warning-box" aria-label="重要な注意事項">
-            <strong>高温環境でのスマートウォッチの使用は推奨されていません。使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong>
+            <strong>高温環境でのスマートウォッチの使用は推奨されていません。<br>使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong>
           </aside>
 
           <section class="content-section" id="overview">
             <h2>アプリ概要</h2>
-            <p><span translate="no">Sauna Timer</span>は、サウナで過ごす時間を計測し、各セットのログを記録するためのタイマーアプリです。サウナ、水風呂、休憩の3つを1セットとして、セッション全体を分かりやすく管理できます。</p>
+            <p><span translate="no">Sauna Timer</span>は、サウナで過ごす時間を計測し、各セットのログを記録するためのタイマーアプリです。<br>サウナ、水風呂、休憩の3つを1セットとして、セッション全体を分かりやすく管理できます。</p>
+
+            <p>保存したアクティビティをAndroidで振り返るには、<a href="../totonel/">ととねる</a>をご利用ください。<br>心拍の変化やセットごとの傾向を、グラフやスコアで確認できます。</p>
 
             <h3>1セットの流れ</h3>
             <ol class="session-flow">
@@ -49,7 +52,8 @@
                 <strong>休憩</strong>
               </li>
             </ol>
-            <p>サウナ、水風呂、休憩では、それぞれに設定した時間をカウントダウンします。残り時間が0になるとウォッチが振動し、現在のフェーズが終了したことを知らせます。</p>
+            <p>サウナ、水風呂、休憩では、それぞれに設定した時間をカウントダウンします。<br>残り時間が0になるとウォッチが振動し、現在のフェーズが終了したことを知らせます。</p>
+            <p>通知後の待機状態で<kbd>ENTER</kbd>を押すと、次のフェーズを開始します。</p>
 
             <h3>主な機能</h3>
             <dl class="feature-list">
@@ -61,7 +65,18 @@
                 <dt>全セットの振り返り</dt>
                 <dd>セッション終了時に、完了したすべてのセットのスコアをまとめて確認できます。</dd>
               </div>
+              <div>
+                <dt><span translate="no">Garmin Connect</span>へのログ送信</dt>
+                <dd><span translate="no">FIT Save</span>をONにすると、計測したログを<span translate="no">Garmin Connect</span>へ送信できます。</dd>
+              </div>
             </dl>
+
+            <aside class="notice-box" aria-label="Garmin Connectへの保存に関する注意">
+              <h3><span translate="no">Garmin Connect</span>へ保存する場合</h3>
+              <p><span translate="no">FIT</span>形式で保存した記録は、<span translate="no">Garmin Connect</span>にアクティビティデータとして登録されます。<br>消費カロリーやトレーニング負荷を厳密に管理している方は、ご注意ください。</p>
+              <p>また、<span translate="no">Garmin</span>の計算仕様により、実際の消費量よりも消費カロリーが大幅に多く表示される場合があります。<br>表示された数値を確認する際はご注意ください。</p>
+              <p>セッションの保存後に「転送に失敗」と表示される場合があります。<br>保存したアクティビティは、<span translate="no">Garmin Connect</span>と同期する際に転送されます。</p>
+            </aside>
           </section>
 
           <section class="content-section" id="notes">
@@ -78,15 +93,15 @@
             <p>初代<span translate="no">Garmin Instinct</span>には対応していません。</p>
 
             <h3>動作確認について</h3>
-            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。その他の対応機種については実機での動作確認を行っていません。</p>
+            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。<br>その他の対応機種については実機での動作確認を行っていません。</p>
 
-            <p class="critical-note"><strong>高温環境でのスマートウォッチの使用は推奨されていません。使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong></p>
+            <p class="critical-note"><strong>高温環境でのスマートウォッチの使用は推奨されていません。<br>使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong></p>
 
             <h3>使用上の注意</h3>
             <p><span translate="no">Sauna Timer</span>は、サウナ時間の管理を補助するためのアプリです。</p>
             <p>体調不良、めまい、息苦しさ、強い動悸などを感じた場合は、アプリの表示や通知に関係なく、ただちに利用を中止してください。</p>
             <p>サウナ施設のルールに従い、水分補給と休憩を十分に取りながら、無理のない範囲で使用してください。</p>
-            <p>本アプリは医療機器ではありません。表示される心拍数やスコアは、診断・治療・安全判断を目的としたものではありません。</p>
+            <p>本アプリは医療機器ではありません。<br>表示される心拍数やスコアは、診断・治療・安全判断を目的としたものではありません。</p>
 
             <h3>ウォッチが振動するタイミング</h3>
             <p><span translate="no">Sauna Timer</span>は、次のタイミングでウォッチを振動させて通知します。</p>
@@ -109,20 +124,22 @@
               </div>
               <div>
                 <dt>心拍数や温度が一定以上になったとき</dt>
-                <dd>デバイスやセンサーから情報を取得できた場合に通知します。取得状況によって動作は異なります。</dd>
+                <dd>デバイスやセンサーから情報を取得できた場合に通知します。<br>取得状況によって動作は異なります。</dd>
               </div>
             </dl>
           </section>
 
           <section class="content-section" id="how-to-use">
             <h2>使い方</h2>
-            <p><span translate="no">Garmin</span>ウォッチの物理ボタンを使って操作します。はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
+            <p><span translate="no">Garmin</span>ウォッチの物理ボタンを使って操作します。<br>はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
+            <p class="guide-note">画像は<span translate="no">Sauna Timer 0.6.1</span>を<span translate="no">Instinct 2</span>のシミュレーターで撮影したものです。<br>色付きの枠は説明用に追加しています。<br>心拍数、スコア、日時はサンプルです。<br>各画像の下に、色付きラベルで枠の意味を記載しています。</p>
 
             <nav class="guide-index" aria-label="使い方の目次">
               <a href="#buttons">ボタン</a>
               <a href="#top-screen">起動画面</a>
               <a href="#run-screen">タイマー動作中</a>
-              <a href="#results">リザルト</a>
+              <a href="#results">セットリザルト</a>
+              <a href="#overall-results">全体リザルト</a>
               <a href="#timer-menu" translate="no">Timer Menu</a>
               <a href="#aufguss-mode" translate="no">Aufguss</a>
               <a href="#main-menu" translate="no">Main Menu</a>
@@ -135,22 +152,20 @@
 
             <section class="guide-section" id="buttons">
               <h3>各種ボタン</h3>
-              <div class="key-grid">
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../assets/images/Buttons.png?v=button-positions-6" alt="Instinct 2のボタン位置。赤丸は右上のENTER、青丸は右下のBACK、紫丸は左中央のUP、オレンジ丸は左下のDOWN" width="382" height="505" loading="lazy">
+                  <figcaption>ボタンの位置（Instinct 2）</figcaption>
+                </figure>
                 <div>
-                  <kbd>ENTER</kbd>
-                  <span>右上のGPSボタン</span>
-                </div>
-                <div>
-                  <kbd>BACK</kbd>
-                  <span>右下のBACKボタン</span>
-                </div>
-                <div>
-                  <kbd>DOWN</kbd>
-                  <span>左下のDOWNボタン</span>
-                </div>
-                <div>
-                  <kbd>UP</kbd>
-                  <span>左中央のUPボタン</span>
+                  <p>画像の色付きの丸が、操作に使うボタンの位置です。</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤丸</span> <kbd>ENTER</kbd>：右上のGPSボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青丸</span> <kbd>BACK</kbd>：右下のSETボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫丸</span> <kbd>UP</kbd>：左中央のMENUボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジ丸</span> <kbd>DOWN</kbd>：左下のABCボタン</li>
+                  </ul>
+                  <p class="guide-note">このページでは、ボタンをENTER／BACK／UP／DOWNと表記します。<br>ウォッチ本体の印字は機種によって異なります。</p>
                 </div>
               </div>
             </section>
@@ -158,10 +173,20 @@
             <section class="guide-section" id="top-screen">
               <h3>起動画面</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/TOP.png" alt="Sauna Timerの起動画面" width="380" height="502" loading="lazy">
-                  <figcaption>起動画面</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/TOP.png" alt="Sauna Timerの起動画面" width="382" height="505" loading="lazy">
+                    <figcaption>起動画面</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>右上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>現在のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>現在時刻</li>
+                  </ul>
+                </div>
                 <div>
                   <p>アプリを起動したときに表示される画面です。</p>
                   <ul class="operation-list">
@@ -177,17 +202,27 @@
             <section class="guide-section" id="run-screen">
               <h3>タイマー動作中</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Run.png" alt="心拍数、フェーズ、残り時間、セット数、現在時刻を表示したタイマー動作中画面" width="374" height="502" loading="lazy">
-                  <figcaption>タイマー動作中</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Run.png" alt="心拍数、フェーズ、残り時間、セット数、現在時刻を表示したタイマー動作中画面" width="382" height="505" loading="lazy">
+                    <figcaption>タイマー動作中</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>右上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>現在のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>現在時刻</li>
+                  </ul>
+                </div>
                 <div>
                   <p>現在のフェーズと残り時間を確認しながら、セッションを進める画面です。</p>
                   <ul class="operation-list">
-                    <li><kbd>ENTER</kbd> <span translate="no">Timer Menu</span>を開きます。このメニューを開いている間、タイマーは停止します。</li>
-                    <li><kbd>DOWN</kbd> メインメニューを開きます。メニューを開いている間もタイマーは動き続けます。</li>
-                    <li><kbd>UP</kbd> 現在のフェーズを延長します。サウナと休憩は1分ずつ、最大5分まで延長できます。水風呂は30秒ずつ、最大2分まで延長できます。</li>
-                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。サウナと休憩は30秒ずつ、水風呂は10秒ずつ短縮できます。</li>
+                    <li><kbd>ENTER</kbd> <span translate="no">Timer Menu</span>を開きます。<br>このメニューを開いている間、タイマーは停止します。</li>
+                    <li><kbd>DOWN</kbd> メインメニューを開きます。<br>メニューを開いている間もタイマーは動き続けます。</li>
+                    <li><kbd>UP</kbd> 現在のフェーズを延長します。<br>サウナと休憩は1分ずつ、最大5分まで延長できます。<br>水風呂は30秒ずつ、最大2分まで延長できます。</li>
+                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。<br>サウナと休憩は30秒ずつ、水風呂は10秒ずつ短縮できます。</li>
                     <li><kbd>BACK</kbd> を素早く2回押すと、タイマーを止めずに終了確認画面を開きます。</li>
                   </ul>
                   <div class="guide-note">
@@ -196,56 +231,80 @@
                   </div>
                 </div>
               </div>
-
-              <h4>画面に表示される情報</h4>
-              <ul class="display-legend">
-                <li><span class="legend-mark legend-set"></span><strong>右上</strong> 現在のセット数</li>
-                <li><span class="legend-mark legend-heart-rate"></span><strong>赤枠</strong> 現在の心拍数</li>
-                <li><span class="legend-mark legend-phase"></span><strong>青枠</strong> 現在のフェーズ</li>
-                <li><span class="legend-mark legend-timer"></span><strong>緑枠</strong> 現在のタイマー残り時間</li>
-                <li><span class="legend-mark legend-clock"></span><strong>黄色枠</strong> 現在時刻</li>
-              </ul>
             </section>
 
             <section class="guide-section" id="results">
-              <h3>リザルト画面</h3>
-
-              <h4>セットリザルト</h4>
+              <h3>セットリザルト</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Result_set.png" alt="セットのTotonoiScoreと各フェーズの最大・最小心拍数を表示したセットリザルト画面" width="380" height="504" loading="lazy">
-                  <figcaption>セットリザルト（表示値はサンプル）</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Result_set.png" alt="セットのTotonoiScoreと各フェーズの最大・最小心拍数を表示したセットリザルト画面" width="382" height="505" loading="lazy">
+                    <figcaption>セットリザルト</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>操作ヒント</li>
+                  </ul>
+                </div>
                 <div>
                   <p>セットが終わり、次のセットを開始する際に、そのセットの<span translate="no">TotonoiScore</span>と各フェーズの最大・最小心拍数が表示されます。</p>
+                  <p>サウナを60秒以上実行したセットが表示の対象です。</p>
                   <p>10秒経過するか、何かキーを押すと元の画面に戻ります。</p>
                 </div>
               </div>
 
-              <h4>全体リザルト</h4>
+            </section>
+
+            <section class="guide-section" id="overall-results">
+              <h3>全体リザルト</h3>
               <div class="guide-images guide-images-two">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Result_all.png" alt="トータルTotonoiScoreを表示した全体リザルト画面" width="380" height="504" loading="lazy">
-                  <figcaption>全体リザルト（トータル）</figcaption>
-                </figure>
-                <figure class="screen-figure">
-                  <img src="../assets/images/Result.png" alt="各セットのTotonoiScoreとフェーズごとの最大・最小心拍数を表示した全体リザルト画面" width="380" height="504" loading="lazy">
-                  <figcaption>全体リザルト（セット詳細）</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Result_all.png" alt="トータルTotonoiScoreを表示した全体リザルト画面" width="382" height="505" loading="lazy">
+                    <figcaption>全体リザルト（トータル）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>トータルスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Result.png" alt="各セットのTotonoiScoreとフェーズごとの最大・最小心拍数を表示した全体リザルト画面" width="382" height="505" loading="lazy">
+                    <figcaption>全体リザルト（セット詳細）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
+                  </ul>
+                </div>
               </div>
-              <p>アプリを終了する際に、今回のリザルトを表示します。トータル<span translate="no">TotonoiScore</span>、各セットの<span translate="no">TotonoiScore</span>、各フェーズの最大・最小心拍数を確認できます。</p>
-              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>キーでページを切り替えられます。自動では終了しないため、確認が終わったら<kbd>ENTER</kbd>または<kbd>BACK</kbd>キーを押してください。</p>
+              <p>セッション終了時、または終了確認画面で「<span translate="no">RESULT</span>」を選択すると、今回のリザルトを表示します。<br>トータル<span translate="no">TotonoiScore</span>、各セットの<span translate="no">TotonoiScore</span>、各フェーズの最大・最小心拍数を確認できます。</p>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替えられます。<br>確認が終わったら<kbd>ENTER</kbd>または<kbd>BACK</kbd>で画面を閉じてください。</p>
+              <p>セッション終了時に開いた場合は、そのままアプリを終了します。<br>「<span translate="no">RESULT</span>」から開いた場合は、終了確認画面に戻ります。</p>
             </section>
 
             <section class="guide-section" id="timer-menu">
               <h3 translate="no">Timer Menu</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Timermenu.png" alt="Resume、Next Timer、Aufgussを表示したTimer Menu画面" width="377" height="501" loading="lazy">
-                  <figcaption>Timer Menu</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Timermenu.png" alt="Resume、Next Timer、Aufgussを表示したTimer Menu画面" width="382" height="505" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>停止中のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の項目</li>
+                  </ul>
+                </div>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<span translate="no">Timer Menu</span>を開いている間、タイマーは停止します。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><span translate="no">Timer Menu</span>を開いている間、タイマーは停止します。</p>
                   <p><kbd>BACK</kbd>でタイマーを再開し、タイマー画面に戻ります。</p>
                   <dl class="menu-list">
                     <div>
@@ -254,11 +313,11 @@
                     </div>
                     <div>
                       <dt translate="no">Next Timer</dt>
-                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。たとえば、サウナ中に選択すると水風呂へ進みます。</dd>
+                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。<br>たとえば、サウナ中に選択すると水風呂へ進みます。</dd>
                     </div>
                     <div>
                       <dt translate="no">Aufguss</dt>
-                      <dd>アウフグースモードのON／OFFを切り替えます。この項目は、サウナのフェーズ中だけ表示されます。</dd>
+                      <dd>アウフグースモードのON／OFFを切り替えます。<br>この項目は、サウナのフェーズ中だけ表示されます。</dd>
                     </div>
                   </dl>
                 </div>
@@ -268,12 +327,22 @@
             <section class="guide-section" id="aufguss-mode">
               <h3><span translate="no">Aufguss</span>モード</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/AUFmode.png" alt="AUF Saunaと経過時間を表示したAufgussモード画面" width="379" height="505" loading="lazy">
-                  <figcaption>Aufgussモード</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/AUFmode.png" alt="AUF Saunaと経過時間を表示したAufgussモード画面" width="382" height="505" loading="lazy">
+                    <figcaption>Aufgussモード</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>右上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>サウナ開始からの経過時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>現在時刻</li>
+                  </ul>
+                </div>
                 <div>
-                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。このモードでは通常のカウントダウンを行いません。サウナを開始してからの経過時間を、0から増やして表示します。</p>
+                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。<br>このモードでは通常のカウントダウンを行いません。<br>サウナを開始してからの経過時間を、0から増やして表示します。</p>
                   <p><kbd>ENTER</kbd>を素早く2回押すか、<span translate="no">Timer Menu</span>で再度「<span translate="no">Aufguss</span>」を選ぶと、通常モードへ戻ります。</p>
                   <ul>
                     <li>設定時間が残っている場合は、その残り時間からカウントダウンを再開します。</li>
@@ -290,16 +359,31 @@
             <section class="guide-section" id="main-menu">
               <h3 translate="no">Main Menu</h3>
               <div class="guide-images guide-images-two">
-                <figure class="screen-figure">
-                  <img src="../assets/images/menu.png" alt="Preset TimerとTimer Editを表示したMain Menu画面" width="379" height="503" loading="lazy">
-                  <figcaption>Main Menu（1/2）</figcaption>
-                </figure>
-                <figure class="screen-figure">
-                  <img src="../assets/images/menu2.png" alt="SettingとHistoryを表示したMain Menu画面" width="379" height="505" loading="lazy">
-                  <figcaption>Main Menu（2/2）</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/menu.png" alt="Preset Timerを選択し、Timer EditとSettingも表示したMain Menu画面" width="382" height="505" loading="lazy">
+                    <figcaption>Main Menu（Preset Timer選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/menu2.png?v=history-frame-2" alt="Historyを選択し、Preset TimerとTimer Editも表示したMain Menu画面" width="382" height="505" loading="lazy">
+                    <figcaption>Main Menu（History選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
               </div>
-              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<kbd>BACK</kbd>でタイマー画面に戻ります。</p>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><kbd>BACK</kbd>でタイマー画面に戻ります。</p>
+              <p>選択中の項目が先頭に表示され、4項目を循環します。<br>下部の黄色枠のマークは、ほかにも項目があることを示します。</p>
               <dl class="menu-list">
                 <div>
                   <dt translate="no">Preset Timer</dt>
@@ -307,11 +391,11 @@
                 </div>
                 <div>
                   <dt translate="no">Timer Edit</dt>
-                  <dd>サウナ、水風呂、休憩の時間を個別に設定します。保存した値は「<span translate="no">Edit Timer</span>」プリセットとして選択できます。</dd>
+                  <dd>サウナ、水風呂、休憩の時間を個別に設定します。<br>保存した値は「<span translate="no">Edit Timer</span>」プリセットとして選択できます。</dd>
                 </div>
                 <div>
                   <dt translate="no">Setting</dt>
-                  <dd>通知と省電力に関する設定を変更します。</dd>
+                  <dd>通知、省電力、<span translate="no">FIT</span>ファイルの保存に関する設定を変更します。</dd>
                 </div>
                 <div>
                   <dt translate="no">History</dt>
@@ -323,12 +407,19 @@
             <section class="guide-section" id="preset-timer">
               <h3 translate="no">Preset Timer</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/PresetTimer.png" alt="Preset 1を表示したPreset Timer画面" width="379" height="502" loading="lazy">
-                  <figcaption>Preset Timer</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/PresetTimer.png" alt="Preset 1を表示したPreset Timer画面" width="382" height="505" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>プリセット名</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの設定時間</li>
+                  </ul>
+                </div>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でプリセットを切り替え、<kbd>ENTER</kbd>で適用します。<kbd>BACK</kbd>で前の画面に戻ります。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でプリセットを切り替え、<kbd>ENTER</kbd>で適用します。<br><kbd>BACK</kbd>で前の画面に戻ります。</p>
                   <div class="table-scroll" tabindex="0" role="region" aria-label="プリセットタイマー一覧">
                     <table>
                       <thead>
@@ -342,7 +433,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <p class="guide-note"><span translate="no">Edit Timer</span>の初期値は<span translate="no">Preset 1</span>と同じです。最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
+                  <p class="guide-note"><span translate="no">Edit Timer</span>の初期値は<span translate="no">Preset 1</span>と同じです。<br>最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
                 </div>
               </div>
             </section>
@@ -350,13 +441,20 @@
             <section class="guide-section" id="timer-edit">
               <h3 translate="no">Timer Edit</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/EditTimer.png" alt="Saunaの時間を編集中のTimer Edit画面" width="380" height="506" loading="lazy">
-                  <figcaption>Timer Edit</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/EditTimer.png" alt="Saunaの時間を編集中のTimer Edit画面" width="382" height="505" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>編集項目と値</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ENTERの操作ヒント</li>
+                  </ul>
+                </div>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で表示中の値を増減し、<kbd>ENTER</kbd>で次の項目へ進みます。<kbd>BACK</kbd>を押すと編集をキャンセルして前の画面に戻ります。</p>
-                  <p>設定項目は、サウナ、水風呂、休憩の順に切り替わります。休憩の時間を設定した後に<kbd>ENTER</kbd>を押すと、設定値を保存してタイマー画面へ戻ります。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で表示中の値を増減し、<kbd>ENTER</kbd>で次の項目へ進みます。<br><kbd>BACK</kbd>を押すと編集をキャンセルして前の画面に戻ります。</p>
+                  <p>設定項目は、サウナ、水風呂、休憩の順に切り替わります。<br>休憩の時間を設定した後に<kbd>ENTER</kbd>を押すと、設定値を保存してタイマー画面へ戻ります。<br>画像の黄色枠には、サウナ・水風呂の編集中は「<span translate="no">Enter: Next</span>」、休憩の編集中は「<span translate="no">Enter: Save</span>」と表示されます。</p>
                   <div class="table-scroll" tabindex="0" role="region" aria-label="タイマー設定可能範囲">
                     <table>
                       <thead>
@@ -376,16 +474,40 @@
             <section class="guide-section" id="settings">
               <h3 translate="no">Setting</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Setting.png" alt="30sec Alert、Stop Alert、Power Saveを表示した設定画面" width="381" height="503" loading="lazy">
-                  <figcaption>Setting</figcaption>
-                </figure>
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../assets/images/Setting.png" alt="30sec Alert、Stop Alert、Power Saveを表示した設定画面" width="382" height="505" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>画面に表示される情報</h4>
+                    <ul class="display-legend">
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の設定</li>
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ほかにも設定があることを示すマーク</li>
+                    </ul>
+                  </div>
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../assets/images/SettingFIT.png" alt="FIT SaveがOFFの状態で選択されている設定画面" width="382" height="505" loading="lazy">
+                      <figcaption>FIT Save</figcaption>
+                    </figure>
+                    <h4>画面に表示される情報</h4>
+                    <ul class="display-legend">
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の設定</li>
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ほかにも設定があることを示すマーク</li>
+                    </ul>
+                  </div>
+                </div>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<kbd>BACK</kbd>で前の画面に戻ります。設定した値は次回起動時にも引き継がれます。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<br><kbd>BACK</kbd>で前の画面に戻ります。<br>設定した値は次回起動時にも引き継がれます。</p>
+                  <p><span translate="no">Instinct 2</span>では選択中の項目を先頭に3項目を表示します。<br>4つの設定を<kbd>UP</kbd>／<kbd>DOWN</kbd>で循環できます。</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">30sec Alert</dt>
                       <dd>各フェーズの終了30秒前に、短いバイブレーションで通知します。</dd>
+                      <dd class="guide-note">
+                        <p>水風呂を30秒以下で開始した場合、<span translate="no">30sec Alert</span>はウォッチを振動させません。<br>ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
+                      </dd>
                     </div>
                     <div>
                       <dt translate="no">Stop Alert</dt>
@@ -393,12 +515,16 @@
                     </div>
                     <div>
                       <dt translate="no">Power Save</dt>
-                      <dd>操作していないときの画面更新頻度を抑えます。タイマーの内部カウントと通知は継続します。</dd>
+                      <dd>操作していないときの画面更新頻度を抑えます。<br>タイマーの内部カウントと通知は継続します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期設定はOFFです。</dd>
+                      <dd class="guide-note">
+                        <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
+                      </dd>
                     </div>
                   </dl>
-                  <div class="guide-note">
-                    <p>水風呂を30秒以下で開始した場合、<span translate="no">30sec Alert</span>はウォッチを振動させません。ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
-                  </div>
                 </div>
               </div>
             </section>
@@ -406,23 +532,47 @@
             <section class="guide-section" id="history">
               <h3 translate="no">History</h3>
               <div class="guide-images guide-images-three">
-                <figure class="screen-figure">
-                  <img src="../assets/images/History.png" alt="保存済みセッションを表示したHistory一覧画面" width="384" height="504" loading="lazy">
-                  <figcaption>History一覧</figcaption>
-                </figure>
-                <figure class="screen-figure">
-                  <img src="../assets/images/history1.png" alt="開始日時、TotonoiScore、セット数を表示した履歴詳細画面" width="383" height="502" loading="lazy">
-                  <figcaption>History詳細</figcaption>
-                </figure>
-                <figure class="screen-figure">
-                  <img src="../assets/images/hisotry2.png" alt="フェーズごとの平均心拍数を表示した履歴詳細画面" width="380" height="510" loading="lazy">
-                  <figcaption>平均心拍数</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/History.png" alt="保存済みセッションを表示したHistory一覧画面" width="382" height="505" loading="lazy">
+                    <figcaption>History一覧</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の履歴</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>保存件数</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/history1.png" alt="開始日時、TotonoiScore、セット数を表示した履歴詳細画面" width="382" height="505" loading="lazy">
+                    <figcaption>History詳細</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>開始日時</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>スコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>セット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/hisotry2.png" alt="フェーズごとの平均心拍数を表示した履歴詳細画面" width="382" height="505" loading="lazy">
+                    <figcaption>平均心拍数</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの平均心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
+                  </ul>
+                </div>
               </div>
-              <p>過去のセッション結果を最大10件まで確認できます。新しい履歴が追加されると、古い履歴から順に上書きされます。</p>
+              <p>過去のセッション結果を最大10件まで確認できます。<br>新しい履歴が追加されると、古い履歴から順に上書きされます。</p>
+              <p><span translate="no">FIT Save</span>がOFFでも、アプリ内の履歴は保存されます。<br>ただし、<span translate="no">Garmin Connect</span>には送信されません。</p>
               <ul class="operation-list">
                 <li><kbd>UP</kbd>／<kbd>DOWN</kbd> 履歴や詳細ページを移動します。</li>
-                <li><kbd>ENTER</kbd> 選択した履歴の詳細を開きます。詳細画面では履歴の削除確認を開きます。</li>
+                <li><kbd>ENTER</kbd> 選択した履歴の詳細を開きます。<br>詳細画面では履歴の削除確認を開きます。</li>
                 <li><kbd>BACK</kbd> 前の画面へ戻ります。</li>
               </ul>
               <p>履歴の詳細では、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数、サウナ・水風呂・休憩の平均心拍数、各セットの<span translate="no">TotonoiScore</span>を確認できます。</p>
@@ -431,13 +581,20 @@
             <section class="guide-section" id="exit-menu">
               <h3>終了確認</h3>
               <div class="guide-layout">
-                <figure class="screen-figure">
-                  <img src="../assets/images/Exitmenu.png" alt="NO、YES、RESULTを表示した終了確認画面" width="380" height="504" loading="lazy">
-                  <figcaption>終了確認</figcaption>
-                </figure>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/Exitmenu.png" alt="NO、YES、RESULTを表示した終了確認画面" width="382" height="505" loading="lazy">
+                    <figcaption>終了確認</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>スコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の項目</li>
+                  </ul>
+                </div>
                 <div>
-                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<kbd>BACK</kbd>でタイマー画面へ戻ります。</p>
-                  <p>画面上部には、当日のセットの<span translate="no">TotonoiScore</span>の平均が表示されます。<span translate="no">TotonoiScore</span>算出前に終了メニューを開くと、<span translate="no">N/A</span>と表示されます。</p>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br>「<span translate="no">NO</span>」を選択すると、タイマー画面へ戻ります。</p>
+                  <p>画面上部には、今回のセッション全体の<span translate="no">TotonoiScore</span>が表示されます。<br>スコアを算出できるセットがない場合は、<span translate="no">N/A</span>と表示されます。</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">NO</dt>
@@ -445,17 +602,17 @@
                     </div>
                     <div>
                       <dt translate="no">YES</dt>
-                      <dd>セッションを終了します。保存条件を満たしている場合はアプリ内の履歴を保存します。</dd>
+                      <dd>セッションを終了します。<br>保存条件を満たしている場合はアプリ内の履歴を保存し、<span translate="no">FIT Save</span>がONであれば<span translate="no">FIT</span>ファイルも保存します。</dd>
                     </div>
                     <div>
                       <dt translate="no">RESULT</dt>
-                      <dd>現在までのセッション結果を表示します。アプリは終了しません。</dd>
+                      <dd>現在までのセッション結果を表示します。<br>アプリは終了しません。</dd>
                     </div>
                   </dl>
                   <div class="guide-note">
                     <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻ることができます。</p>
-                    <p>サウナを60秒以上実行して休憩に到達したセットが1つもない場合は、アプリ内の履歴を保存しません。</p>
-                    <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。自動終了した場合は、アプリ内の履歴を保存しません。</p>
+                    <p>サウナを60秒以上実行して休憩に到達したセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
+                    <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。<br>自動終了した場合は、アプリ内の履歴を保存しません。</p>
                   </div>
                 </div>
               </div>
@@ -477,5 +634,8 @@
         <small>&copy; Lifunia</small>
       </div>
     </footer>
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

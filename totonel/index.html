@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ととねるは、サウナセッションの心拍と記録をあとから振り返るAndroidアプリです。">
+    <meta property="og:title" content="ととねる | Lifunia">
+    <meta property="og:description" content="サウナセッションの心拍と記録を、あとから振り返る。">
+    <meta property="og:image" content="https://lifunia.github.io/assets/images/totonel-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>ととねる | Lifunia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header site-header-with-tabs">
+      <div class="container">
+        <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+        <nav class="section-tabs" aria-label="ととねるページ内メニュー">
+          <a href="#overview">アプリ概要</a>
+          <a href="#features">主な機能</a>
+          <a href="#download">ダウンロード</a>
+          <a href="#how-to-use">使い方</a>
+          <a href="#screens">画面紹介</a>
+          <a href="#notes">利用について</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="totonel-hero" aria-labelledby="page-title">
+        <div class="container content-container">
+          <p class="eyebrow" lang="en" translate="no">Android App</p>
+          <h1 id="page-title">ととねる</h1>
+          <p class="lead">サウナセッションの心拍と記録を、一覧・グラフ・スコアで振り返るためのAndroidアプリです。</p>
+        </div>
+      </section>
+      <article class="page-content totonel-page">
+        <div class="container content-container">
+          <section class="content-section" id="overview">
+            <h2>アプリ概要</h2>
+            <p>ととねるは、<a href="../sauna-timer/" translate="no">Sauna Timer</a>で保存したアクティビティを閲覧し、振り返るためのAndroidアプリです。</p>
+            <p>心拍の変化やセットごとの傾向を確認できます。<br>過去の記録をもとに、休憩時間やセットの組み立てを振り返れます。</p>
+          </section>
+          <section class="content-section" id="features">
+            <h2>主な機能</h2>
+            <dl class="feature-list">
+              <div>
+                <dt>セッションを一覧で整理</dt>
+                <dd>日時、滞在時間、施設、評価を一覧で見渡せます。<br>検索やカレンダー表示にも対応しています。</dd>
+              </div>
+              <div>
+                <dt>心拍の変化を確認</dt>
+                <dd>サウナ、水風呂、休憩ごとの心拍の変化をグラフで確認し、各セットを振り返れます。</dd>
+              </div>
+              <div>
+                <dt><span translate="no">Totonoi Score</span>で傾向を把握</dt>
+                <dd>心拍から算出したスコアと体感評価を並べて、セッションの特徴を確認できます。</dd>
+              </div>
+            </dl>
+          </section>
+          <section class="content-section" id="download">
+            <h2>ダウンロード・インストール</h2>
+            <p>Android端末にAPKファイルをダウンロードしてインストールします。</p>
+            <a class="totonel-download-link" href="https://github.com/Lifunia/totonel/releases/latest/download/totonel.apk">APKをダウンロード</a>
+            <h3>インストール方法</h3>
+            <ol class="operation-list">
+              <li>Android端末でこのページを開き、APKをダウンロードします。</li>
+              <li>ダウンロードしたAPKファイルを開きます。</li>
+              <li>許可を求められたら「設定」を開き、使用中のブラウザやファイルアプリの「この提供元を許可」をONにします。</li>
+              <li>元の画面に戻り、「インストール」をタップします。<br>完了したら「開く」をタップして起動します。</li>
+            </ol>
+            <p class="guide-note">設定項目の名称は、端末やAndroidのバージョンによって異なります。<br><a href="https://support.google.com/pixelphone/answer/7391672?hl=ja">Androidのインストール手順</a>も参考にしてください。</p>
+          </section>
+          <section class="content-section" id="how-to-use">
+            <h2>使い方</h2>
+            <details class="totonel-howto-item">
+              <summary>記録を振り返る</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>ホーム画面のリストからセッションを選びます。<br>カレンダー表示の場合は、日付を選び、その日の記録をタップします。</li>
+                  <li><strong>概要</strong>で評価・施設・日時・スコア・心拍を確認します。</li>
+                  <li><strong>分析・グラフ</strong>で心拍の推移やセットの詳細、次回のヒントを確認します。</li>
+                </ol>
+                <p class="guide-note">「評価前はScoreを隠す」がONの場合、Ratingを入力するまでScoreは表示されません。</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item">
+              <summary>セッションを同期する</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>起動時に自動同期する場合は、Settingsで<strong>起動時に自動同期</strong>をONにします。</li>
+                  <li>手動で同期する場合は、ホーム画面を下にスワイプします。</li>
+                  <li>同期結果は通知と、ホーム画面上部の<strong>同期ステータス</strong>で確認します。</li>
+                </ol>
+                <p class="guide-note">前回の同期から1分が経過するまでは、再同期できません。<br>同期ステータスを開くと、最終同期日時、状態、コードを確認できます。</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item" id="intervals-api-key">
+              <summary>Intervals API Key（APIキー）の設定</summary>
+              <div class="totonel-howto-content">
+                <p>初めて同期するときは、Intervals.icuのAPIキーを取得してアプリに設定します。</p>
+                <h3>APIキーを取得する</h3>
+                <ol class="operation-list">
+                  <li><a href="https://intervals.icu/">Intervals.icu</a>にアクセスします。</li>
+                  <li>左側のメニューから<strong>設定</strong>を開きます。</li>
+                  <li>設定画面の下部にある<strong>Developer Settings</strong>まで進みます。</li>
+                  <li><strong>API Key</strong>の項目にある<strong>view</strong>をクリックします。</li>
+                  <li>ポップアップに表示されたAPIキーをコピーします。</li>
+                </ol>
+                <p class="guide-note"><strong>APIキーは他者に知られないようにしてください。</strong><br>コピーしたキーを公開ページやSNSに貼り付けないでください。</p>
+                <h3>ととねるに設定する</h3>
+                <ol class="operation-list">
+                  <li>ホーム画面右上の歯車アイコンからSettingsを開きます。</li>
+                  <li><span translate="no">Intervals API Key</span>を入力し、<strong>保存</strong>をタップします。</li>
+                  <li><strong>接続テスト</strong>で、接続に成功したことを確認します。</li>
+                </ol>
+              </div>
+            </details>
+          </section>
+          <section class="content-section" id="screens">
+            <h2>画面紹介</h2>
+            <p>各画面で確認できる情報と、主な操作方法を紹介します。</p>
+            <div class="totonel-feature-cards">
+              <article class="totonel-feature-card totonel-feature-card-paired">
+                <div class="totonel-feature-row">
+                  <div class="totonel-feature-media">
+                    <figure class="screen-figure">
+                      <div class="totonel-screen-image">
+                        <button class="totonel-image-zoom" type="button" aria-label="リスト表示の画像を拡大">
+                          <img src="../assets/images/totonel-list.svg" alt="ととねるのセッション一覧。日時、滞在時間、施設、評価を表示している画面" width="1080" height="2188">
+                        </button>
+                      </div>
+                      <figcaption>リスト表示</figcaption>
+                    </figure>
+                  </div>
+                  <div class="totonel-operation-guide">
+                    <h3>セッション一覧画面の操作</h3>
+                    <dl>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>検索ボタン</dt>
+                        <dd>施設名とRatingで検索できます。</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>Settingsボタン</dt>
+                        <dd>設定画面（Settings）を開きます。</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-purple">紫枠</span>同期ステータス</dt>
+                        <dd>タップすると、最終同期日時や同期の状態を確認できます。</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>各セッション</dt>
+                        <dd>タップすると、そのセッションの詳細画面を開きます。</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="totonel-feature-row">
+                  <div class="totonel-feature-media">
+                    <figure class="screen-figure">
+                      <div class="totonel-screen-image">
+                        <button class="totonel-image-zoom" type="button" aria-label="カレンダー表示の画像を拡大">
+                          <img src="../assets/images/totonel-calendar.svg" alt="ととねるのカレンダー表示。月ごとのセッション記録と選択日のログを表示している画面" width="1080" height="2188">
+                        </button>
+                      </div>
+                      <figcaption>カレンダー表示</figcaption>
+                    </figure>
+                  </div>
+                  <div class="totonel-operation-guide">
+                    <h3>カレンダー表示画面の操作</h3>
+                    <dl>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>日付</dt>
+                        <dd>日付の下に「・」がある日は、記録がある日です。<br>日付をダブルタップすると、詳細画面を開けます。</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>概要</dt>
+                        <dd>日付をタップすると、その日の記録の概要が表示されます。<br>Ratingが未入力の場合、評価の星は表示されません。<br>「評価前はScoreを隠す」がONの場合、Ratingを入力するまでScoreは表示されません。<br>概要をタップすると、詳細画面を開けます。</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="セッション詳細の画像を拡大">
+                        <img src="../assets/images/totonel-detail.svg" alt="ととねるのセッション詳細。Totonoi Score、評価、施設、日時、心拍のハイライトを表示している画面" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>セッション詳細</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>セッション詳細画面の操作</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>表示切り替えボタン</dt>
+                      <dd>表示する内容を切り替えられます。</dd>
+                    </div>
+                    <div>
+                      <dt>概要</dt>
+                      <dd>セッションの概要を確認できます。</dd>
+                    </div>
+                    <div>
+                      <dt>分析・グラフ</dt>
+                      <dd>セッションの詳細と、次回のヒントをまとめた「今日の改善インサイト」を確認できます。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>Scoreの切り替えボタン</dt>
+                      <dd>
+                        標準スコアとRating+を切り替えられます。
+                        <ul class="totonel-switch-options">
+                          <li><strong>標準スコア：</strong>心拍データから算出するスコアです。</li>
+                          <li><strong>Rating+：</strong>過去の評価傾向を反映したスコアです。<br>学習が進むまでは、標準スコアと同じ値になります。</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-cyan">水色枠</span>心拍の切り替えボタン</dt>
+                      <dd>
+                        グラフやScoreに使う心拍データを、元データと補正データで切り替えられます。
+                        <ul class="totonel-switch-options">
+                          <li><strong>元データ：</strong>取り込んだままの心拍です。</li>
+                          <li><strong>補正データ：</strong>記録が途切れた部分や明らかに不自然な数値を整えた心拍です。</li>
+                        </ul>
+                        <p>選択中のデータ名はスイッチの横に表示されます。</p>
+                        <p>元データは、取り込んだ心拍を補正せずに使用します。<br>Scoreの計算方法はSauna Timerと異なるため、値が一致しない場合があります。</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>編集ボタン</dt>
+                      <dd>Rating（体感評価）とLocation（施設名）を編集できます。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-orange">オレンジ枠</span>スクリーンショットボタン</dt>
+                      <dd>操作ボタンなどを隠してスクリーンショットを撮影できます。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-purple">紫枠</span>？ボタン</dt>
+                      <dd>各項目の説明を確認できます。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-pink">ピンク枠</span>操作ボタン</dt>
+                      <dd>
+                        セッションの再計算や削除などを行えます。
+                        <ul class="totonel-switch-options">
+                          <li><strong>再計算：</strong>Ratingを変更した後に、スコアを計算し直します。</li>
+                          <li><strong>削除：</strong>アプリ内のセッションデータを削除します。<br>Intervals.icuにデータが残っていると、次回の同期で再び取り込まれます。</li>
+                          <li><strong>Rating+学習から除外：</strong>セッションをRating+の学習から除外します。</li>
+                        </ul>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image totonel-edit-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="基本情報の編集画面の画像を拡大">
+                        <img src="../assets/images/totonel_edit.svg" alt="基本情報の編集画面。赤枠のRatingと青枠のLocationを表示" width="954" height="736">
+                      </button>
+                    </div>
+                    <figcaption>基本情報の編集</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>基本情報の編集画面の操作</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>Rating</dt>
+                      <dd>そのセッションの体感を星で評価できます。<br>入力済みの評価も変更できます。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>Location</dt>
+                      <dd>利用した施設名を入力・変更できます。</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="分析・グラフの画像を拡大">
+                        <img src="../assets/images/totonel-analysis.svg" alt="ととねるの分析・グラフ画面。心拍グラフとセット選択を表示している画面" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>分析・グラフ</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>分析・グラフ画面の操作</h3>
+                <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>心拍データの切り替えボタン</dt>
+                    <dd>グラフに表示する心拍データを、補正データと元データで切り替えられます。</dd>
+                  </div>
+                  <div>
+                    <dt>補正データ</dt>
+                    <dd>記録の途切れや不自然な数値を整えた心拍データです。</dd>
+                  </div>
+                  <div>
+                    <dt>元データ</dt>
+                    <dd>取り込んだままの心拍です。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>セットの切り替えボタン</dt>
+                    <dd>セットを選ぶと、そのセットのグラフを確認できます。<br>「全体」を選ぶと、セッション全体のグラフを確認できます。<br>最初に表示する範囲はSettingsで選べます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>？ボタン</dt>
+                    <dd>各項目の説明を確認できます。</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="セットごとの詳細の画像を拡大">
+                        <img src="../assets/images/totonel-set-details.svg" alt="ととねるのセットごとの詳細画面。Set Score、Depth、Speed、Stabilityと、フェーズごとの時間と心拍を表示している画面" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>セットごとの詳細</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>セットごとの詳細</h3>
+                <dl>
+                  <div>
+                    <dt>Set Score</dt>
+                    <dd>セットごとの指標から算出したスコアです。</dd>
+                  </div>
+                  <div>
+                    <dt>Depth</dt>
+                    <dd>サウナで上がった心拍の、休憩中の下がり幅を示します。<br>心拍が大きく下がるほど、スコアが高くなります。</dd>
+                  </div>
+                  <div>
+                    <dt>Speed</dt>
+                    <dd>休憩に入ってから心拍が下がるまでの速さです。<br>心拍が短時間で下がるほど、スコアが高くなります。</dd>
+                  </div>
+                  <div>
+                    <dt>Stability</dt>
+                    <dd>休憩中の心拍の変動の小ささを示します。<br>心拍が安定し、休憩時間が十分あるほど高得点になります。</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Settings上部の画像を拡大">
+                        <img src="../assets/images/totonel-settings.svg" alt="ととねるのSettings上部。ホーム画面やScoreの表示設定、心拍とScoreの初期表示、バックアップの項目を表示している画面" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Settings：表示とバックアップ（APIキー設定済み）</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Settings：表示とバックアップ</h3>
+                <dl>
+                  <div>
+                    <dt>Intervals.icuのAPIキー設定</dt>
+                    <dd>APIキーが未設定の場合は設定案内が表示されます。<br>この画像は設定済みの状態です。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>ホーム画面の表示切り替え</dt>
+                    <dd>ホーム画面のリスト表示とカレンダー表示を切り替えられます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-orange">オレンジ枠</span>評価前のScore表示設定</dt>
+                    <dd>「評価前はScoreを隠す」は、初期状態でONです。<br>ON：Ratingの入力後にScoreを表示します。<br>OFF：入力前もScoreを表示します。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>心拍の初期表示</dt>
+                    <dd>最初に表示する心拍データを、元データと補正データから選べます。<br>初期状態は元データです。<br>選択中のデータ名はスイッチの下に表示されます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-pink">ピンク枠</span>Scoreの初期表示</dt>
+                    <dd>最初に表示するスコアを、標準スコアとRating+から選べます。<br>初期状態は標準スコアです。<br>選択中のスコア名はスイッチの下に表示されます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-purple">紫枠</span>インポート／エクスポートボタン</dt>
+                    <dd>施設名（Location）と体感評価（Rating）を保存・復元できます。<br>機種変更時のデータ引き継ぎなどに使います。</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Settings下部の画像を拡大">
+                        <img src="../assets/images/totonel-settings-lower.svg" alt="ととねるのSettings下部。自動同期、取得期間、API接続、ローカルデータ削除を設定する画面" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Settings：同期とデータ管理</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Settings：同期とデータ管理</h3>
+                <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>起動時の自動同期設定</dt>
+                    <dd>ONにすると、アプリの起動時にIntervals.icuと同期します。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>同期データの取得期間</dt>
+                    <dd>同期するデータの取得期間を選べます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-orange">オレンジ枠</span>APIキー入力フォーム</dt>
+                    <dd>APIキーを入力します。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-purple">紫枠</span>操作ボタン</dt>
+                    <dd>APIキーの保存、接続テスト、削除を行えます。<br>キーを入力すると、保存ボタンを操作できます。</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>ローカルデータ削除ボタン</dt>
+                    <dd>端末内に保存された記録を削除します。<br>APIキーとアプリの設定は残ります。</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+            </div>
+            <p class="totonel-caption">掲載している記録、施設名、心拍、評価、スコアはすべて紹介用の架空データです。</p>
+          </section>
+          <section class="content-section" id="notes">
+            <h2>利用について</h2>
+            <div class="notice-box">
+              <h3>記録を振り返る際の注意</h3>
+              <p>ととねるは、セッションを記録して振り返るためのアプリです。<br>心拍やスコアは診断・治療・安全判断を目的とするものではありません。<br>体調に不安がある場合は、アプリの表示にかかわらず利用を中止してください。</p>
+            </div>
+            <p>サウナ施設のルールに従い、水分補給と休憩を十分に取りながら使用してください。</p>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="container"><small>&copy; Lifunia</small></div>
+    </footer>
+    <dialog class="totonel-image-dialog" id="totonel-image-dialog" aria-label="サンプル画像の拡大表示">
+      <form method="dialog">
+        <button class="totonel-image-dialog-close" type="submit" aria-label="閉じる">×</button>
+      </form>
+      <div class="totonel-image-dialog-viewport"><img alt=""></div>
+    </dialog>
+    <script src="image-dialog.js" defer></script>
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
