@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Totonel is an Android app for reviewing your sauna sessions and heart rate trends.">
+    <meta property="og:title" content="Totonel | Lifunia">
+    <meta property="og:description" content="Review heart rate trends and records from your sauna sessions.">
+    <meta property="og:image" content="https://lifunia.github.io/assets/images/totonel-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Totonel | Lifunia</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/totonel/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/totonel/">
+  </head>
+  <body>
+    <header class="site-header site-header-with-tabs">
+      <div class="container">
+        <div class="site-brand">
+          <a class="site-name" href="../" aria-label="Lifunia home" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="Language">
+            <a href="../../totonel/" lang="ja" hreflang="ja" translate="no">日本語</a>
+            <span lang="en" aria-current="page" translate="no">English</span>
+          </nav>
+        </div>
+        <nav class="section-tabs" aria-label="Totonel page navigation">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#download">Download</a>
+          <a href="#how-to-use">User guide</a>
+          <a href="#screens">Screen guide</a>
+          <a href="#notes">Usage notes</a>
+          <a href="#changelog">Changelog</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="totonel-hero" aria-labelledby="page-title">
+        <div class="container content-container">
+          <p class="eyebrow" lang="en" translate="no">Android App</p>
+          <h1 id="page-title">Totonel</h1>
+          <p class="lead">Review your sauna sessions and heart rate trends with lists, graphs, and scores on Android.</p>
+          <p class="guide-note">The Totonel app is currently available in Japanese only.</p>
+        </div>
+      </section>
+      <article class="page-content totonel-page">
+        <div class="container content-container">
+          <section class="content-section" id="overview">
+            <h2>Overview</h2>
+            <p>Totonel is an Android app for reviewing activities saved with <a href="../sauna-timer/" translate="no">Sauna Timer</a>.</p>
+            <p>Review heart rate changes and trends for each set.<br>Look back at past sessions to review your rest times and the way you plan your sets.</p>
+            <p class="guide-note">To use Totonel, you need an account on <a href="https://intervals.icu/" translate="no">Intervals.icu</a>.<br>Turn on <a href="../sauna-timer/#settings" translate="no">FIT Save</a> in the <span translate="no">Sauna Timer</span> settings.</p>
+          </section>
+          <section class="content-section" id="features">
+            <h2>Features</h2>
+            <dl class="feature-list">
+              <div>
+                <dt>Organize sessions in a list</dt>
+                <dd>See dates, times, duration, location, and ratings at a glance.<br>Search and calendar views are also available.</dd>
+              </div>
+              <div>
+                <dt>Review heart rate changes</dt>
+                <dd>View heart rate graphs for sauna, cold bath, and rest to review each set.</dd>
+              </div>
+              <div>
+                <dt>Explore trends with <span translate="no">Totonoi Score</span></dt>
+                <dd>Compare the score calculated from your heart rate with your own rating of the session.</dd>
+              </div>
+              <div>
+                <dt>Delete unwanted sets</dt>
+                <dd>Select and delete sets within a session.<br>The app recalculates scores using the remaining sets. Deleted sets will not reappear when you sync.</dd>
+              </div>
+            </dl>
+          </section>
+          <section class="content-section" id="download">
+            <h2>Download and installation</h2>
+            <p>Download the APK file to your Android device and install it.</p>
+            <a class="totonel-download-link" href="https://github.com/Lifunia/totonel/releases/latest/download/totonel.apk">Download APK</a>
+            <h3>Installation</h3>
+            <ol class="operation-list">
+              <li>Open this page on your Android device and download the APK.</li>
+              <li>Open the downloaded APK file.</li>
+              <li>If prompted for permission, open Settings and enable Allow from this source for the browser or file app you are using.</li>
+              <li>Return to the previous screen and tap Install.<br>When installation is complete, tap Open to launch the app.</li>
+            </ol>
+            <p class="guide-note">Setting names vary by device and Android version.<br>You can also refer to <a href="https://support.google.com/pixelphone/answer/7391672?hl=en">Android installation instructions</a>.</p>
+          </section>
+          <section class="content-section" id="how-to-use">
+            <h2>User guide</h2>
+            <details class="totonel-howto-item">
+              <summary>Review your records</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>Select a session from the list on the home screen.<br>In calendar view, select a date and tap that day's record.</li>
+                  <li>Check the rating, location, date and time, score, and heart rate in <strong>Overview</strong>.</li>
+                  <li>Review heart rate trends, set details, and tips for next time in <strong>Analysis and graphs</strong>.</li>
+                </ol>
+                <p class="guide-note">If Hide Score until rated is on, Score is hidden until you enter a Rating.</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item">
+              <summary>Sync sessions</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>To sync automatically at startup, enable <strong>Sync automatically at startup</strong> in Settings.</li>
+                  <li>To sync manually, swipe down on the home screen.</li>
+                  <li>Check the sync result in notifications or <strong>Sync status</strong> at the top of the home screen.</li>
+                </ol>
+                <p class="guide-note">You must wait one minute after the previous sync before syncing again.<br>Open Sync status to check the last sync date and time, status, and code.</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item" id="delete-sets">
+              <summary>Delete sets within a session</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>Open the session containing the sets you want to delete.</li>
+                  <li>Tap the Actions button at the bottom of <strong>Overview</strong> and tap <strong>Delete sets</strong>.</li>
+                  <li>On the <strong>Sets to delete</strong> screen, check the sets you want to remove.<br>You can select several sets at once.</li>
+                  <li>Tap <strong>Delete</strong> to remove the selected sets and recalculate the score using the remaining sets.<br>The remaining sets keep their original numbers.</li>
+                </ol>
+                <p class="guide-note">After you delete sets, future syncs will not update that session.<br>To restore it, use <strong>Delete</strong> in the Actions menu to delete the entire session, then sync again.<br>The original data must still exist on Intervals.icu and fall within the sync date range.<br>You cannot delete sets while syncing.</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item" id="intervals-api-key">
+              <summary>Set up your Intervals API Key</summary>
+              <div class="totonel-howto-content">
+                <p>Before your first sync, get your API key from Intervals.icu and enter it in the app.</p>
+                <h3>Get your API key</h3>
+                <ol class="operation-list">
+                  <li>Visit <a href="https://intervals.icu/">Intervals.icu</a>.</li>
+                  <li>Open <strong>Settings</strong> from the menu on the left.</li>
+                  <li>Scroll to <strong>Developer Settings</strong> near the bottom of the settings page.</li>
+                  <li>Click <strong>view</strong> in the <strong>API Key</strong> section.</li>
+                  <li>Copy the API key shown in the popup.</li>
+                </ol>
+                <p class="guide-note"><strong>Keep your API key private.</strong><br>Do not paste it on public pages or social media.</p>
+                <h3>Enter the key in Totonel</h3>
+                <ol class="operation-list">
+                  <li>Open Settings using the gear icon at the top right of the home screen.</li>
+                  <li>Enter your <span translate="no">Intervals API Key</span> and tap <strong>Save</strong>.</li>
+                  <li>Tap <strong>Test connection</strong> to check that the app can connect.</li>
+                </ol>
+              </div>
+            </details>
+          </section>
+          <section class="content-section" id="screens">
+            <h2>Screen guide</h2>
+            <p>Learn what each screen shows and how to use its main controls.</p>
+            <div class="totonel-feature-cards">
+              <article class="totonel-feature-card totonel-feature-card-paired">
+                <div class="totonel-feature-row">
+                  <div class="totonel-feature-media">
+                    <figure class="screen-figure">
+                      <div class="totonel-screen-image">
+                        <button class="totonel-image-zoom" type="button" aria-label="Enlarge the list view screenshot">
+                          <img src="../../assets/images/totonel-list.svg" alt="Totonel session list showing date and time, duration, location, and rating" width="1080" height="2188">
+                        </button>
+                      </div>
+                      <figcaption>List view</figcaption>
+                    </figure>
+                  </div>
+                  <div class="totonel-operation-guide">
+                    <h3>Using the session list</h3>
+                    <dl>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Search button</dt>
+                        <dd>Search by location name and Rating.</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Settings button</dt>
+                        <dd>Open Settings.</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-purple">Purple frame</span>Sync status</dt>
+                        <dd>Tap to check the last sync date and time and sync status.</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Session entry</dt>
+                        <dd>Tap to open the session's detail screen.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="totonel-feature-row">
+                  <div class="totonel-feature-media">
+                    <figure class="screen-figure">
+                      <div class="totonel-screen-image">
+                        <button class="totonel-image-zoom" type="button" aria-label="Enlarge the calendar view screenshot">
+                          <img src="../../assets/images/totonel-calendar.svg" alt="Totonel calendar showing monthly session records and logs for the selected day" width="1080" height="2188">
+                        </button>
+                      </div>
+                      <figcaption>Calendar view</figcaption>
+                    </figure>
+                  </div>
+                  <div class="totonel-operation-guide">
+                    <h3>Using the calendar</h3>
+                    <dl>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Date</dt>
+                        <dd>A dot below a date means there is a record for that day.<br>Double-tap the date to open the detail screen.</dd>
+                      </div>
+                      <div>
+                        <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Overview</dt>
+                        <dd>Tap a date to see an overview of that day's record.<br>Rating stars are hidden if no Rating has been entered.<br>If Hide Score until rated is on, Score is hidden until you enter a Rating.<br>Tap the overview to open the detail screen.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the session details screenshot">
+                        <img src="../../assets/images/totonel-detail.svg" alt="Totonel 0.1.2 session details showing Totonoi Score, rating, heart rate highlights, and the Delete sets button at the bottom" width="1080" height="2220">
+                      </button>
+                    </div>
+                    <figcaption>Session details</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>Using session details</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>View buttons</dt>
+                      <dd>Switch between views.</dd>
+                    </div>
+                    <div>
+                      <dt>Overview</dt>
+                      <dd>Review an overview of the session.</dd>
+                    </div>
+                    <div>
+                      <dt>Analysis and graphs</dt>
+                      <dd>View session details and tips for your next session in the Today's improvement insights section.</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Score switch</dt>
+                      <dd>
+                        Switch between the standard score and Rating+.
+                        <ul class="totonel-switch-options">
+                          <li><strong>Standard score:</strong> A score calculated from heart rate data.</li>
+                          <li><strong>Rating+:</strong> A score based on your past ratings.<br>It matches the standard score until the app has learned enough from your ratings.</li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-cyan">Cyan frame</span>Heart rate switch</dt>
+                      <dd>
+                        Choose whether graphs and Score use raw or corrected heart rate data.
+                        <ul class="totonel-switch-options">
+                          <li><strong>Raw data:</strong> Heart rate data as imported.</li>
+                          <li><strong>Corrected data:</strong> Heart rate data adjusted to account for gaps and clearly implausible readings.</li>
+                        </ul>
+                        <p>The selected data type appears beside the switch.</p>
+                        <p>Raw data uses the imported heart rate readings without correction.<br>Totonel and Sauna Timer use different formulas to calculate scores, so the values may not match.</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Edit button</dt>
+                      <dd>Edit Rating (how the session felt) and Location (the facility name).</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-orange">Orange frame</span>Screenshot button</dt>
+                      <dd>Take a screenshot with controls and other buttons hidden.</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-purple">Purple frame</span>Help (?) button</dt>
+                      <dd>View explanations of each item.</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-pink">Pink frame</span>Actions button</dt>
+                      <dd>
+                        Recalculate the score, exclude the session from Rating+ learning, or delete session data or sets.
+                        <ul class="totonel-switch-options">
+                          <li><strong>Recalculate:</strong> Recalculate the score after changing the Rating.</li>
+                          <li><strong>Exclude from Rating+ learning:</strong> Exclude this session from Rating+ learning.</li>
+                          <li><strong>Delete:</strong> Delete the session data from the app.<br>If the data still exists on Intervals.icu, it will be imported again on the next sync.</li>
+                          <li><strong>Delete sets:</strong> Open the screen for selecting sets to delete.<br>You can delete several sets at once. The app then recalculates the score using the remaining sets.<br>After deletion, future syncs will not update that session. See <a href="#delete-sets">how to delete sets</a>.</li>
+                        </ul>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card" id="set-delete-screen">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the set deletion screenshot">
+                        <img src="../../assets/images/totonel-set-delete.svg" alt="Totonel set deletion screen with sample Set1 and Set3 selected, a note about sync after deletion, and Cancel and Delete buttons" width="1080" height="2220" loading="lazy">
+                      </button>
+                    </div>
+                    <figcaption>Delete sets: example with Set1 and Set3 selected</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>Deleting sets</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Set selection</dt>
+                      <dd>Check the sets you want to delete.<br>You can select more than one.<br>If there are five or more sets, they appear in two columns.</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Delete</dt>
+                      <dd>Delete the checked sets and recalculate the score using the remaining sets.<br>The Delete button becomes available when you select at least one set.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image totonel-edit-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the basic information editing screenshot">
+                        <img src="../../assets/images/totonel_edit.svg" alt="Basic information editor showing Rating in a red frame and Location in a blue frame" width="954" height="736">
+                      </button>
+                    </div>
+                    <figcaption>Edit basic information</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>Editing basic information</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Rating</dt>
+                      <dd>Rate how the session felt using stars.<br>You can also change an existing rating.</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Location</dt>
+                      <dd>Enter or change the name of the facility you visited.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the analysis and graphs screenshot">
+                        <img src="../../assets/images/totonel-analysis.svg" alt="Totonel analysis and graphs screen showing a heart rate graph and set selector" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Analysis and graphs</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Using analysis and graphs</h3>
+                <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Heart rate data switch</dt>
+                    <dd>Choose whether the graph shows corrected or raw heart rate data.</dd>
+                  </div>
+                  <div>
+                    <dt>Corrected data</dt>
+                    <dd>Heart rate data adjusted to account for gaps and implausible readings.</dd>
+                  </div>
+                  <div>
+                    <dt>Raw data</dt>
+                    <dd>Heart rate data as imported.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Set selector</dt>
+                    <dd>Select a set to view its graph.<br>Select All to view the graph for the entire session.<br>Choose which range to show by default in Settings.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Help (?) button</dt>
+                    <dd>View explanations of each item.</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the set details screenshot">
+                        <img src="../../assets/images/totonel-set-details.svg" alt="Totonel set details showing Set Score, Depth, Speed, Stability, and duration and heart rate for each phase" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Set details</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Set details</h3>
+                <dl>
+                  <div>
+                    <dt>Set Score</dt>
+                    <dd>A score calculated from the metrics for that set.</dd>
+                  </div>
+                  <div>
+                    <dt>Depth</dt>
+                    <dd>Shows how far your heart rate drops during rest after rising in the sauna.<br>A larger drop produces a higher score.</dd>
+                  </div>
+                  <div>
+                    <dt>Speed</dt>
+                    <dd>Shows how quickly your heart rate drops after you begin resting.<br>A faster drop produces a higher score.</dd>
+                  </div>
+                  <div>
+                    <dt>Stability</dt>
+                    <dd>Measures how stable your heart rate is during rest.<br>A steadier heart rate and enough time to rest produce a higher score.</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the upper Settings screenshot">
+                        <img src="../../assets/images/totonel-settings.svg" alt="Upper part of Totonel Settings showing home screen and Score display options, default heart rate and Score views, and backup settings" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Settings: display and backup (API key configured)</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Settings: display and backup</h3>
+                <dl>
+                  <div>
+                    <dt>Intervals.icu API key setup</dt>
+                    <dd>Setup instructions appear if an API key has not been entered.<br>In this screenshot, the API key is already set up.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Home screen view</dt>
+                    <dd>Switch the home screen between list and calendar views.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-orange">Orange frame</span>Score visibility before rating</dt>
+                    <dd>Hide Score until rated is on by default.<br>ON: Show Score after a Rating is entered.<br>OFF: Show Score even before a Rating is entered.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Default heart rate data</dt>
+                    <dd>Choose which heart rate data to show by default: raw or corrected.<br>Raw data is the default.<br>The selected data type appears below the switch.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-pink">Pink frame</span>Default Score</dt>
+                    <dd>Choose which score to show by default: the standard score or Rating+.<br>The standard score is the default.<br>The selected score name appears below the switch.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-purple">Purple frame</span>Import/export buttons</dt>
+                    <dd>Save and restore facility names (Location) and personal ratings (Rating).<br>Use these buttons to transfer your data to a new device.</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="Enlarge the lower Settings screenshot">
+                        <img src="../../assets/images/totonel-settings-lower.svg" alt="Lower part of Totonel Settings showing automatic sync, sync date range, API connection, and local data deletion" width="1080" height="2188">
+                      </button>
+                    </div>
+                    <figcaption>Settings: sync and data management</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                <h3>Settings: sync and data management</h3>
+                <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Sync automatically at startup</dt>
+                    <dd>When enabled, the app syncs with Intervals.icu at startup.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Sync date range</dt>
+                    <dd>Choose the date range of data to sync.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-orange">Orange frame</span>API key field</dt>
+                    <dd>Enter your API key.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-purple">Purple frame</span>Actions button</dt>
+                    <dd>Save or delete your API key and test the connection.<br>The Save button becomes available once you enter a key.</dd>
+                  </div>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Delete local data button</dt>
+                    <dd>Delete records stored on your device.<br>Your API key and app settings are kept.</dd>
+                  </div>
+                </dl>
+                </div>
+              </article>
+            </div>
+            <p class="totonel-caption">The records, facility names, heart rate readings, ratings, and scores shown here are all fictional examples.</p>
+          </section>
+          <section class="content-section" id="notes">
+            <h2>Usage notes</h2>
+            <div class="notice-box">
+              <h3>Notes on reviewing your records</h3>
+              <p>Totonel is an app for recording and reviewing sessions.<br>Heart rate readings and scores are not intended for diagnosis, treatment, or assessing safety.<br>If you have concerns about your physical condition, discontinue use regardless of what the app shows.</p>
+            </div>
+            <p>Follow the sauna facility's rules, stay hydrated, and take enough time to rest.</p>
+          </section>
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">Changelog</h2>
+            <p class="changelog-description">Updates to this page and major changes to the app.</p>
+
+            <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-09">October 9, 2026</time></dt>
+                <dd>
+                  Added an English version.
+                  <br>
+                  <strong>Totonel v0.1.2 released</strong>
+                  <ul class="operation-list">
+                    <li>Added set deletion.<br>You can select and delete several sets within a session at once.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-04">October 4, 2026</time></dt>
+                <dd>Published the app page.<br>Totonel v0.1.1 released</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="container"><small>&copy; Lifunia</small></div>
+    </footer>
+    <dialog class="totonel-image-dialog" id="totonel-image-dialog" aria-label="Enlarged sample image">
+      <form method="dialog">
+        <button class="totonel-image-dialog-close" type="submit" aria-label="Close">×</button>
+      </form>
+      <div class="totonel-image-dialog-viewport"><img alt=""></div>
+    </dialog>
+    <script src="../../totonel/image-dialog.js" defer></script>
+    <script src="../../totonel/anchor-navigation.js" defer></script>
+
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
+
+  </body>
+</html>

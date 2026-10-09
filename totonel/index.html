@@ -3,18 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ととねるは、サウナセッションの心拍と記録をあとから振り返るAndroidアプリです。">
+    <meta name="description" content="ととねるは、サウナの記録や心拍の変化をあとから振り返るAndroidアプリです。">
     <meta property="og:title" content="ととねる | Lifunia">
     <meta property="og:description" content="サウナセッションの心拍と記録を、あとから振り返る。">
     <meta property="og:image" content="https://lifunia.github.io/assets/images/totonel-og.png">
     <meta name="twitter:card" content="summary_large_image">
     <title>ととねる | Lifunia</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/totonel/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/totonel/">
   </head>
   <body>
     <header class="site-header site-header-with-tabs">
       <div class="container">
-        <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+        <div class="site-brand">
+          <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="言語">
+            <span lang="ja" aria-current="page" translate="no">日本語</span>
+            <a href="../en/totonel/" lang="en" hreflang="en" translate="no">English</a>
+          </nav>
+        </div>
         <nav class="section-tabs" aria-label="ととねるページ内メニュー">
           <a href="#overview">アプリ概要</a>
           <a href="#features">主な機能</a>
@@ -22,6 +30,7 @@
           <a href="#how-to-use">使い方</a>
           <a href="#screens">画面紹介</a>
           <a href="#notes">利用について</a>
+          <a href="#changelog">更新履歴</a>
         </nav>
       </div>
     </header>
@@ -30,7 +39,7 @@
         <div class="container content-container">
           <p class="eyebrow" lang="en" translate="no">Android App</p>
           <h1 id="page-title">ととねる</h1>
-          <p class="lead">サウナセッションの心拍と記録を、一覧・グラフ・スコアで振り返るためのAndroidアプリです。</p>
+          <p class="lead">サウナの記録や心拍の変化を、一覧・グラフ・スコアで振り返るAndroidアプリです。</p>
         </div>
       </section>
       <article class="page-content totonel-page">
@@ -55,6 +64,10 @@
               <div>
                 <dt><span translate="no">Totonoi Score</span>で傾向を把握</dt>
                 <dd>心拍から算出したスコアと体感評価を並べて、セッションの特徴を確認できます。</dd>
+              </div>
+              <div>
+                <dt>不要なセットを削除</dt>
+                <dd>セッション内のセットを選んで削除できます。<br>残ったセットをもとにスコアを計算し直し、削除したセットが同期で戻らないようにします。</dd>
               </div>
             </dl>
           </section>
@@ -88,11 +101,23 @@
               <summary>セッションを同期する</summary>
               <div class="totonel-howto-content">
                 <ol class="operation-list">
-                  <li>起動時に自動同期する場合は、Settingsで<strong>起動時に自動同期</strong>をONにします。</li>
+                  <li>起動時に自動同期するには、Settingsで<strong>起動時に自動同期</strong>をONにします。</li>
                   <li>手動で同期する場合は、ホーム画面を下にスワイプします。</li>
-                  <li>同期結果は通知と、ホーム画面上部の<strong>同期ステータス</strong>で確認します。</li>
+                  <li>同期結果は、通知やホーム画面上部の<strong>同期ステータス</strong>で確認できます。</li>
                 </ol>
                 <p class="guide-note">前回の同期から1分が経過するまでは、再同期できません。<br>同期ステータスを開くと、最終同期日時、状態、コードを確認できます。</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item" id="delete-sets">
+              <summary>セッション内のセットを削除する</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>削除したいセットがあるセッションを開きます。</li>
+                  <li><strong>概要</strong>の下部にある操作ボタンを開き、<strong>セット削除</strong>をタップします。</li>
+                  <li><strong>削除するセット</strong>の画面で、削除したいセットにチェックを入れます。<br>複数のセットをまとめて選べます。</li>
+                  <li><strong>削除</strong>をタップすると、選んだセットを削除し、残ったセットでスコアを計算し直します。<br>選ばなかったセットの番号はそのまま残ります。</li>
+                </ol>
+                <p class="guide-note">セットを削除したセッションは、以後の同期で更新されません。<br>元に戻すには、操作ボタンの<strong>削除</strong>でセッション全体を削除し、再同期してください。<br>Intervals.icuに元のデータが残っており、同期の取得期間に含まれている必要があります。<br>同期中はセットを削除できません。</p>
               </div>
             </details>
             <details class="totonel-howto-item" id="intervals-api-key">
@@ -186,7 +211,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="セッション詳細の画像を拡大">
-                        <img src="../assets/images/totonel-detail.svg" alt="ととねるのセッション詳細。Totonoi Score、評価、施設、日時、心拍のハイライトを表示している画面" width="1080" height="2188">
+                        <img src="../assets/images/totonel-detail.svg" alt="ととねる0.1.2のセッション詳細。Totonoi Score、評価、心拍のハイライトと、下部のセット削除ボタンを表示している画面" width="1080" height="2220">
                       </button>
                     </div>
                     <figcaption>セッション詳細</figcaption>
@@ -222,8 +247,8 @@
                       <dd>
                         グラフやScoreに使う心拍データを、元データと補正データで切り替えられます。
                         <ul class="totonel-switch-options">
-                          <li><strong>元データ：</strong>取り込んだままの心拍です。</li>
-                          <li><strong>補正データ：</strong>記録が途切れた部分や明らかに不自然な数値を整えた心拍です。</li>
+                          <li><strong>元データ：</strong>取り込んだままの心拍データです。</li>
+                          <li><strong>補正データ：</strong>記録が途切れた部分や明らかに不自然な数値を整えた心拍データです。</li>
                         </ul>
                         <p>選択中のデータ名はスイッチの横に表示されます。</p>
                         <p>元データは、取り込んだ心拍を補正せずに使用します。<br>Scoreの計算方法はSauna Timerと異なるため、値が一致しない場合があります。</p>
@@ -247,10 +272,36 @@
                         セッションの再計算や削除などを行えます。
                         <ul class="totonel-switch-options">
                           <li><strong>再計算：</strong>Ratingを変更した後に、スコアを計算し直します。</li>
-                          <li><strong>削除：</strong>アプリ内のセッションデータを削除します。<br>Intervals.icuにデータが残っていると、次回の同期で再び取り込まれます。</li>
                           <li><strong>Rating+学習から除外：</strong>セッションをRating+の学習から除外します。</li>
+                          <li><strong>削除：</strong>アプリ内のセッションデータを削除します。<br>Intervals.icuにデータが残っていると、次回の同期で再び取り込まれます。</li>
+                          <li><strong>セット削除：</strong>削除するセットの選択画面を開きます。<br>複数のセットをまとめて選び、残ったセットでスコアを計算し直せます。<br>削除後、そのセッションは同期で更新されません。<a href="#delete-sets">セット削除の手順</a>をご覧ください。</li>
                         </ul>
                       </dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+              <article class="totonel-feature-card" id="set-delete-screen">
+                <div class="totonel-feature-media">
+                  <figure class="screen-figure">
+                    <div class="totonel-screen-image">
+                      <button class="totonel-image-zoom" type="button" aria-label="セット削除画面の画像を拡大">
+                        <img src="../assets/images/totonel-set-delete.svg" alt="ととねるのセット削除画面。ダミーデータのSet1とSet3を選択し、削除後の同期についての案内、キャンセル、削除ボタンを表示" width="1080" height="2220" loading="lazy">
+                      </button>
+                    </div>
+                    <figcaption>セット削除：Set1とSet3を選択した例</figcaption>
+                  </figure>
+                </div>
+                <div class="totonel-operation-guide">
+                  <h3>セット削除画面の操作</h3>
+                  <dl>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-red">赤枠</span>セットの選択</dt>
+                      <dd>削除したいセットにチェックを入れます。<br>複数選択できます。<br>セットが5件以上ある場合は2列で表示します。</dd>
+                    </div>
+                    <div>
+                      <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>削除</dt>
+                      <dd>チェックしたセットを削除し、残ったセットでスコアを計算し直します。<br>セットを1件以上選ぶと、削除ボタンをタップできます。</dd>
                     </div>
                   </dl>
                 </div>
@@ -304,7 +355,7 @@
                   </div>
                   <div>
                     <dt>元データ</dt>
-                    <dd>取り込んだままの心拍です。</dd>
+                    <dd>取り込んだままの心拍データです。</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-blue">青枠</span>セットの切り替えボタン</dt>
@@ -337,7 +388,7 @@
                   </div>
                   <div>
                     <dt>Depth</dt>
-                    <dd>サウナで上がった心拍の、休憩中の下がり幅を示します。<br>心拍が大きく下がるほど、スコアが高くなります。</dd>
+                    <dd>サウナで上がった心拍が、休憩中にどれだけ下がったかを示します。<br>心拍が大きく下がるほど、スコアが高くなります。</dd>
                   </div>
                   <div>
                     <dt>Speed</dt>
@@ -345,7 +396,7 @@
                   </div>
                   <div>
                     <dt>Stability</dt>
-                    <dd>休憩中の心拍の変動の小ささを示します。<br>心拍が安定し、休憩時間が十分あるほど高得点になります。</dd>
+                    <dd>休憩中の心拍の変動の小ささを示します。<br>心拍が安定し、休憩時間が十分にあるほど、スコアが高くなります。</dd>
                   </div>
                 </dl>
                 </div>
@@ -419,7 +470,7 @@
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-purple">紫枠</span>操作ボタン</dt>
-                    <dd>APIキーの保存、接続テスト、削除を行えます。<br>キーを入力すると、保存ボタンを操作できます。</dd>
+                    <dd>APIキーの保存・削除と接続テストができます。<br>キーを入力すると、保存ボタンを操作できます。</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-green">緑枠</span>ローカルデータ削除ボタン</dt>
@@ -439,6 +490,28 @@
             </div>
             <p>サウナ施設のルールに従い、水分補給と休憩を十分に取りながら使用してください。</p>
           </section>
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">更新履歴</h2>
+            <p class="changelog-description">このページの更新内容と、アプリの主な変更を掲載しています。</p>
+            <!-- 更新時は日付と変更内容を先頭に追加します。 -->
+            <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-09">2026年10月9日</time></dt>
+                <dd>
+                  英語版を追加しました。
+                  <br>
+                  <strong>ととねる v0.1.2リリース</strong>
+                  <ul class="operation-list">
+                    <li>セッション内のセットを選んで削除する機能を追加しました。<br>複数のセットをまとめて削除できます。</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-04">2026年10月4日</time></dt>
+                <dd>紹介ページを公開しました。<br>ととねる v0.1.1リリース</dd>
+              </div>
+            </dl>
+          </section>
         </div>
       </article>
     </main>
@@ -452,6 +525,7 @@
       <div class="totonel-image-dialog-viewport"><img alt=""></div>
     </dialog>
     <script src="image-dialog.js" defer></script>
+    <script src="anchor-navigation.js" defer></script>
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
     <!-- End Cloudflare Web Analytics -->

@@ -6,16 +6,25 @@
     <meta name="description" content="Sauna Timerは、対応するGarmin Instinctシリーズでサウナ、水風呂、休憩の時間を計測・記録するアプリです。">
     <title>Sauna Timer | Lifunia</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/">
   </head>
   <body>
     <header class="site-header site-header-with-tabs">
       <div class="container">
-        <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+        <div class="site-brand">
+          <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="言語">
+            <span lang="ja" aria-current="page" translate="no">日本語</span>
+            <a href="../en/sauna-timer/" lang="en" hreflang="en" translate="no">English</a>
+          </nav>
+        </div>
         <nav class="section-tabs" aria-label="Sauna Timerページ内メニュー">
           <a href="#overview">アプリ概要</a>
           <a href="#notes">注意事項</a>
           <a href="#how-to-use">使い方</a>
           <a href="#faq">FAQ</a>
+          <a href="#changelog">更新履歴</a>
         </nav>
       </div>
     </header>
@@ -25,7 +34,7 @@
         <div class="container content-container">
           <p class="eyebrow" lang="en" translate="no">Garmin App</p>
           <h1 id="page-title" translate="no">Sauna Timer</h1>
-          <p class="lead">サウナ、水風呂、休憩の時間を計測し、セッションのログを記録する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
+          <p class="lead">サウナ、水風呂、休憩の時間を計測し、一連のセットの記録を保存する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
         </div>
       </section>
       <article class="page-content sauna-timer-page">
@@ -36,7 +45,7 @@
 
           <section class="content-section" id="overview">
             <h2>アプリ概要</h2>
-            <p><span translate="no">Sauna Timer</span>は、サウナで過ごす時間を計測し、各セットのログを記録するためのタイマーアプリです。<br>サウナ、水風呂、休憩の3つを1セットとして、セッション全体を分かりやすく管理できます。</p>
+            <p><span translate="no">Sauna Timer</span>は、サウナ、水風呂、休憩の時間を計測し、各セットの記録を保存するタイマーアプリです。<br>サウナ、水風呂、休憩を1セットとして、一連のセット（セッション）を管理できます。</p>
 
             <p><strong><a href="https://apps.garmin.com/ja-JP/apps/88ef23c2-0f48-4bfc-90d2-d033243d61ac">Sauna Timerをダウンロード（Connect IQ Store）</a></strong></p>
 
@@ -54,7 +63,7 @@
                 <strong>休憩</strong>
               </li>
             </ol>
-            <p>サウナ、水風呂、休憩では、それぞれに設定した時間をカウントダウンします。<br>残り時間が0になるとウォッチが振動し、現在のフェーズが終了したことを知らせます。</p>
+            <p>サウナ、水風呂、休憩の各段階（フェーズ）で、設定した時間をカウントダウンします。<br>残り時間が0になるとウォッチが振動し、現在のフェーズが終了したことを知らせます。</p>
             <p>通知後の待機状態で<kbd>ENTER</kbd>を押すと、次のフェーズを開始します。</p>
 
             <h3>主な機能</h3>
@@ -95,7 +104,7 @@
             <p>初代<span translate="no">Garmin Instinct</span>には対応していません。</p>
 
             <h3>動作確認について</h3>
-            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。<br>その他の対応機種については実機での動作確認を行っていません。</p>
+            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。<br>その他の対応機種は、実機での動作を確認していません。</p>
 
             <p class="critical-note"><strong>高温環境でのスマートウォッチの使用は推奨されていません。<br>使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong></p>
 
@@ -160,7 +169,7 @@
                   <figcaption>ボタンの位置（Instinct 2）</figcaption>
                 </figure>
                 <div>
-                  <p>画像の色付きの丸が、操作に使うボタンの位置です。</p>
+                  <p>画像の色付きの丸は、操作に使うボタンの位置を示しています。</p>
                   <ul class="display-legend">
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤丸</span> <kbd>ENTER</kbd>：右上のGPSボタン</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青丸</span> <kbd>BACK</kbd>：右下のSETボタン</li>
@@ -185,7 +194,7 @@
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>右上のセット数</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>現在の心拍数</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>現在のフェーズ</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>現在のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>タイマーの残り時間</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>現在時刻</li>
                   </ul>
                 </div>
@@ -214,7 +223,7 @@
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>右上のセット数</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>現在の心拍数</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>現在のフェーズ</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>現在のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>タイマーの残り時間</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>現在時刻</li>
                   </ul>
                 </div>
@@ -252,8 +261,8 @@
                 </div>
                 <div>
                   <p>セットが終わり、次のセットを開始する際に、そのセットの<span translate="no">TotonoiScore</span>と各フェーズの最大・最小心拍数が表示されます。</p>
-                  <p>サウナを60秒以上実行したセットが表示の対象です。</p>
-                  <p>10秒経過するか、何かキーを押すと元の画面に戻ります。</p>
+                  <p>サウナのタイマーを60秒以上動かしたセットが表示の対象です。</p>
+                  <p>10秒経過するか、いずれかのボタンを押すと元の画面に戻ります。</p>
                 </div>
               </div>
 
@@ -344,7 +353,7 @@
                   </ul>
                 </div>
                 <div>
-                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。<br>このモードでは通常のカウントダウンを行いません。<br>サウナを開始してからの経過時間を、0から増やして表示します。</p>
+                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。<br>このモードでは通常のカウントダウンを行いません。<br>サウナを開始してからの経過時間を、0から数え上げます。</p>
                   <p><kbd>ENTER</kbd>を素早く2回押すか、<span translate="no">Timer Menu</span>で再度「<span translate="no">Aufguss</span>」を選ぶと、通常モードへ戻ります。</p>
                   <ul>
                     <li>設定時間が残っている場合は、その残り時間からカウントダウンを再開します。</li>
@@ -385,7 +394,7 @@
                 </div>
               </div>
               <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><kbd>BACK</kbd>でタイマー画面に戻ります。</p>
-              <p>選択中の項目が先頭に表示され、4項目を循環します。<br>下部の黄色枠のマークは、ほかにも項目があることを示します。</p>
+              <p>選択中の項目が先頭に表示されます。4つの項目は、最後まで進むと先頭に戻ります。<br>下部の黄色枠のマークは、ほかにも項目があることを示します。</p>
               <dl class="menu-list">
                 <div>
                   <dt translate="no">Preset Timer</dt>
@@ -502,7 +511,7 @@
                 </div>
                 <div>
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<br><kbd>BACK</kbd>で前の画面に戻ります。<br>設定した値は次回起動時にも引き継がれます。</p>
-                  <p><span translate="no">Instinct 2</span>では選択中の項目を先頭に3項目を表示します。<br>4つの設定を<kbd>UP</kbd>／<kbd>DOWN</kbd>で循環できます。</p>
+                  <p><span translate="no">Instinct 2</span>では、選択中の項目を先頭に3項目が表示されます。<br><kbd>UP</kbd>／<kbd>DOWN</kbd>で4つの設定を切り替えられます。最後まで進むと先頭に戻ります。</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">30sec Alert</dt>
@@ -521,7 +530,7 @@
                     </div>
                     <div>
                       <dt translate="no">FIT Save</dt>
-                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期設定はOFFです。</dd>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期状態はOFFです。</dd>
                       <dd class="guide-note">
                         <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
                       </dd>
@@ -612,8 +621,8 @@
                     </div>
                   </dl>
                   <div class="guide-note">
-                    <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻ることができます。</p>
-                    <p>サウナを60秒以上実行して休憩に到達したセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
+                    <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻れます。</p>
+                    <p>サウナのタイマーを60秒以上動かし、休憩まで進んだセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
                     <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。<br>自動終了した場合は、アプリ内の履歴を保存しません。</p>
                   </div>
                 </div>
@@ -626,7 +635,51 @@
             <p class="coming-soon">準備中です。</p>
           </section>
 
-          <!-- インストール方法、更新履歴は情報の準備ができ次第追加します。 -->
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">更新履歴</h2>
+            <p class="changelog-description">このページの更新内容と、アプリの主な変更を掲載しています。</p>
+            <!-- 更新時は日付と変更内容を先頭に追加します。 -->
+            <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-09">2026年10月9日</time></dt>
+                <dd>英語版を追加しました。<br>更新履歴を追加しました。</dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-04">2026年10月4日</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.1リリース</strong>
+                  <ul class="operation-list">
+                    <li>FIT Saveを公開しました。</li>
+                    <li>メニューの表示と操作案内を改善しました。</li>
+                    <li>画面紹介と操作説明を更新しました。</li>
+                    <li>ととねるへの案内とダウンロードリンクを追加しました。</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-16">2026年9月16日</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.5.10リリース</strong>
+                  <ul class="operation-list">
+                    <li>InstinctシリーズのAPACモデルに対応しました。</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-13">2026年9月13日</time></dt>
+                <dd>リザルト画面の説明と実機動作確認の案内を追加しました。</dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-12">2026年9月12日</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.5.9リリース</strong>
+                  <br>紹介ページを公開しました。
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+          <!-- インストール方法は情報の準備ができ次第追加します。 -->
         </div>
       </article>
     </main>

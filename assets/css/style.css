@@ -71,6 +71,29 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.site-brand {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.language-switch [aria-current="page"] {
+  color: var(--color-text-muted);
+}
+
+.language-switch a {
+  text-underline-offset: 3px;
+}
+
 .site-header-with-tabs .container {
   justify-content: space-between;
   gap: 24px;
@@ -79,6 +102,8 @@ a:focus-visible {
 .section-tabs {
   display: flex;
   align-self: stretch;
+  min-width: 0;
+  overflow-x: auto;
 }
 
 .section-tabs a {
@@ -279,6 +304,7 @@ h4 {
 
 .totonel-howto-item {
   margin-top: 12px;
+  scroll-margin-top: 88px;
   border: 1px solid var(--color-border);
   border-radius: 8px;
   background: var(--color-surface);
@@ -1209,6 +1235,10 @@ kbd {
   background: #c5549b;
 }
 
+.totonel-page #set-delete-screen {
+  scroll-margin-top: 112px;
+}
+
 .totonel-caption {
   margin: 20px 0 0;
   color: var(--color-text-muted);
@@ -1272,6 +1302,35 @@ tbody th {
   background: var(--color-surface);
 }
 
+.changelog-section {
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: 88px;
+}
+
+.changelog-description {
+  color: var(--color-text-muted);
+}
+
+.changelog-list {
+  margin: 0;
+}
+
+.changelog-list > div {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 8px 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.changelog-list dt {
+  font-weight: 600;
+}
+
+.changelog-list dd {
+  margin: 0;
+}
+
 .site-footer {
   padding: 24px 0;
   border-top: 1px solid var(--color-border);
@@ -1320,8 +1379,14 @@ tbody th {
   }
 
   .content-section,
-  .guide-section {
+  .guide-section,
+  .totonel-howto-item,
+  .changelog-section {
     scroll-margin-top: 112px;
+  }
+
+  .changelog-list > div {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .session-flow,

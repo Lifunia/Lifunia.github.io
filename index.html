@@ -6,11 +6,23 @@
     <meta name="description" content="Lifuniaで公開しているアプリやツールを紹介するサイトです。">
     <title>Lifunia</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/">
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header site-header-with-tabs">
       <div class="container">
-        <a class="site-name" href="./" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+        <div class="site-brand">
+          <a class="site-name" href="./" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="言語">
+            <span lang="ja" aria-current="page" translate="no">日本語</span>
+            <a href="en/" lang="en" hreflang="en" translate="no">English</a>
+          </nav>
+        </div>
+        <nav class="section-tabs" aria-label="トップページ内メニュー">
+          <a href="#products-title">Products</a>
+          <a href="#changelog">更新履歴</a>
+        </nav>
       </div>
     </header>
 
@@ -36,10 +48,31 @@
             <a class="product-card product-card-totonel" href="totonel/">
               <p class="product-card-eyebrow" lang="en" translate="no">Android App</p>
               <h3>ととねる</h3>
-              <p>サウナセッションの心拍と記録を、あとから振り返るアプリ</p>
+              <p>サウナの記録や心拍の変化を、あとから振り返るアプリ</p>
               <span class="card-link" aria-hidden="true">詳しく見る <span>→</span></span>
             </a>
           </div>
+        </div>
+      </section>
+      <section class="section changelog-section" id="changelog" aria-labelledby="changelog-title">
+        <div class="container">
+          <h2 id="changelog-title">更新履歴</h2>
+          <p class="changelog-description">このページの更新内容を掲載しています。</p>
+          <!-- 更新時は日付と変更内容を先頭に追加します。 -->
+          <dl class="changelog-list">
+            <div>
+              <dt><time datetime="2026-10-09">2026年10月9日</time></dt>
+              <dd>英語版を追加しました。<br>各ページに更新履歴を追加しました。</dd>
+            </div>
+            <div>
+              <dt><time datetime="2026-10-04">2026年10月4日</time></dt>
+              <dd>Productsに「ととねる」を追加しました。</dd>
+            </div>
+            <div>
+              <dt><time datetime="2026-09-12">2026年9月12日</time></dt>
+              <dd>Lifuniaの紹介サイトとSauna Timerの案内を公開しました。</dd>
+            </div>
+          </dl>
         </div>
       </section>
     </main>

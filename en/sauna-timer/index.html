@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sauna Timer tracks and records sauna, cold bath, and rest times on compatible Garmin Instinct watches.">
+    <title>Sauna Timer | Lifunia</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/">
+  </head>
+  <body>
+    <header class="site-header site-header-with-tabs">
+      <div class="container">
+        <div class="site-brand">
+          <a class="site-name" href="../" aria-label="Lifunia home" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="Language">
+            <a href="../../sauna-timer/" lang="ja" hreflang="ja" translate="no">日本語</a>
+            <span lang="en" aria-current="page" translate="no">English</span>
+          </nav>
+        </div>
+        <nav class="section-tabs" aria-label="Sauna Timer page navigation">
+          <a href="#overview">Overview</a>
+          <a href="#notes">Important notes</a>
+          <a href="#how-to-use">User guide</a>
+          <a href="#faq">FAQ</a>
+          <a href="#changelog">Changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="sauna-timer-hero" aria-labelledby="page-title">
+        <div class="container content-container">
+          <p class="eyebrow" lang="en" translate="no">Garmin App</p>
+          <h1 id="page-title" translate="no">Sauna Timer</h1>
+          <p class="lead">An app for <span translate="no">Garmin Instinct</span> watches that times sauna, cold bath, and rest phases and saves a record of your session.</p>
+        </div>
+      </section>
+      <article class="page-content sauna-timer-page">
+        <div class="container content-container">
+          <aside class="warning-box" aria-label="Important warnings">
+            <strong>Using a smartwatch in high temperatures is not recommended.<br>We accept no responsibility for any malfunction or damage to your smartwatch caused by its use.</strong>
+          </aside>
+
+          <section class="content-section" id="overview">
+            <h2>Overview</h2>
+            <p><span translate="no">Sauna Timer</span> times sauna, cold bath, and rest phases and saves a record of each set.<br>One set consists of sauna, a cold bath, and rest. A series of sets makes up a session.</p>
+
+            <p><strong><a href="https://apps.garmin.com/en-US/apps/88ef23c2-0f48-4bfc-90d2-d033243d61ac">Download Sauna Timer (Connect IQ Store)</a></strong></p>
+
+            <p>Use <a href="../totonel/">Totonel</a> to review your saved activities on Android.<br>Graphs and scores help you review heart rate changes and trends across sets.</p>
+
+            <h3>The three phases of a set</h3>
+            <ol class="session-flow">
+              <li>
+                <strong>Sauna</strong>
+              </li>
+              <li>
+                <strong>Cold bath</strong>
+              </li>
+              <li>
+                <strong>Rest</strong>
+              </li>
+            </ol>
+            <p>The timer counts down the duration you set for each phase: sauna, cold bath, and rest.<br>When the remaining time reaches zero, the watch vibrates to let you know the current phase has ended.</p>
+            <p>After the alert, the timer waits for you. Press <kbd>ENTER</kbd> to start the next phase.</p>
+
+            <h3>Features</h3>
+            <dl class="feature-list">
+              <div>
+                <dt>Scores for each set</dt>
+                <dd>At the end of each set, the app displays a <span translate="no">TotonoiScore</span> calculated using its own formula.</dd>
+              </div>
+              <div>
+                <dt>Review all sets</dt>
+                <dd>At the end of a session, you can review the scores for all completed sets together.</dd>
+              </div>
+              <div>
+                <dt>Send logs to <span translate="no">Garmin Connect</span></dt>
+                <dd>Turn on <span translate="no">FIT Save</span> to send your recorded logs to <span translate="no">Garmin Connect</span>.</dd>
+              </div>
+            </dl>
+
+            <aside class="notice-box" aria-label="Notes on saving to Garmin Connect">
+              <h3>Saving to <span translate="no">Garmin Connect</span></h3>
+              <p>Records saved in <span translate="no">FIT</span> format appear as activities in <span translate="no">Garmin Connect</span>.<br>Keep this in mind if you closely track calories burned or training load.</p>
+              <p><span translate="no">Garmin</span>'s calorie calculation may greatly overestimate how many calories you burned.<br>Keep this in mind when reviewing the figures.</p>
+              <p>A transfer failure message may appear after you save a session.<br>The saved activity will be transferred when you sync with <span translate="no">Garmin Connect</span>.</p>
+            </aside>
+          </section>
+
+          <section class="content-section" id="notes">
+            <h2>Important notes</h2>
+            <h3>Compatible devices</h3>
+            <p>The following models are currently supported.</p>
+            <ul class="notes-list" translate="no">
+              <li>Instinct 2 / Solar / Dual Power / dezl Edition</li>
+              <li>Instinct 2S / Solar / Dual Power</li>
+              <li>Instinct 2X Solar</li>
+              <li>Instinct 3 Solar 45mm / 50mm</li>
+              <li>Instinct E 40mm / 45mm</li>
+            </ul>
+            <p>The original <span translate="no">Garmin Instinct</span> is not supported.</p>
+
+            <h3>Device testing</h3>
+            <p>The app has been tested on a physical <span translate="no">Instinct 2</span>.<br>Other supported models have not been tested on physical devices.</p>
+
+            <p class="critical-note"><strong>Using a smartwatch in high temperatures is not recommended.<br>We accept no responsibility for any malfunction or damage to your smartwatch caused by its use.</strong></p>
+
+            <h3>Usage precautions</h3>
+            <p><span translate="no">Sauna Timer</span> helps you keep track of your time in the sauna.</p>
+            <p>If you feel unwell, dizzy, short of breath, or experience strong palpitations, discontinue use immediately, regardless of the app's display or alerts.</p>
+            <p>Follow the sauna facility's rules, stay hydrated, and take enough time to rest. Do not push yourself beyond your limits.</p>
+            <p>This app is not a medical device.<br>The heart rate readings and scores are not intended for diagnosis, treatment, or assessing safety.</p>
+
+            <h3>When the watch vibrates</h3>
+            <p><span translate="no">Sauna Timer</span> uses vibration alerts in the following situations.</p>
+            <dl class="feature-list notification-list">
+              <div>
+                <dt>At the end of a phase</dt>
+                <dd>The watch vibrates when the remaining time for the sauna, cold bath, or rest phase reaches zero.</dd>
+              </div>
+              <div>
+                <dt>30 seconds before a phase ends</dt>
+                <dd>When <span translate="no">30sec Alert</span> is on, the watch vibrates briefly when 30 seconds remain.</dd>
+              </div>
+              <div>
+                <dt>When the timer remains paused</dt>
+                <dd>When <span translate="no">Stop Alert</span> is on, the watch reminds you every two minutes that the timer is still paused.</dd>
+              </div>
+              <div>
+                <dt>In Aufguss mode</dt>
+                <dd>After the elapsed time reaches 10 minutes, the watch vibrates at five-minute intervals.</dd>
+              </div>
+              <div>
+                <dt>When heart rate or temperature reaches a threshold</dt>
+                <dd>The watch provides an alert when readings are available from the device or sensors.<br>Alert behavior varies depending on the readings available.</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="content-section" id="how-to-use">
+            <h2>User guide</h2>
+            <p>Use the physical buttons on your <span translate="no">Garmin</span> watch.<br>Check the button names first, then follow the instructions for each screen.</p>
+            <p class="guide-note">These screenshots show <span translate="no">Sauna Timer 0.6.1</span> in the <span translate="no">Instinct 2</span> simulator.<br>The colored frames mark the areas described in this guide.<br>Heart rate readings, scores, dates, and times are sample data.<br>The labels below each image explain what the frames highlight.</p>
+
+            <nav class="guide-index" aria-label="User guide contents">
+              <a href="#buttons">Buttons</a>
+              <a href="#top-screen">Start screen</a>
+              <a href="#run-screen">Running timer</a>
+              <a href="#results">Set results</a>
+              <a href="#overall-results">Session results</a>
+              <a href="#timer-menu" translate="no">Timer Menu</a>
+              <a href="#aufguss-mode" translate="no">Aufguss</a>
+              <a href="#main-menu" translate="no">Main Menu</a>
+              <a href="#preset-timer" translate="no">Preset Timer</a>
+              <a href="#timer-edit" translate="no">Timer Edit</a>
+              <a href="#settings" translate="no">Setting</a>
+              <a href="#history" translate="no">History</a>
+              <a href="#exit-menu">Exit confirmation</a>
+            </nav>
+
+            <section class="guide-section" id="buttons">
+              <h3>Watch buttons</h3>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/Buttons.png?v=button-positions-6" alt="Instinct 2 button positions: ENTER at the top right in red, BACK at the bottom right in blue, UP at the middle left in purple, and DOWN at the bottom left in orange" width="382" height="505" loading="lazy">
+                  <figcaption>Button positions (Instinct 2)</figcaption>
+                </figure>
+                <div>
+                  <p>The colored circles show the positions of the buttons used to operate the app.</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: GPS button at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: SET button at the bottom right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: MENU button at the middle left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: ABC button at the bottom left</li>
+                  </ul>
+                  <p class="guide-note">This guide calls the buttons ENTER, BACK, UP, and DOWN.<br>The labels printed on the watch vary by model.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="top-screen">
+              <h3>Start screen</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/TOP.png" alt="Sauna Timer start screen" width="382" height="505" loading="lazy">
+                    <figcaption>Start screen</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span>Set count at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen appears when you launch the app.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Start the timer.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.</li>
+                    <li><kbd>BACK</kbd> Exit the app immediately if the timer has not started.</li>
+                  </ul>
+                  <p class="guide-note">The app loads the last selected preset or the settings saved in <span translate="no">Timer Edit</span>.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="run-screen">
+              <h3>Running timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Run.png" alt="Running timer showing heart rate, phase, remaining time, set count, and current time" width="382" height="505" loading="lazy">
+                    <figcaption>Running timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span>Set count at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen shows the current phase and remaining time as you progress through the session.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Open <span translate="no">Timer Menu</span>.<br>The timer pauses while this menu is open.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.<br>The timer keeps running while this menu is open.</li>
+                    <li><kbd>UP</kbd> Extend the current phase.<br>Sauna and rest can be extended in one-minute steps, up to five minutes in total.<br>The cold bath can be extended in 30-second steps, up to two minutes in total.</li>
+                    <li>Press <kbd>DOWN</kbd> twice quickly to shorten the remaining time.<br>Sauna and rest are shortened by 30 seconds each time; the cold bath is shortened by 10 seconds.</li>
+                    <li>Press <kbd>BACK</kbd> twice quickly to open the exit confirmation screen while the timer keeps running.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>You can shorten the remaining time to a minimum of 30 seconds for sauna and rest, or 10 seconds for the cold bath.</p>
+                    <p>You cannot shorten the time while the timer is paused or waiting after a phase has ended.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="results">
+              <h3>Set results</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Result_set.png" alt="Set results showing TotonoiScore and maximum and minimum heart rates for each phase" width="382" height="505" loading="lazy">
+                    <figcaption>Set results</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Button hints</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>When you start the next set, the app shows the previous set's <span translate="no">TotonoiScore</span> and the maximum and minimum heart rates for each phase.</p>
+                  <p>Results are shown only for sets where the sauna timer ran for at least 60 seconds.</p>
+                  <p>You return to the previous screen after 10 seconds or when you press any button.</p>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="guide-section" id="overall-results">
+              <h3>Session results</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Result_all.png" alt="Session results showing the total TotonoiScore" width="382" height="505" loading="lazy">
+                    <figcaption>Session results (total)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Total score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Result.png" alt="Session results showing each set's TotonoiScore and maximum and minimum heart rates for each phase" width="382" height="505" loading="lazy">
+                    <figcaption>Session results (set details)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Results for the current session appear when the session ends or when you select <span translate="no">RESULT</span> on the exit confirmation screen.<br>You can review the total <span translate="no">TotonoiScore</span>, each set's <span translate="no">TotonoiScore</span>, and maximum and minimum heart rates for each phase.</p>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages.<br>When you finish reviewing, press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to close the screen.</p>
+              <p>If you are viewing results at the end of the session, closing the screen exits the app.<br>If you opened the screen by selecting <span translate="no">RESULT</span>, you return to exit confirmation.</p>
+            </section>
+
+            <section class="guide-section" id="timer-menu">
+              <h3 translate="no">Timer Menu</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Timermenu.png" alt="Timer Menu showing Resume, Next Timer, and Aufguss" width="382" height="505" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Time remaining on the paused timer</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>The timer pauses while <span translate="no">Timer Menu</span> is open.</p>
+                  <p>Press <kbd>BACK</kbd> to resume the timer and return to the timer screen.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">Resume</dt>
+                      <dd>Resume the timer and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>End the current phase and move to the next one.<br>For example, selecting this during the sauna phase starts the cold bath.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>Turn Aufguss mode on or off.<br>This option appears only during the sauna phase.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="aufguss-mode">
+              <h3><span translate="no">Aufguss</span> mode</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/AUFmode.png" alt="Aufguss mode showing AUF Sauna and elapsed time" width="382" height="505" loading="lazy">
+                    <figcaption>Aufguss mode</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span>Set count at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Time elapsed since the sauna phase began</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Aufguss mode is available only during the sauna phase.<br>Instead of counting down, it counts up from zero to show the time elapsed since the sauna phase began.</p>
+                  <p>Press <kbd>ENTER</kbd> twice quickly, or select <span translate="no">Aufguss</span> again in <span translate="no">Timer Menu</span>, to return to normal mode.</p>
+                  <ul>
+                    <li>If the set duration has not elapsed, the countdown resumes with the remaining time.</li>
+                    <li>If the elapsed time exceeds the set duration, the countdown resumes with five seconds remaining.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>For example, with a seven-minute timer, turning off Aufguss mode after six minutes resumes the countdown with one minute left. Turning it off after 10 minutes resumes the countdown with five seconds left.</p>
+                    <p>After the elapsed time reaches 10 minutes, the watch vibrates at five-minute intervals.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="main-menu">
+              <h3 translate="no">Main Menu</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/menu.png" alt="Main Menu with Preset Timer selected and Timer Edit and Setting also visible" width="382" height="505" loading="lazy">
+                    <figcaption>Main Menu (Preset Timer selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Indicator for more menu items</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/menu2.png?v=history-frame-2" alt="Main Menu with History selected and Preset Timer and Timer Edit also visible" width="382" height="505" loading="lazy">
+                    <figcaption>Main Menu (History selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Indicator for more menu items</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Press <kbd>BACK</kbd> to return to the timer screen.</p>
+              <p>The selected item appears at the top. After the fourth item, the menu returns to the first.<br>The indicator in the yellow frame at the bottom means more items are available.</p>
+              <dl class="menu-list">
+                <div>
+                  <dt translate="no">Preset Timer</dt>
+                  <dd>Choose timer settings from the available presets.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>Set separate durations for sauna, cold bath, and rest.<br>Saved values can be selected as the <span translate="no">Edit Timer</span> preset.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Setting</dt>
+                  <dd>Change alert, power-saving, and <span translate="no">FIT</span> file settings.</dd>
+                </div>
+                <div>
+                  <dt translate="no">History</dt>
+                  <dd>Review past session results.</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="guide-section" id="preset-timer">
+              <h3 translate="no">Preset Timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/PresetTimer.png" alt="Preset Timer showing Preset 1" width="382" height="505" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Preset name</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Duration of each phase</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch presets, and <kbd>ENTER</kbd> to apply one.<br>Press <kbd>BACK</kbd> to return to the previous screen.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Timer presets">
+                    <table>
+                      <thead>
+                        <tr><th>Preset</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Preset 1</th><td>7 min</td><td>30 sec</td><td>7 min</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10 min</td><td>60 sec</td><td>8 min</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5 min</td><td>20 sec</td><td>10 min</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3">Values last saved in <span translate="no">Timer Edit</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="guide-note">The default values for <span translate="no">Edit Timer</span> match <span translate="no">Preset 1</span>.<br>The last selected preset is saved and used the next time you launch the app.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="timer-edit">
+              <h3 translate="no">Timer Edit</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/EditTimer.png" alt="Timer Edit while editing the Sauna duration" width="382" height="505" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Setting being edited and its value</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>ENTER button hint</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to increase or decrease the displayed value, and <kbd>ENTER</kbd> to move to the next setting.<br>Press <kbd>BACK</kbd> to cancel editing and return to the previous screen.</p>
+                  <p>Settings appear in this order: sauna, cold bath, then rest.<br>After setting the rest duration, press <kbd>ENTER</kbd> to save the values and return to the timer screen.<br>The yellow frame shows <span translate="no">Enter: Next</span> while editing sauna or cold bath, and <span translate="no">Enter: Save</span> while editing rest.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Allowed timer settings">
+                    <table>
+                      <thead>
+                        <tr><th>Setting</th><th>Range</th><th>Step</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Sauna</th><td>1–15 min</td><td>1 min</td></tr>
+                        <tr><th translate="no">WBath</th><td>10–120 sec</td><td>10 sec</td></tr>
+                        <tr><th translate="no">Rest</th><td>1–15 min</td><td>1 min</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="settings">
+              <h3 translate="no">Setting</h3>
+              <div class="guide-layout">
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../../assets/images/Setting.png" alt="Settings showing 30sec Alert, Stop Alert, and Power Save" width="382" height="505" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>On-screen information</h4>
+                    <ul class="display-legend">
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected setting</li>
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Indicator for more settings</li>
+                    </ul>
+                  </div>
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../../assets/images/SettingFIT.png" alt="Settings with FIT Save selected and set to OFF" width="382" height="505" loading="lazy">
+                      <figcaption>FIT Save</figcaption>
+                    </figure>
+                    <h4>On-screen information</h4>
+                    <ul class="display-legend">
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected setting</li>
+                      <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Indicator for more settings</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to turn each setting on or off.<br>Press <kbd>BACK</kbd> to return to the previous screen.<br>The app saves your settings for the next time you use it.</p>
+                  <p>On <span translate="no">Instinct 2</span>, three items are shown with the selected item at the top.<br>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to cycle through all four settings. After the last item, the list returns to the first.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">30sec Alert</dt>
+                      <dd>The watch vibrates briefly 30 seconds before each phase ends.</dd>
+                      <dd class="guide-note">
+                        <p>If you start the cold bath with 30 seconds or less, the watch does not vibrate for <span translate="no">30sec Alert</span>.<br>The alert can still occur if you extend the timer to 30 seconds or more.</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Stop Alert</dt>
+                      <dd>The watch vibrates every two minutes while the timer remains paused.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Power Save</dt>
+                      <dd>The screen updates less often when you are not using the controls.<br>The timer keeps counting, and alerts still work.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>Saves the session as an activity in <span translate="no">FIT</span> format. This setting is off by default.</dd>
+                      <dd class="guide-note">
+                        <p>You can change <span translate="no">FIT Save</span> only before starting the timer.<br>Once the timer has started, this setting cannot be changed.</p>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="history">
+              <h3 translate="no">History</h3>
+              <div class="guide-images guide-images-three">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/History.png" alt="History list showing saved sessions" width="382" height="505" loading="lazy">
+                    <figcaption>History list</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected session</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span>Number of saved sessions</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/history1.png" alt="History details showing start date and time, TotonoiScore, and set count" width="382" height="505" loading="lazy">
+                    <figcaption>History details</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Start date and time</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Set count</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/hisotry2.png" alt="History details showing average heart rate for each phase" width="382" height="505" loading="lazy">
+                    <figcaption>Average heart rate</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Average heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Review up to 10 past session results.<br>When a new entry is added, the oldest entry is overwritten first.</p>
+              <p>In-app history is saved even when <span translate="no">FIT Save</span> is off.<br>However, it is not sent to <span translate="no">Garmin Connect</span>.</p>
+              <ul class="operation-list">
+                <li><kbd>UP</kbd> / <kbd>DOWN</kbd> Move between history entries or detail pages.</li>
+                <li><kbd>ENTER</kbd> Open the selected session's details.<br>On the detail screen, press it again to open the deletion confirmation.</li>
+                <li><kbd>BACK</kbd> Return to the previous screen.</li>
+              </ul>
+              <p>History details show the start date and time, overall <span translate="no">TotonoiScore</span>, set count, average heart rates for sauna, cold bath, and rest, and each set's <span translate="no">TotonoiScore</span>.</p>
+            </section>
+
+            <section class="guide-section" id="exit-menu">
+              <h3>Exit confirmation</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/Exitmenu.png" alt="Exit confirmation showing NO, YES, and RESULT" width="382" height="505" loading="lazy">
+                    <figcaption>Exit confirmation</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Select <span translate="no">NO</span> to return to the timer screen.</p>
+              <p>The overall <span translate="no">TotonoiScore</span> for the current session appears at the top.<br>If a score cannot be calculated for any set, <span translate="no">N/A</span> is shown.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">NO</dt>
+                      <dd>Cancel exiting and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">YES</dt>
+                      <dd>End the session.<br>If the saving conditions are met, the app saves the session to its history. If <span translate="no">FIT Save</span> is on, it also saves a <span translate="no">FIT</span> file.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">RESULT</dt>
+                      <dd>Show session results so far.<br>This does not exit the app.</dd>
+                    </div>
+                  </dl>
+                  <div class="guide-note">
+                    <p>On the <span translate="no">RESULT</span> screen, use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages, and <kbd>BACK</kbd> to return to exit confirmation.</p>
+              <p>The app saves a <span translate="no">FIT</span> file and in-app history only if at least one set reached the rest phase after the sauna timer ran for 60 seconds or more.</p>
+                    <p>If the app waits for 10 minutes after a phase ends or the timer is paused, it exits automatically.<br>When this happens, the session is not saved to the in-app history.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section class="content-section" id="faq">
+            <h2>FAQ</h2>
+            <p class="coming-soon">Coming soon.</p>
+          </section>
+
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">Changelog</h2>
+            <p class="changelog-description">Updates to this page and major changes to the app.</p>
+
+            <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-09">October 9, 2026</time></dt>
+                <dd>Added an English version.<br>Added a changelog.</dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-04">October 4, 2026</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.1 released</strong>
+                  <ul class="operation-list">
+                    <li>Released FIT Save.</li>
+                    <li>Improved menu displays and button instructions.</li>
+                    <li>Updated the screen guide and operating instructions.</li>
+                    <li>Added information about Totonel and a download link.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-16">September 16, 2026</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.5.10 released</strong>
+                  <ul class="operation-list">
+                    <li>Added support for APAC models in the Instinct series.</li>
+                  </ul>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-13">September 13, 2026</time></dt>
+                <dd>Added results screen explanations and notes on testing with a physical watch.</dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-09-12">September 12, 2026</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.5.9 released</strong>
+                  <br>Published the app page.
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; Lifunia</small>
+      </div>
+    </footer>
+
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
+
+  </body>
+</html>
