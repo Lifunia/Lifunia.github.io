@@ -77,8 +77,12 @@
                 <dd>セッション終了時に、完了したすべてのセットのスコアをまとめて確認できます。</dd>
               </div>
               <div>
-                <dt><span translate="no">Garmin Connect</span>へのログ送信</dt>
-                <dd><span translate="no">FIT Save</span>をONにすると、計測したログを<span translate="no">Garmin Connect</span>へ送信できます。</dd>
+                <dt>履歴からセットの詳細を確認</dt>
+                <dd><span translate="no">v0.6.2</span>では、保存した履歴から各セットのスコアと、サウナ・水風呂・休憩の最大／最小心拍数を確認できます。<br>操作方法は「<a href="#history" translate="no">History</a>」をご覧ください。</dd>
+              </div>
+              <div>
+                <dt>アプリ内に履歴を保存</dt>
+                <dd>セッション終了時に記録を保存し、過去10件の履歴をウォッチ上で確認できます。</dd>
               </div>
             </dl>
 
@@ -143,7 +147,7 @@
           <section class="content-section" id="how-to-use">
             <h2>使い方</h2>
             <p><span translate="no">Garmin</span>ウォッチの物理ボタンを使って操作します。<br>はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
-            <p class="guide-note">画像は<span translate="no">Sauna Timer 0.6.1</span>を<span translate="no">Instinct 2</span>のシミュレーターで撮影したものです。<br>色付きの枠は説明用に追加しています。<br>心拍数、スコア、日時はサンプルです。<br>各画像の下に、色付きラベルで枠の意味を記載しています。</p>
+            <p class="guide-note">History・セット終了時・セット別Resultの画像は<span translate="no">Sauna Timer 0.6.2</span>、その他の画像は<span translate="no">Sauna Timer 0.6.1</span>を<span translate="no">Instinct 2</span>のシミュレーターで撮影したものです。<br>色付きの枠は説明用に追加しています。<br>心拍数、スコア、日時はサンプルです。<br>各画像の下に、色付きラベルで枠の意味を記載しています。</p>
 
             <nav class="guide-index" aria-label="使い方の目次">
               <a href="#buttons">ボタン</a>
@@ -530,7 +534,7 @@
                     </div>
                     <div>
                       <dt translate="no">FIT Save</dt>
-                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期状態はOFFです。</dd>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期値はOFFです。<br>保存する場合は、セッション開始前にONへ変更してください。</dd>
                       <dd class="guide-note">
                         <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
                       </dd>
@@ -542,7 +546,8 @@
 
             <section class="guide-section" id="history">
               <h3 translate="no">History</h3>
-              <div class="guide-images guide-images-three">
+              <p class="guide-note">操作説明と画像は<span translate="no">v0.6.2</span>の内容です。<br>心拍数、スコア、日時は撮影用のサンプルです。</p>
+              <div class="guide-images guide-images-two">
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
                     <img src="../assets/images/History.png" alt="保存済みセッションを表示したHistory一覧画面" width="382" height="505" loading="lazy">
@@ -551,31 +556,56 @@
                   <h4>画面に表示される情報</h4>
                   <ul class="display-legend">
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>選択中の履歴</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>保存件数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>選択中の履歴番号</li>
                   </ul>
                 </div>
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
-                    <img src="../assets/images/history1.png" alt="開始日時、TotonoiScore、セット数を表示した履歴詳細画面" width="382" height="505" loading="lazy">
-                    <figcaption>History詳細</figcaption>
+                    <img src="../assets/images/history1.png" alt="全体のスコアとフェーズ別の最大・最小心拍数の平均を表示した履歴概要画面" width="382" height="505" loading="lazy">
+                    <figcaption>History概要</figcaption>
                   </figure>
                   <h4>画面に表示される情報</h4>
                   <ul class="display-legend">
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>開始日時</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>スコア</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>セット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>全体のスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの最大心拍数の平均／最小心拍数の平均</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>セット数とページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/HistoryScore.png" alt="セット1のスコアとEnter to Detailを表示した画面" width="382" height="505" loading="lazy">
+                    <figcaption>セット別スコア</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑の丸</span>セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>詳細を開く操作案内</li>
                     <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
                   </ul>
                 </div>
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
-                    <img src="../assets/images/hisotry2.png" alt="フェーズごとの平均心拍数を表示した履歴詳細画面" width="382" height="505" loading="lazy">
-                    <figcaption>平均心拍数</figcaption>
+                    <img src="../assets/images/HistorySetDetail.png" alt="セット1のスコアと各フェーズの最大・最小心拍数を表示した履歴のセット詳細画面" width="382" height="505" loading="lazy">
+                    <figcaption>セット詳細</figcaption>
                   </figure>
                   <h4>画面に表示される情報</h4>
                   <ul class="display-legend">
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの平均心拍数</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>ページ番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span>セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span>各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span>前のスコアページへ戻る案内</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/HistoryNoDetails.png" alt="詳細データがない場合にNo detailsと表示される画面" width="382" height="505" loading="lazy">
+                    <figcaption>詳細データがない場合</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span>詳細データがないことを示す表示</li>
                   </ul>
                 </div>
               </div>
@@ -583,10 +613,19 @@
               <p><span translate="no">FIT Save</span>がOFFでも、アプリ内の履歴は保存されます。<br>ただし、<span translate="no">Garmin Connect</span>には送信されません。</p>
               <ul class="operation-list">
                 <li><kbd>UP</kbd>／<kbd>DOWN</kbd> 履歴や詳細ページを移動します。</li>
-                <li><kbd>ENTER</kbd> 選択した履歴の詳細を開きます。<br>詳細画面では履歴の削除確認を開きます。</li>
+                <li><kbd>ENTER</kbd> 一覧では選択した履歴を開きます。<br>セット別のスコアページでは、そのセットの詳細を開きます。概要ページでは履歴の削除確認を開きます。</li>
                 <li><kbd>BACK</kbd> 前の画面へ戻ります。</li>
               </ul>
-              <p>履歴の詳細では、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数、サウナ・水風呂・休憩の平均心拍数、各セットの<span translate="no">TotonoiScore</span>を確認できます。</p>
+              <h4>概要画面の見方</h4>
+              <p>最初のページには、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数と、各フェーズの最大心拍数の平均／最小心拍数の平均が表示されます。<br>全体のスコアは右上の丸い領域、セット数とページ番号は画面下部に表示されます。</p>
+              <p>たとえば「<span translate="no">Sauna 138/111</span>」は、各セットのサウナ中の最大心拍数を平均した値が138、最小心拍数を平均した値が111という意味です（単位：bpm）。</p>
+              <h4>セットごとの詳細を開く</h4>
+              <ol class="operation-list">
+                <li><kbd>UP</kbd>／<kbd>DOWN</kbd>で、確認したいセットのスコアページへ移動します。<br>最終ページからさらに進むと、概要ページに戻ります。</li>
+                <li>「<span translate="no">Enter to Detail</span>」が表示されたページで<kbd>ENTER</kbd>を押します。<br>セット番号、スコア、サウナ・水風呂・休憩の最大／最小心拍数を確認できます。</li>
+                <li><kbd>ENTER</kbd>または<kbd>BACK</kbd>で、元のスコアページに戻ります。</li>
+              </ol>
+              <p class="guide-note">セットの詳細は、対応版で新しく保存したセッションから確認できます。<br>旧バージョンの履歴など、詳細データがない場合は「<span translate="no">No details</span>」と表示されます。取得できない心拍数は「<span translate="no">---</span>」と表示され、概要画面の平均計算から除かれます。</p>
             </section>
 
             <section class="guide-section" id="exit-menu">
@@ -622,7 +661,7 @@
                   </dl>
                   <div class="guide-note">
                     <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻れます。</p>
-                    <p>サウナのタイマーを60秒以上動かし、休憩まで進んだセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。</p>
+                    <p>サウナのタイマーを60秒以上動かし、休憩まで進んだセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。<br><span translate="no">FIT</span>ファイルの保存には、<span translate="no">FIT Save</span>をONにする必要があります。</p>
                     <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。<br>自動終了した場合は、アプリ内の履歴を保存しません。</p>
                   </div>
                 </div>
@@ -640,6 +679,30 @@
             <p class="changelog-description">このページの更新内容と、アプリの主な変更を掲載しています。</p>
             <!-- 更新時は日付と変更内容を先頭に追加します。 -->
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-19">2026年10月19日</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.2リリース</strong>
+                  <ul class="operation-list">
+                    <li>履歴からセットごとの詳細を確認できるように改善しました。</li>
+                    <li>動作の安定性を改善しました。</li>
+                    <li>画面レイアウトを調整しました。</li>
+                  </ul>
+                  <p>正式版に合わせて操作説明とスクリーンショットを更新しました。FIT Saveを利用でき、初期値がOFFであることを明記し、Enter to Detailを囲む青枠の位置を調整しました。</p>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-18">2026年10月18日</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.2.b2（ベータ版）</strong>
+                  <ul class="operation-list">
+                    <li>Historyから、各セットのスコアとフェーズ別の最大／最小心拍数を確認できるようになりました。</li>
+                    <li>概要画面に、各フェーズの最大心拍数の平均／最小心拍数の平均をまとめて表示するようになりました。</li>
+                    <li>小型画面などでの表示配置を改善し、メモリ使用量を削減しました。</li>
+                    <li>追加機能に合わせて、履歴のスクリーンショット、見方と操作説明を更新しました。</li>
+                  </ul>
+                </dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-09">2026年10月9日</time></dt>
                 <dd>英語版を追加しました。<br>更新履歴を追加しました。</dd>

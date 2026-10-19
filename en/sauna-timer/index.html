@@ -77,8 +77,12 @@
                 <dd>At the end of a session, you can review the scores for all completed sets together.</dd>
               </div>
               <div>
-                <dt>Send logs to <span translate="no">Garmin Connect</span></dt>
-                <dd>Turn on <span translate="no">FIT Save</span> to send your recorded logs to <span translate="no">Garmin Connect</span>.</dd>
+                <dt>Review set details from history</dt>
+                <dd>In <span translate="no">v0.6.2</span>, saved history lets you review each set's score and maximum/minimum heart rates for sauna, cold bath, and rest.<br>See <a href="#history" translate="no">History</a> for instructions.</dd>
+              </div>
+              <div>
+                <dt>Saved history on your watch</dt>
+                <dd>Save a completed session and review your ten most recent sessions on your watch.</dd>
               </div>
             </dl>
 
@@ -143,7 +147,7 @@
           <section class="content-section" id="how-to-use">
             <h2>User guide</h2>
             <p>Use the physical buttons on your <span translate="no">Garmin</span> watch.<br>Check the button names first, then follow the instructions for each screen.</p>
-            <p class="guide-note">These screenshots show <span translate="no">Sauna Timer 0.6.1</span> in the <span translate="no">Instinct 2</span> simulator.<br>The colored frames mark the areas described in this guide.<br>Heart rate readings, scores, dates, and times are sample data.<br>The labels below each image explain what the frames highlight.</p>
+            <p class="guide-note">History, set completion, and per-set Result screenshots show <span translate="no">Sauna Timer 0.6.2</span>; other screenshots show <span translate="no">Sauna Timer 0.6.1</span>. All were captured in the <span translate="no">Instinct 2</span> simulator.<br>The colored frames mark the areas described in this guide.<br>Heart rate readings, scores, dates, and times are sample data.<br>The labels below each image explain what the frames highlight.</p>
 
             <nav class="guide-index" aria-label="User guide contents">
               <a href="#buttons">Buttons</a>
@@ -530,7 +534,7 @@
                     </div>
                     <div>
                       <dt translate="no">FIT Save</dt>
-                      <dd>Saves the session as an activity in <span translate="no">FIT</span> format. This setting is off by default.</dd>
+                      <dd>Saves the session as an activity in <span translate="no">FIT</span> format. This setting is off by default. Turn it on before starting a session to record a FIT activity.</dd>
                       <dd class="guide-note">
                         <p>You can change <span translate="no">FIT Save</span> only before starting the timer.<br>Once the timer has started, this setting cannot be changed.</p>
                       </dd>
@@ -542,40 +546,66 @@
 
             <section class="guide-section" id="history">
               <h3 translate="no">History</h3>
-              <div class="guide-images guide-images-three">
+              <p class="guide-note">The instructions and screenshots show <span translate="no">v0.6.2</span>.<br>Heart rates, scores, dates, and times are sample data prepared for these screenshots.</p>
+              <div class="guide-images guide-images-two">
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
                     <img src="../../assets/images/History.png" alt="History list showing saved sessions" width="382" height="505" loading="lazy">
                     <figcaption>History list</figcaption>
                   </figure>
-                  <h4>On-screen information</h4>
+                  <h4>Information on the screen</h4>
                   <ul class="display-legend">
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Selected session</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span>Number of saved sessions</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected session</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span> Selected session number</li>
                   </ul>
                 </div>
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
-                    <img src="../../assets/images/history1.png" alt="History details showing start date and time, TotonoiScore, and set count" width="382" height="505" loading="lazy">
-                    <figcaption>History details</figcaption>
+                    <img src="../../assets/images/history1.png" alt="History summary showing the overall score and average maximum/minimum heart rates for each phase" width="382" height="505" loading="lazy">
+                    <figcaption>History summary</figcaption>
                   </figure>
-                  <h4>On-screen information</h4>
+                  <h4>Information on the screen</h4>
                   <ul class="display-legend">
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span>Start date and time</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span>Score</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Set count</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Start date and time</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Overall score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Average maximum / average minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Set count and page number</li>
                   </ul>
                 </div>
                 <div class="sauna-timer-screen-media">
                   <figure class="screen-figure">
-                    <img src="../../assets/images/hisotry2.png" alt="History details showing average heart rate for each phase" width="382" height="505" loading="lazy">
-                    <figcaption>Average heart rate</figcaption>
+                    <img src="../../assets/images/HistoryScore.png" alt="Set 1 score page with Enter to Detail" width="382" height="505" loading="lazy">
+                    <figcaption>Set score</figcaption>
                   </figure>
-                  <h4>On-screen information</h4>
+                  <h4>Information on the screen</h4>
                   <ul class="display-legend">
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span>Average heart rate for each phase</li>
-                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span>Page number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime circle</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Hint for opening details</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/HistorySetDetail.png" alt="History set details showing the score and maximum/minimum heart rates for each phase" width="382" height="505" loading="lazy">
+                    <figcaption>Set details</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Hint for returning to the score page</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/HistoryNoDetails.png" alt="No details message when a saved set has no detail data" width="382" height="505" loading="lazy">
+                    <figcaption>When details are unavailable</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Message indicating that detail data is unavailable</li>
                   </ul>
                 </div>
               </div>
@@ -583,10 +613,19 @@
               <p>In-app history is saved even when <span translate="no">FIT Save</span> is off.<br>However, it is not sent to <span translate="no">Garmin Connect</span>.</p>
               <ul class="operation-list">
                 <li><kbd>UP</kbd> / <kbd>DOWN</kbd> Move between history entries or detail pages.</li>
-                <li><kbd>ENTER</kbd> Open the selected session's details.<br>On the detail screen, press it again to open the deletion confirmation.</li>
+                <li><kbd>ENTER</kbd> In the list, open the selected session.<br>On a set score page, open that set's details. On the summary page, open the deletion confirmation.</li>
                 <li><kbd>BACK</kbd> Return to the previous screen.</li>
               </ul>
-              <p>History details show the start date and time, overall <span translate="no">TotonoiScore</span>, set count, average heart rates for sauna, cold bath, and rest, and each set's <span translate="no">TotonoiScore</span>.</p>
+              <h4>Reading the summary</h4>
+              <p>The first page shows the start date and time, overall <span translate="no">TotonoiScore</span>, set count, and the average maximum / average minimum heart rate for each phase.<br>The overall score appears in the circle at the top right. The set count and page number appear at the bottom.</p>
+              <p>For example, <span translate="no">Sauna 138/111</span> means the maximum sauna heart rates across sets average 138 bpm, and the minimum sauna heart rates average 111 bpm.</p>
+              <h4>Opening a set's details</h4>
+              <ol class="operation-list">
+                <li>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to find the set's score page.<br>Moving forward from the last page returns to the summary.</li>
+                <li>Press <kbd>ENTER</kbd> on a page showing <span translate="no">Enter to Detail</span>.<br>You can review the set number, score, and maximum/minimum heart rates for sauna, cold bath, and rest.</li>
+                <li>Press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to return to the same score page.</li>
+              </ol>
+              <p class="guide-note">Set details are available for sessions newly saved with a version that supports them.<br>If detail data is unavailable, such as for history saved with an older version, <span translate="no">No details</span> appears. Missing heart rate values appear as <span translate="no">---</span> and are excluded from the summary averages.</p>
             </section>
 
             <section class="guide-section" id="exit-menu">
@@ -622,7 +661,7 @@
                   </dl>
                   <div class="guide-note">
                     <p>On the <span translate="no">RESULT</span> screen, use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages, and <kbd>BACK</kbd> to return to exit confirmation.</p>
-              <p>The app saves a <span translate="no">FIT</span> file and in-app history only if at least one set reached the rest phase after the sauna timer ran for 60 seconds or more.</p>
+                    <p>FIT files and in-app history are saved only if at least one set reached the rest phase after the sauna timer ran for 60 seconds or more. FIT files also require <span translate="no">FIT Save</span> to be on.</p>
                     <p>If the app waits for 10 minutes after a phase ends or the timer is paused, it exits automatically.<br>When this happens, the session is not saved to the in-app history.</p>
                   </div>
                 </div>
@@ -640,6 +679,30 @@
             <p class="changelog-description">Updates to this page and major changes to the app.</p>
 
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-19">October 19, 2026</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.2 released</strong>
+                  <ul class="operation-list">
+                    <li>Improved access to per-set details from history.</li>
+                    <li>Improved app stability.</li>
+                    <li>Adjusted screen layouts.</li>
+                  </ul>
+                  <p>Updated the guide and screenshots for the release. Clarified that FIT Save is available and off by default, and adjusted the blue frame around Enter to Detail.</p>
+                </dd>
+              </div>
+              <div>
+                <dt><time datetime="2026-10-18">October 18, 2026</time></dt>
+                <dd>
+                  <strong translate="no">Sauna Timer v0.6.2.b2 (beta)</strong>
+                  <ul class="operation-list">
+                    <li>History now lets you review each set's score and maximum/minimum heart rates for each phase.</li>
+                    <li>The summary now combines the average maximum and average minimum heart rates for each phase on one page.</li>
+                    <li>Improved layouts, including those on smaller screens, and reduced memory usage.</li>
+                    <li>Updated the history screenshots, guide, and controls to cover the added features.</li>
+                  </ul>
+                </dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-09">October 9, 2026</time></dt>
                 <dd>Added an English version.<br>Added a changelog.</dd>

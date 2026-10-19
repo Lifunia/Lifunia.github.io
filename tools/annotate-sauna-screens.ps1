@@ -1,5 +1,7 @@
-﻿# Instinct 2 / Sauna Timer 0.6.1 の実際のキャプチャに説明用の枠を重ねる。
+﻿# Instinct 2 / Sauna Timer の実際のキャプチャに説明用の枠を重ねる。
 # 元画像を残しておくことで、撮影結果を変えずに枠の位置だけを調整できる。
+param([switch]$HistoryOnly, [string[]]$Names = @())
+# History、セット結果は0.6.2。その他の画像は0.6.1の撮影結果を維持する。
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $root = Split-Path $PSScriptRoot -Parent
@@ -26,15 +28,20 @@ $frames = @{
     'EditTimer' = @(@('green', 132, 264, 112, 26), @('yellow', 153, 301, 70, 17))
     'Setting' = @(@('red', 125, 242, 124, 28), @('yellow', 178, 316, 18, 11))
     'SettingFIT' = @(@('red', 132, 242, 110, 28), @('yellow', 178, 316, 18, 11))
-    'Result_set' = @(@('red', 217, 179, 49, 36), @('green', 124, 238, 126, 63), @('yellow', 132, 310, 110, 27))
+    'Result_set' = @(@('red', 217, 179, 49, 36), @('green', 124, 235, 128, 76), @('yellow', 132, 310, 110, 27))
     'Result_all' = @(@('red', 161, 254, 55, 38), @('yellow', 166, 321, 42, 21))
-    'Result' = @(@('red', 218, 178, 48, 41), @('green', 129, 255, 116, 59), @('yellow', 166, 321, 42, 21))
-    'History' = @(@('red', 104, 242, 159, 27), @('lime', 213, 167, 57, 58, 'ellipse'))
-    'history1' = @(@('blue', 122, 191, 75, 42), @('red', 161, 244, 55, 38), @('green', 160, 287, 53, 22), @('yellow', 166, 321, 42, 21))
+    'Result' = @(@('red', 218, 178, 48, 41), @('green', 124, 235, 128, 76), @('yellow', 166, 321, 42, 21))
+    'History' = @(@('red', 104, 244, 159, 24), @('lime', 207, 161, 74, 73, 'ellipse'))
+    'history1' = @(@('blue', 122, 178, 76, 48), @('red', 217, 179, 49, 36), @('green', 126, 233, 128, 79), @('yellow', 144, 317, 89, 23))
+    'HistoryScore' = @(@('lime', 207, 161, 74, 73, 'ellipse'), @('red', 164, 235, 49, 37), @('blue', 126, 285, 124, 24), @('yellow', 163, 317, 51, 23))
+    'HistorySetDetail' = @(@('blue', 130, 174, 55, 49), @('red', 217, 179, 49, 36), @('green', 124, 235, 128, 76), @('yellow', 168, 317, 42, 23))
+    'HistoryNoDetails' = ,@('red', 141, 317, 94, 23)
     'hisotry2' = @(@('green', 145, 235, 84, 74), @('yellow', 166, 321, 42, 21))
     'Exitmenu' = @(@('green', 131, 176, 70, 54), @('red', 173, 258, 30, 27))
 }
 foreach ($name in ($frames.Keys | Sort-Object)) {
+    if ($Names.Count -gt 0 -and $name -notin $Names) { continue }
+    if ($HistoryOnly -and $name -notin @('History', 'history1', 'HistoryScore', 'HistorySetDetail', 'HistoryNoDetails')) { continue }
     $sourceName = if ($name -eq 'Buttons') { 'TOP' } else { $name }
     $bitmap = [System.Drawing.Bitmap]::new((Join-Path $raw "$sourceName.png"))
     $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
