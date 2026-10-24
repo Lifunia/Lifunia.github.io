@@ -27,3 +27,22 @@ Recapture only the five History screens from the current app sources, then regen
 ```
 
 Requires the configured Connect IQ SDK, Java, Python 3, and an already open Instinct 2 simulator. The app's developer key is used only for the local fixture build. Build output goes to the system temporary folder.
+
+## v0.7.1 representative device screenshots
+
+- `fr965/` and `fenix7/` contain the unannotated simulator originals captured on 2026-10-21 for Forerunner 965 and fēnix 7.
+- These two raw directories are local working files excluded by `.gitignore`. On a fresh checkout, run the capture commands below before preparing the annotated images. The prepared images in `assets/images/sauna-timer/fr965/` and `fenix7/` are tracked in Git.
+- Source: Sauna-Timer main commit `e1df2cd`, with `APP_VERSION = "0.7.1"`. The product source files and rendering classes were not changed.
+- `tools/sauna-device-screens/DeviceScreens.mc` supplies explicit sample heart rates, scores, dates, and timer states to the product views. It uses a separate application ID and sets FIT Save OFF; the normal app's storage is not modified.
+- The 18 captures cover the same screen types as the Instinct guide. `Buttons.png` uses the original TOP capture with colored circles marking the buttons. No Run History screenshot is added.
+- `tools/prepare-sauna-device-screens.ps1` crops the simulator chrome, resizes the watch panel to 382px wide while preserving its aspect ratio, and draws explanatory outlines using `tools/sauna-device-screens/annotations.json`. Output goes to `assets/images/sauna-timer/fr965/` and `fenix7/`. Coordinates in the JSON are final-image pixels; each frame lists its color, x, y, width, height, and optionally `ellipse`. Originals in this raw directory are never modified.
+- The colors match the Instinct guide: red for heart rate, scores or the selected item; blue for the phase, date/time, set title or detail hint; green for timer values and heart-rate tables; yellow for the clock, page/item counts or button hints; lime for set/session numbers. Button circles use red (ENTER), blue (BACK), purple (UP), and orange (DOWN). Japanese and English pages use the same images and matching colored labels.
+- Capture uses the existing SDK and Python's standard library. The simulator is shown without activation so PrintWindow can read its window. Keep the simulator on one device until capture finishes; do not run the two commands concurrently.
+
+From the repository root, capture each device sequentially, then prepare the page images:
+
+```powershell
+./tools/capture-sauna-device-screens.ps1 -AppRoot D:/develop/Sauna-Timer -Device fr965
+./tools/capture-sauna-device-screens.ps1 -AppRoot D:/develop/Sauna-Timer -Device fenix7
+./tools/prepare-sauna-device-screens.ps1
+```
