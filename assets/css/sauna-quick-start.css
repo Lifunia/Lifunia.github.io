@@ -1,0 +1,154 @@
+.quick-start-hero {
+  padding: 32px 0;
+}
+
+.quick-start-details-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.quick-start-details-link:hover {
+  color: #fff;
+  background: var(--color-accent-hover);
+}
+
+.quick-start-details {
+  margin: 24px 0;
+  padding-top: 24px;
+  border-top: 2px solid var(--color-accent);
+}
+
+.quick-start-details h2 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.quick-start-details p {
+  margin-bottom: 16px;
+}
+
+.quick-start-page {
+  padding: 28px 0 48px;
+}
+
+.quick-start-page [hidden] {
+  display: none !important;
+}
+
+.quick-start-page .content-section {
+  padding: 28px 0;
+}
+
+.quick-start-page h2 {
+  margin-top: 0;
+}
+
+.quick-start-before {
+  margin: 0 0 28px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-notice-background);
+}
+
+.quick-start-basics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.quick-start-basics .content-section {
+  border: 0;
+}
+
+.quick-start-page select {
+  display: block;
+  width: 100%;
+  margin: 8px 0 16px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font: inherit;
+}
+
+.quick-start-page select:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.quick-start-page .screen-figure img {
+  max-width: 240px;
+}
+
+.quick-start-page .display-legend {
+  margin-top: 16px;
+  font-size: 0.9375rem;
+}
+
+.quick-start-page .display-legend li + li {
+  margin-top: 6px;
+}
+
+.quick-start-steps {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.quick-start-steps li {
+  padding: 0 0 20px 8px;
+}
+
+.quick-start-steps li::marker {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.quick-start-steps h3 {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+}
+
+.quick-start-steps p {
+  margin: 0;
+}
+
+.quick-start-page .notice-box {
+  margin: 0 0 24px;
+  padding: 20px;
+}
+
+.quick-start-page kbd {
+  min-width: 0;
+}
+
+.quick-start-page .guide-note {
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .section-tabs a {
+    padding: 0 8px;
+    font-size: 0.875rem;
+  }
+
+  .quick-start-basics {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .quick-start-hero h1 {
+    font-size: 1.75rem;
+  }
+}

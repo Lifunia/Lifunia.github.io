@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sauna Timer tracks and records sauna, cold bath, and rest times on compatible Garmin Instinct watches.">
+    <meta name="description" content="Sauna Timer tracks and records sauna, cold bath, and rest times on compatible Garmin Instinct, Forerunner, and Fenix watches.">
     <title>Sauna Timer | Lifunia</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/sauna-timer.css">
     <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/">
     <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/">
   </head>
   <body>
-    <header class="site-header site-header-with-tabs">
+    <header class="site-header site-header-with-tabs sauna-timer-header">
       <div class="container">
         <div class="site-brand">
           <a class="site-name" href="../" aria-label="Lifunia home" translate="no">Lifunia</a>
@@ -34,7 +35,8 @@
         <div class="container content-container">
           <p class="eyebrow" lang="en" translate="no">Garmin App</p>
           <h1 id="page-title" translate="no">Sauna Timer</h1>
-          <p class="lead">An app for <span translate="no">Garmin Instinct</span> watches that times sauna, cold bath, and rest phases and saves a record of your session.</p>
+          <p class="lead">An app for <span translate="no">Garmin Instinct, Forerunner, and Fenix</span> watches that times sauna, cold bath, and rest phases and saves a record of your session.</p>
+          <p><strong><a href="quick-start/">Read the quick start guide</a></strong></p>
         </div>
       </section>
       <article class="page-content sauna-timer-page">
@@ -98,17 +100,49 @@
             <h2>Important notes</h2>
             <h3>Compatible devices</h3>
             <p>The following models are currently supported.</p>
-            <ul class="notes-list" translate="no">
+            <details class="sauna-device-list">
+              <summary>Instinct series</summary>
+              <ul class="notes-list" translate="no">
               <li>Instinct 2 / Solar / Dual Power / dezl Edition</li>
               <li>Instinct 2S / Solar / Dual Power</li>
               <li>Instinct 2X Solar</li>
               <li>Instinct 3 Solar 45mm / 50mm</li>
+              <li>Instinct 3 AMOLED 45mm / 50mm</li>
               <li>Instinct E 40mm / 45mm</li>
             </ul>
+            </details>
+            <details class="sauna-device-list">
+              <summary>Forerunner series</summary>
+              <ul class="notes-list" translate="no">
+              <li>Forerunner 55 / 70</li>
+              <li>Forerunner 165 / 165 Music / 170 / 170 Music</li>
+              <li>Forerunner 245 / 245 Music</li>
+              <li>Forerunner 255 / 255 Music / 255S / 255S Music</li>
+              <li>Forerunner 265 / 265S</li>
+              <li>Forerunner 570 42mm / 47mm</li>
+              <li>Forerunner 745 / 945 / 945 LTE / 955 / 955 Solar / 965 / 970</li>
+            </ul>
+            </details>
+            <details class="sauna-device-list">
+              <summary>Fenix series</summary>
+              <ul class="notes-list" translate="no">
+              <li>fēnix 6 / 6S / 6 Pro / 6S Pro / 6X Pro</li>
+              <li>fēnix 7 / 7S / 7X / 7 Pro / 7S Pro / 7X Pro</li>
+              <li>fēnix 7 Pro / 7X Pro Solar Edition (no Wi-Fi)</li>
+              <li>fēnix 8 43mm / 47mm / 51mm</li>
+              <li>fēnix 8 Pro 47mm / 51mm / MicroLED</li>
+              <li>fēnix 8 Solar 47mm / 51mm</li>
+              <li>fēnix 9 43mm / 47mm / 51mm</li>
+              <li>fēnix 9 Pro 43mm / 47mm / 51mm</li>
+              <li>fēnix 9 Pro Solar 47mm / 51mm</li>
+              <li>fēnix E</li>
+            </ul>
+            </details>
             <p>The original <span translate="no">Garmin Instinct</span> is not supported.</p>
 
             <h3>Device testing</h3>
-            <p>The app has been tested on a physical <span translate="no">Instinct 2</span>.<br>Other supported models have not been tested on physical devices.</p>
+            <p>The app has been tested on a physical <span translate="no">Instinct 2</span>.</p>
+            <p class="critical-note"><strong>All supported models other than <span translate="no">Instinct 2</span> have only been tested in the simulator. They have not been tested on physical devices.</strong></p>
 
             <p class="critical-note"><strong>Using a smartwatch in high temperatures is not recommended.<br>We accept no responsibility for any malfunction or damage to your smartwatch caused by its use.</strong></p>
 
@@ -146,7 +180,17 @@
 
           <section class="content-section" id="how-to-use">
             <h2>User guide</h2>
+            <p><strong><a href="quick-start/">New to Sauna Timer? Read the quick start guide</a></strong></p>
             <p>Use the physical buttons on your <span translate="no">Garmin</span> watch.<br>Check the button names first, then follow the instructions for each screen.</p>
+            <p>Select your watch series to view its screen guide. Forerunner and Fenix screenshots use one representative model each. Sizes and layouts vary by model.</p>
+            <label class="sauna-device-picker-label" for="guide-device" hidden>Your watch series</label>
+            <select class="sauna-device-picker" id="guide-device" hidden>
+              <option value="instinct-guide">Instinct — Instinct 2</option>
+              <option value="forerunner-guide">Forerunner — Forerunner 965</option>
+              <option value="fenix-guide">fēnix — fēnix 7</option>
+            </select>
+            <div class="sauna-device-guide" id="instinct-guide" role="region" aria-label="Instinct series">
+              <div class="sauna-device-guide-body">
             <p class="guide-note">History, set completion, and per-set Result screenshots show <span translate="no">Sauna Timer 0.6.2</span>; other screenshots show <span translate="no">Sauna Timer 0.6.1</span>. All were captured in the <span translate="no">Instinct 2</span> simulator.<br>The colored frames mark the areas described in this guide.<br>Heart rate readings, scores, dates, and times are sample data.<br>The labels below each image explain what the frames highlight.</p>
 
             <nav class="guide-index" aria-label="User guide contents">
@@ -241,7 +285,7 @@
                     <li>Press <kbd>BACK</kbd> twice quickly to open the exit confirmation screen while the timer keeps running.</li>
                   </ul>
                   <div class="guide-note">
-                    <p>You can shorten the remaining time to a minimum of 30 seconds for sauna and rest, or 10 seconds for the cold bath.</p>
+                    <p>You can shorten the remaining time to a minimum of 10 seconds for sauna, cold bath, and rest.</p>
                     <p>You cannot shorten the time while the timer is paused or waiting after a phase has ended.</p>
                   </div>
                 </div>
@@ -398,7 +442,7 @@
                 </div>
               </div>
               <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Press <kbd>BACK</kbd> to return to the timer screen.</p>
-              <p>The selected item appears at the top. After the fourth item, the menu returns to the first.<br>The indicator in the yellow frame at the bottom means more items are available.</p>
+              <p>The selected item appears at the top. After the fourth item, the menu returns to the first.<br>The indicator in the yellow frame at the bottom means more items are available.<br>On Instinct 2 / 2S / 2X, turning Run History OFF hides History after a session starts, leaving three items.</p>
               <dl class="menu-list">
                 <div>
                   <dt translate="no">Preset Timer</dt>
@@ -504,7 +548,7 @@
                 </div>
                 <div>
                   <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to turn each setting on or off.<br>Press <kbd>BACK</kbd> to return to the previous screen.<br>The app saves your settings for the next time you use it.</p>
-                  <p>On <span translate="no">Instinct 2</span>, three items are shown with the selected item at the top.<br>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to cycle through all four settings. After the last item, the list returns to the first.</p>
+                  <p>On <span translate="no">Instinct 2</span>, three items are shown with the selected item at the top.<br>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to cycle through all five settings. After the last item, the list returns to the first.</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">30sec Alert</dt>
@@ -528,6 +572,11 @@
                         <p>You can change <span translate="no">FIT Save</span> only before starting the timer.<br>Once the timer has started, this setting cannot be changed.</p>
                       </dd>
                     </div>
+                    <div>
+                      <dt translate="no" id="run-history">Run History</dt>
+                      <dd>On Instinct 2 / 2S / 2X, controls whether you can browse History during a session. The default is ON.<br>When OFF, History is hidden from Main Menu after the session starts, including while paused, in Aufguss mode, or waiting for the next phase.</dd>
+                      <dd class="guide-note"><p>History is still saved when OFF and can be viewed before starting a session. Changes made during a session apply when you return to Main Menu and are saved for the next launch.<br>If opening History causes the app to exit, restart it and turn this setting OFF. Other supported models do not show this setting and allow History access during a session.</p></dd>
+                    </div>
                   </dl>
                 </div>
               </div>
@@ -535,6 +584,7 @@
 
             <section class="guide-section" id="history">
               <h3 translate="no">History</h3>
+              <p class="guide-note">On Instinct 2 / 2S / 2X, <a href="#run-history" translate="no">Run History</a> must be ON to browse history during a session.</p>
               <p class="guide-note">The instructions and screenshots show <span translate="no">v0.6.2</span>.<br>Heart rates, scores, dates, and times are sample data prepared for these screenshots.</p>
               <div class="guide-images guide-images-two">
                 <div class="sauna-timer-screen-media">
@@ -656,6 +706,1035 @@
                 </div>
               </div>
             </section>
+              </div>
+            </div>
+            <div class="sauna-device-guide" id="forerunner-guide" role="region" aria-label="Forerunner series">
+              <div class="sauna-device-guide-body">
+            <p class="guide-note">Captured from Sauna Timer v0.7.1 in the Forerunner 965 simulator. Colored frames highlight the fields described by the matching labels below each image. Heart rates, scores, dates, and times are sample data. Use physical buttons; touch input is not supported.</p>
+            <nav class="guide-index" aria-label="User guide contents">
+              <a href="#fr965-buttons">Buttons</a>
+              <a href="#fr965-top-screen">Start screen</a>
+              <a href="#fr965-run-screen">Running timer</a>
+              <a href="#fr965-results">Set results</a>
+              <a href="#fr965-overall-results">Session results</a>
+              <a href="#fr965-timer-menu" translate="no">Timer Menu</a>
+              <a href="#fr965-aufguss-mode" translate="no">Aufguss</a>
+              <a href="#fr965-main-menu" translate="no">Main Menu</a>
+              <a href="#fr965-preset-timer" translate="no">Preset Timer</a>
+              <a href="#fr965-timer-edit" translate="no">Timer Edit</a>
+              <a href="#fr965-settings" translate="no">Setting</a>
+              <a href="#fr965-history" translate="no">History</a>
+              <a href="#fr965-exit-menu">Exit confirmation</a>
+            </nav>
+
+            <section class="guide-section" id="fr965-buttons">
+              <h3>Watch buttons</h3>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/sauna-timer/fr965/Buttons.png?v=frames-1" alt="Forerunner 965: Button positions (Forerunner 965)" width="382" height="509" loading="lazy">
+                  <figcaption>Button positions (Forerunner 965)</figcaption>
+                </figure>
+                <div>
+                  <p>The colored circles show the positions of the buttons used to operate the app.</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: START / STOP button at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: BACK / LAP button at the bottom right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: MENU button at the middle left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: DOWN button at the bottom left</li>
+                  </ul>
+                  <p class="guide-note">This guide calls the buttons ENTER, BACK, UP, and DOWN.<br>The labels printed on the watch vary by model.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-top-screen">
+              <h3>Start screen</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/TOP.png?v=frames-1" alt="Forerunner 965: Start screen" width="382" height="509" loading="lazy">
+                    <figcaption>Start screen</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen appears when you launch the app.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Start the timer.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.</li>
+                    <li><kbd>BACK</kbd> Exit the app immediately if the timer has not started.</li>
+                  </ul>
+                  <p class="guide-note">The app loads the last selected preset or the settings saved in <span translate="no">Timer Edit</span>.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-run-screen">
+              <h3>Running timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Run.png?v=frames-1" alt="Forerunner 965: Running timer" width="382" height="509" loading="lazy">
+                    <figcaption>Running timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen shows the current phase and remaining time as you progress through the session.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Open <span translate="no">Timer Menu</span>.<br>The timer pauses while this menu is open.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.<br>The timer keeps running while this menu is open.</li>
+                    <li><kbd>UP</kbd> Extend the current phase.<br>Sauna and rest can be extended in one-minute steps, up to five minutes in total.<br>The cold bath can be extended in 30-second steps, up to two minutes in total.</li>
+                    <li>Press <kbd>DOWN</kbd> twice quickly to shorten the remaining time.<br>Sauna and rest are shortened by 30 seconds each time; the cold bath is shortened by 10 seconds.</li>
+                    <li>Press <kbd>BACK</kbd> twice quickly to open the exit confirmation screen while the timer keeps running.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>You can shorten the remaining time to a minimum of 10 seconds for sauna, cold bath, and rest.</p>
+                    <p>You cannot shorten the time while the timer is paused or waiting after a phase has ended.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-results">
+              <h3>Set results</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Result_set.png?v=frames-1" alt="Forerunner 965: Set results" width="382" height="509" loading="lazy">
+                    <figcaption>Set results</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Button hints</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>When you start the next set, the app shows the previous set's <span translate="no">TotonoiScore</span> and the maximum and minimum heart rates for each phase.</p>
+                  <p>Results are shown only for sets where the sauna timer ran for at least 60 seconds.</p>
+                  <p>You return to the previous screen after 10 seconds or when you press any button.</p>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="guide-section" id="fr965-overall-results">
+              <h3>Session results</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Result_all.png?v=frames-1" alt="Forerunner 965: Session results (total)" width="382" height="509" loading="lazy">
+                    <figcaption>Session results (total)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Total score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Result.png?v=frames-1" alt="Forerunner 965: Session results (set details)" width="382" height="509" loading="lazy">
+                    <figcaption>Session results (set details)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Results for the current session appear when the session ends or when you select <span translate="no">RESULT</span> on the exit confirmation screen.<br>You can review the total <span translate="no">TotonoiScore</span>, each set's <span translate="no">TotonoiScore</span>, and maximum and minimum heart rates for each phase.</p>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages.<br>When you finish reviewing, press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to close the screen.</p>
+              <p>If you are viewing results at the end of the session, closing the screen exits the app.<br>If you opened the screen by selecting <span translate="no">RESULT</span>, you return to exit confirmation.</p>
+            </section>
+
+            <section class="guide-section" id="fr965-timer-menu">
+              <h3 translate="no">Timer Menu</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Timermenu.png?v=frames-1" alt="Forerunner 965: Timer Menu" width="382" height="509" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining on the paused timer</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>The timer pauses while <span translate="no">Timer Menu</span> is open.</p>
+                  <p>Press <kbd>BACK</kbd> to resume the timer and return to the timer screen.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">Resume</dt>
+                      <dd>Resume the timer and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>End the current phase and move to the next one.<br>For example, selecting this during the sauna phase starts the cold bath.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>Turn Aufguss mode on or off.<br>This option appears only during the sauna phase.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-aufguss-mode">
+              <h3><span translate="no">Aufguss</span> mode</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/AUFmode.png?v=frames-1" alt="Forerunner 965: Aufguss mode" width="382" height="509" loading="lazy">
+                    <figcaption>Aufguss mode</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time elapsed since the sauna phase began</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Aufguss mode is available only during the sauna phase.<br>Instead of counting down, it counts up from zero to show the time elapsed since the sauna phase began.</p>
+                  <p>Press <kbd>ENTER</kbd> twice quickly, or select <span translate="no">Aufguss</span> again in <span translate="no">Timer Menu</span>, to return to normal mode.</p>
+                  <ul>
+                    <li>If the set duration has not elapsed, the countdown resumes with the remaining time.</li>
+                    <li>If the elapsed time exceeds the set duration, the countdown resumes with five seconds remaining.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>For example, with a seven-minute timer, turning off Aufguss mode after six minutes resumes the countdown with one minute left. Turning it off after 10 minutes resumes the countdown with five seconds left.</p>
+                    <p>After the elapsed time reaches 10 minutes, the watch vibrates at five-minute intervals.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-main-menu">
+              <h3 translate="no">Main Menu</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/menu.png?v=frames-1" alt="Forerunner 965: Main Menu (Preset Timer selected)" width="382" height="509" loading="lazy">
+                    <figcaption>Main Menu (Preset Timer selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more menu items</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/menu2.png?v=frames-1" alt="Forerunner 965: Main Menu (History selected)" width="382" height="509" loading="lazy">
+                    <figcaption>Main Menu (History selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more menu items</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Press <kbd>BACK</kbd> to return to the timer screen.</p>
+              <p>The selected item appears at the top. After the fourth item, the menu returns to the first.<br>The yellow frame at the bottom shows the selected item and total item count.</p>
+              <dl class="menu-list">
+                <div>
+                  <dt translate="no">Preset Timer</dt>
+                  <dd>Choose timer settings from the available presets.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>Set separate durations for sauna, cold bath, and rest.<br>Saved values can be selected as the <span translate="no">Edit Timer</span> preset.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Setting</dt>
+                  <dd>Change alert, power-saving, and <span translate="no">FIT</span> file settings.</dd>
+                </div>
+                <div>
+                  <dt translate="no">History</dt>
+                  <dd>Review past session results.</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="guide-section" id="fr965-preset-timer">
+              <h3 translate="no">Preset Timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/PresetTimer.png?v=frames-1" alt="Forerunner 965: Preset Timer" width="382" height="509" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Preset name</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Duration of each phase</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch presets, and <kbd>ENTER</kbd> to apply one.<br>Press <kbd>BACK</kbd> to return to the previous screen.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Timer presets">
+                    <table>
+                      <thead>
+                        <tr><th>Preset</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Preset 1</th><td>7 min</td><td>30 sec</td><td>7 min</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10 min</td><td>60 sec</td><td>8 min</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5 min</td><td>20 sec</td><td>10 min</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3">Values last saved in <span translate="no">Timer Edit</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="guide-note">The default values for <span translate="no">Edit Timer</span> match <span translate="no">Preset 1</span>.<br>The last selected preset is saved and used the next time you launch the app.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-timer-edit">
+              <h3 translate="no">Timer Edit</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/EditTimer.png?v=frames-1" alt="Forerunner 965: Timer Edit" width="382" height="509" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Setting being edited and its value</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> ENTER button hint</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to increase or decrease the displayed value, and <kbd>ENTER</kbd> to move to the next setting.<br>Press <kbd>BACK</kbd> to cancel editing and return to the previous screen.</p>
+                  <p>Settings appear in this order: sauna, cold bath, then rest.<br>After setting the rest duration, press <kbd>ENTER</kbd> to save the values and return to the timer screen.<br>The yellow frame shows <span translate="no">Enter: Next</span> while editing sauna or cold bath, and <span translate="no">Enter: Save</span> while editing rest.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Allowed timer settings">
+                    <table>
+                      <thead>
+                        <tr><th>Setting</th><th>Range</th><th>Step</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Sauna</th><td>1–15 min</td><td>1 min</td></tr>
+                        <tr><th translate="no">WBath</th><td>10–120 sec</td><td>10 sec</td></tr>
+                        <tr><th translate="no">Rest</th><td>1–15 min</td><td>1 min</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-settings">
+              <h3 translate="no">Setting</h3>
+              <div class="guide-layout">
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../../assets/images/sauna-timer/fr965/Setting.png?v=frames-1" alt="Forerunner 965: Setting" width="382" height="509" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>On-screen information</h4>
+                    <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected setting</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more settings</li>
+                  </ul>
+                  </div>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to turn each setting on or off.<br>Press <kbd>BACK</kbd> to return to the previous screen.<br>The app saves your settings for the next time you use it.</p>
+                  <p>On <span translate="no">Forerunner 965</span>, three items are shown with the selected item at the top.<br>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to cycle through all four settings. After the last item, the list returns to the first.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">30sec Alert</dt>
+                      <dd>The watch vibrates briefly 30 seconds before each phase ends.</dd>
+                      <dd class="guide-note">
+                        <p>If you start the cold bath with 30 seconds or less, the watch does not vibrate for <span translate="no">30sec Alert</span>.<br>The alert can still occur if you extend the timer to 30 seconds or more.</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Stop Alert</dt>
+                      <dd>The watch vibrates every two minutes while the timer remains paused.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Power Save</dt>
+                      <dd>The screen updates less often when you are not using the controls.<br>The timer keeps counting, and alerts still work.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>Saves the session as an activity in <span translate="no">FIT</span> format. This setting is off by default. Turn it on before starting a session to record a FIT activity.</dd>
+                      <dd class="guide-note">
+                        <p>You can change <span translate="no">FIT Save</span> only before starting the timer.<br>Once the timer has started, this setting cannot be changed.</p>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-history">
+              <h3 translate="no">History</h3>
+
+
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/History.png?v=frames-1" alt="Forerunner 965: History list" width="382" height="509" loading="lazy">
+                    <figcaption>History list</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected session</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Selected session number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/history1.png?v=frames-1" alt="Forerunner 965: History summary" width="382" height="509" loading="lazy">
+                    <figcaption>History summary</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Start date and time</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Overall score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Average maximum / average minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Set count and page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/HistoryScore.png?v=frames-1" alt="Forerunner 965: Set score" width="382" height="509" loading="lazy">
+                    <figcaption>Set score</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Hint for opening details</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/HistorySetDetail.png?v=frames-1" alt="Forerunner 965: Set details" width="382" height="509" loading="lazy">
+                    <figcaption>Set details</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Hint for returning to the score page</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/HistoryNoDetails.png?v=frames-1" alt="Forerunner 965: When details are unavailable" width="382" height="509" loading="lazy">
+                    <figcaption>When details are unavailable</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Message indicating that detail data is unavailable</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Review up to 10 past session results.<br>When a new entry is added, the oldest entry is overwritten first.</p>
+              <p>In-app history is saved even when <span translate="no">FIT Save</span> is off.<br>However, it is not sent to <span translate="no">Garmin Connect</span>.</p>
+              <ul class="operation-list">
+                <li><kbd>UP</kbd> / <kbd>DOWN</kbd> Move between history entries or detail pages.</li>
+                <li><kbd>ENTER</kbd> In the list, open the selected session.<br>On a set score page, open that set's details. On the summary page, open the deletion confirmation.</li>
+                <li><kbd>BACK</kbd> Return to the previous screen.</li>
+              </ul>
+              <h4>Reading the summary</h4>
+              <p>The first page shows the start date and time, overall <span translate="no">TotonoiScore</span>, set count, and the average maximum / average minimum heart rate for each phase.<br>The overall score appears in the center. The set count and page number appear at the bottom.</p>
+              <p>For example, <span translate="no">Sauna 138/111</span> means the maximum sauna heart rates across sets average 138 bpm, and the minimum sauna heart rates average 111 bpm.</p>
+              <h4>Opening a set's details</h4>
+              <ol class="operation-list">
+                <li>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to find the set's score page.<br>Moving forward from the last page returns to the summary.</li>
+                <li>Press <kbd>ENTER</kbd> on a page showing <span translate="no">Enter to Detail</span>.<br>You can review the set number, score, and maximum/minimum heart rates for sauna, cold bath, and rest.</li>
+                <li>Press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to return to the same score page.</li>
+              </ol>
+              <p class="guide-note">Set details are available for sessions newly saved with a version that supports them.<br>If detail data is unavailable, such as for history saved with an older version, <span translate="no">No details</span> appears. Missing heart rate values appear as <span translate="no">---</span> and are excluded from the summary averages.</p>
+            </section>
+
+            <section class="guide-section" id="fr965-exit-menu">
+              <h3>Exit confirmation</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fr965/Exitmenu.png?v=frames-1" alt="Forerunner 965: Exit confirmation" width="382" height="509" loading="lazy">
+                    <figcaption>Exit confirmation</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Select <span translate="no">NO</span> to return to the timer screen.</p>
+              <p>The overall <span translate="no">TotonoiScore</span> for the current session appears at the top.<br>If a score cannot be calculated for any set, <span translate="no">N/A</span> is shown.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">NO</dt>
+                      <dd>Cancel exiting and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">YES</dt>
+                      <dd>End the session.<br>If the saving conditions are met, the app saves the session to its history. If <span translate="no">FIT Save</span> is on, it also saves a <span translate="no">FIT</span> file.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">RESULT</dt>
+                      <dd>Show session results so far.<br>This does not exit the app.</dd>
+                    </div>
+                  </dl>
+                  <div class="guide-note">
+                    <p>On the <span translate="no">RESULT</span> screen, use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages, and <kbd>BACK</kbd> to return to exit confirmation.</p>
+                    <p>FIT files and in-app history are saved only if at least one set reached the rest phase after the sauna timer ran for 60 seconds or more. FIT files also require <span translate="no">FIT Save</span> to be on.</p>
+                    <p>If the app waits for 10 minutes after a phase ends or the timer is paused, it exits automatically.<br>When this happens, the session is not saved to the in-app history.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+              </div>
+            </div>
+            <div class="sauna-device-guide" id="fenix-guide" role="region" aria-label="Fenix series">
+              <div class="sauna-device-guide-body">
+            <p class="guide-note">Captured from Sauna Timer v0.7.1 in the fēnix 7 simulator. Colored frames highlight the fields described by the matching labels below each image. Heart rates, scores, dates, and times are sample data. Use physical buttons; touch input is not supported.</p>
+            <nav class="guide-index" aria-label="User guide contents">
+              <a href="#fenix7-buttons">Buttons</a>
+              <a href="#fenix7-top-screen">Start screen</a>
+              <a href="#fenix7-run-screen">Running timer</a>
+              <a href="#fenix7-results">Set results</a>
+              <a href="#fenix7-overall-results">Session results</a>
+              <a href="#fenix7-timer-menu" translate="no">Timer Menu</a>
+              <a href="#fenix7-aufguss-mode" translate="no">Aufguss</a>
+              <a href="#fenix7-main-menu" translate="no">Main Menu</a>
+              <a href="#fenix7-preset-timer" translate="no">Preset Timer</a>
+              <a href="#fenix7-timer-edit" translate="no">Timer Edit</a>
+              <a href="#fenix7-settings" translate="no">Setting</a>
+              <a href="#fenix7-history" translate="no">History</a>
+              <a href="#fenix7-exit-menu">Exit confirmation</a>
+            </nav>
+
+            <section class="guide-section" id="fenix7-buttons">
+              <h3>Watch buttons</h3>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/sauna-timer/fenix7/Buttons.png?v=frames-1" alt="fēnix 7: Button positions (fēnix 7)" width="382" height="519" loading="lazy">
+                  <figcaption>Button positions (fēnix 7)</figcaption>
+                </figure>
+                <div>
+                  <p>The colored circles show the positions of the buttons used to operate the app.</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: START / STOP button at the top right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: BACK / LAP button at the bottom right</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: MENU button at the middle left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: DOWN button at the bottom left</li>
+                  </ul>
+                  <p class="guide-note">This guide calls the buttons ENTER, BACK, UP, and DOWN.<br>The labels printed on the watch vary by model.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-top-screen">
+              <h3>Start screen</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/TOP.png?v=frames-1" alt="fēnix 7: Start screen" width="382" height="519" loading="lazy">
+                    <figcaption>Start screen</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen appears when you launch the app.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Start the timer.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.</li>
+                    <li><kbd>BACK</kbd> Exit the app immediately if the timer has not started.</li>
+                  </ul>
+                  <p class="guide-note">The app loads the last selected preset or the settings saved in <span translate="no">Timer Edit</span>.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-run-screen">
+              <h3>Running timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Run.png?v=frames-1" alt="fēnix 7: Running timer" width="382" height="519" loading="lazy">
+                    <figcaption>Running timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>This screen shows the current phase and remaining time as you progress through the session.</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> Open <span translate="no">Timer Menu</span>.<br>The timer pauses while this menu is open.</li>
+                    <li><kbd>DOWN</kbd> Open the main menu.<br>The timer keeps running while this menu is open.</li>
+                    <li><kbd>UP</kbd> Extend the current phase.<br>Sauna and rest can be extended in one-minute steps, up to five minutes in total.<br>The cold bath can be extended in 30-second steps, up to two minutes in total.</li>
+                    <li>Press <kbd>DOWN</kbd> twice quickly to shorten the remaining time.<br>Sauna and rest are shortened by 30 seconds each time; the cold bath is shortened by 10 seconds.</li>
+                    <li>Press <kbd>BACK</kbd> twice quickly to open the exit confirmation screen while the timer keeps running.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>You can shorten the remaining time to a minimum of 10 seconds for sauna, cold bath, and rest.</p>
+                    <p>You cannot shorten the time while the timer is paused or waiting after a phase has ended.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-results">
+              <h3>Set results</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Result_set.png?v=frames-1" alt="fēnix 7: Set results" width="382" height="519" loading="lazy">
+                    <figcaption>Set results</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Button hints</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>When you start the next set, the app shows the previous set's <span translate="no">TotonoiScore</span> and the maximum and minimum heart rates for each phase.</p>
+                  <p>Results are shown only for sets where the sauna timer ran for at least 60 seconds.</p>
+                  <p>You return to the previous screen after 10 seconds or when you press any button.</p>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="guide-section" id="fenix7-overall-results">
+              <h3>Session results</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Result_all.png?v=frames-1" alt="fēnix 7: Session results (total)" width="382" height="519" loading="lazy">
+                    <figcaption>Session results (total)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Total score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Result.png?v=frames-1" alt="fēnix 7: Session results (set details)" width="382" height="519" loading="lazy">
+                    <figcaption>Session results (set details)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Results for the current session appear when the session ends or when you select <span translate="no">RESULT</span> on the exit confirmation screen.<br>You can review the total <span translate="no">TotonoiScore</span>, each set's <span translate="no">TotonoiScore</span>, and maximum and minimum heart rates for each phase.</p>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages.<br>When you finish reviewing, press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to close the screen.</p>
+              <p>If you are viewing results at the end of the session, closing the screen exits the app.<br>If you opened the screen by selecting <span translate="no">RESULT</span>, you return to exit confirmation.</p>
+            </section>
+
+            <section class="guide-section" id="fenix7-timer-menu">
+              <h3 translate="no">Timer Menu</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Timermenu.png?v=frames-1" alt="fēnix 7: Timer Menu" width="382" height="519" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time remaining on the paused timer</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>The timer pauses while <span translate="no">Timer Menu</span> is open.</p>
+                  <p>Press <kbd>BACK</kbd> to resume the timer and return to the timer screen.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">Resume</dt>
+                      <dd>Resume the timer and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>End the current phase and move to the next one.<br>For example, selecting this during the sauna phase starts the cold bath.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>Turn Aufguss mode on or off.<br>This option appears only during the sauna phase.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-aufguss-mode">
+              <h3><span translate="no">Aufguss</span> mode</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/AUFmode.png?v=frames-1" alt="fēnix 7: Aufguss mode" width="382" height="519" loading="lazy">
+                    <figcaption>Aufguss mode</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set count at the upper left</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Current heart rate</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Current phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Time elapsed since the sauna phase began</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Current time</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Aufguss mode is available only during the sauna phase.<br>Instead of counting down, it counts up from zero to show the time elapsed since the sauna phase began.</p>
+                  <p>Press <kbd>ENTER</kbd> twice quickly, or select <span translate="no">Aufguss</span> again in <span translate="no">Timer Menu</span>, to return to normal mode.</p>
+                  <ul>
+                    <li>If the set duration has not elapsed, the countdown resumes with the remaining time.</li>
+                    <li>If the elapsed time exceeds the set duration, the countdown resumes with five seconds remaining.</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>For example, with a seven-minute timer, turning off Aufguss mode after six minutes resumes the countdown with one minute left. Turning it off after 10 minutes resumes the countdown with five seconds left.</p>
+                    <p>After the elapsed time reaches 10 minutes, the watch vibrates at five-minute intervals.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-main-menu">
+              <h3 translate="no">Main Menu</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/menu.png?v=frames-1" alt="fēnix 7: Main Menu (Preset Timer selected)" width="382" height="519" loading="lazy">
+                    <figcaption>Main Menu (Preset Timer selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more menu items</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/menu2.png?v=frames-1" alt="fēnix 7: Main Menu (History selected)" width="382" height="519" loading="lazy">
+                    <figcaption>Main Menu (History selected)</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more menu items</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Press <kbd>BACK</kbd> to return to the timer screen.</p>
+              <p>The selected item appears at the top. After the fourth item, the menu returns to the first.<br>The yellow frame at the bottom shows the selected item and total item count.</p>
+              <dl class="menu-list">
+                <div>
+                  <dt translate="no">Preset Timer</dt>
+                  <dd>Choose timer settings from the available presets.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>Set separate durations for sauna, cold bath, and rest.<br>Saved values can be selected as the <span translate="no">Edit Timer</span> preset.</dd>
+                </div>
+                <div>
+                  <dt translate="no">Setting</dt>
+                  <dd>Change alert, power-saving, and <span translate="no">FIT</span> file settings.</dd>
+                </div>
+                <div>
+                  <dt translate="no">History</dt>
+                  <dd>Review past session results.</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="guide-section" id="fenix7-preset-timer">
+              <h3 translate="no">Preset Timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/PresetTimer.png?v=frames-1" alt="fēnix 7: Preset Timer" width="382" height="519" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Preset name</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Duration of each phase</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch presets, and <kbd>ENTER</kbd> to apply one.<br>Press <kbd>BACK</kbd> to return to the previous screen.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Timer presets">
+                    <table>
+                      <thead>
+                        <tr><th>Preset</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Preset 1</th><td>7 min</td><td>30 sec</td><td>7 min</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10 min</td><td>60 sec</td><td>8 min</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5 min</td><td>20 sec</td><td>10 min</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3">Values last saved in <span translate="no">Timer Edit</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="guide-note">The default values for <span translate="no">Edit Timer</span> match <span translate="no">Preset 1</span>.<br>The last selected preset is saved and used the next time you launch the app.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-timer-edit">
+              <h3 translate="no">Timer Edit</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/EditTimer.png?v=frames-1" alt="fēnix 7: Timer Edit" width="382" height="519" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Setting being edited and its value</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> ENTER button hint</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to increase or decrease the displayed value, and <kbd>ENTER</kbd> to move to the next setting.<br>Press <kbd>BACK</kbd> to cancel editing and return to the previous screen.</p>
+                  <p>Settings appear in this order: sauna, cold bath, then rest.<br>After setting the rest duration, press <kbd>ENTER</kbd> to save the values and return to the timer screen.<br>The yellow frame shows <span translate="no">Enter: Next</span> while editing sauna or cold bath, and <span translate="no">Enter: Save</span> while editing rest.</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="Allowed timer settings">
+                    <table>
+                      <thead>
+                        <tr><th>Setting</th><th>Range</th><th>Step</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Sauna</th><td>1–15 min</td><td>1 min</td></tr>
+                        <tr><th translate="no">WBath</th><td>10–120 sec</td><td>10 sec</td></tr>
+                        <tr><th translate="no">Rest</th><td>1–15 min</td><td>1 min</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-settings">
+              <h3 translate="no">Setting</h3>
+              <div class="guide-layout">
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../../assets/images/sauna-timer/fenix7/Setting.png?v=frames-1" alt="fēnix 7: Setting" width="382" height="519" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>On-screen information</h4>
+                    <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected setting</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Indicator for more settings</li>
+                  </ul>
+                  </div>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to turn each setting on or off.<br>Press <kbd>BACK</kbd> to return to the previous screen.<br>The app saves your settings for the next time you use it.</p>
+                  <p>On <span translate="no">fēnix 7</span>, three items are shown with the selected item at the top.<br>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to cycle through all four settings. After the last item, the list returns to the first.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">30sec Alert</dt>
+                      <dd>The watch vibrates briefly 30 seconds before each phase ends.</dd>
+                      <dd class="guide-note">
+                        <p>If you start the cold bath with 30 seconds or less, the watch does not vibrate for <span translate="no">30sec Alert</span>.<br>The alert can still occur if you extend the timer to 30 seconds or more.</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Stop Alert</dt>
+                      <dd>The watch vibrates every two minutes while the timer remains paused.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Power Save</dt>
+                      <dd>The screen updates less often when you are not using the controls.<br>The timer keeps counting, and alerts still work.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>Saves the session as an activity in <span translate="no">FIT</span> format. This setting is off by default. Turn it on before starting a session to record a FIT activity.</dd>
+                      <dd class="guide-note">
+                        <p>You can change <span translate="no">FIT Save</span> only before starting the timer.<br>Once the timer has started, this setting cannot be changed.</p>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-history">
+              <h3 translate="no">History</h3>
+
+
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/History.png?v=frames-1" alt="fēnix 7: History list" width="382" height="519" loading="lazy">
+                    <figcaption>History list</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected session</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Selected session number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/history1.png?v=frames-1" alt="fēnix 7: History summary" width="382" height="519" loading="lazy">
+                    <figcaption>History summary</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Start date and time</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Overall score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Average maximum / average minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Set count and page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/HistoryScore.png?v=frames-1" alt="fēnix 7: Set score" width="382" height="519" loading="lazy">
+                    <figcaption>Set score</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">Lime frame</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Hint for opening details</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Page number</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/HistorySetDetail.png?v=frames-1" alt="fēnix 7: Set details" width="382" height="519" loading="lazy">
+                    <figcaption>Set details</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue frame</span> Set number</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Set score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Maximum/minimum heart rate for each phase</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">Yellow frame</span> Hint for returning to the score page</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/HistoryNoDetails.png?v=frames-1" alt="fēnix 7: When details are unavailable" width="382" height="519" loading="lazy">
+                    <figcaption>When details are unavailable</figcaption>
+                  </figure>
+                  <h4>Information on the screen</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Message indicating that detail data is unavailable</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Review up to 10 past session results.<br>When a new entry is added, the oldest entry is overwritten first.</p>
+              <p>In-app history is saved even when <span translate="no">FIT Save</span> is off.<br>However, it is not sent to <span translate="no">Garmin Connect</span>.</p>
+              <ul class="operation-list">
+                <li><kbd>UP</kbd> / <kbd>DOWN</kbd> Move between history entries or detail pages.</li>
+                <li><kbd>ENTER</kbd> In the list, open the selected session.<br>On a set score page, open that set's details. On the summary page, open the deletion confirmation.</li>
+                <li><kbd>BACK</kbd> Return to the previous screen.</li>
+              </ul>
+              <h4>Reading the summary</h4>
+              <p>The first page shows the start date and time, overall <span translate="no">TotonoiScore</span>, set count, and the average maximum / average minimum heart rate for each phase.<br>The overall score appears in the center. The set count and page number appear at the bottom.</p>
+              <p>For example, <span translate="no">Sauna 138/111</span> means the maximum sauna heart rates across sets average 138 bpm, and the minimum sauna heart rates average 111 bpm.</p>
+              <h4>Opening a set's details</h4>
+              <ol class="operation-list">
+                <li>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to find the set's score page.<br>Moving forward from the last page returns to the summary.</li>
+                <li>Press <kbd>ENTER</kbd> on a page showing <span translate="no">Enter to Detail</span>.<br>You can review the set number, score, and maximum/minimum heart rates for sauna, cold bath, and rest.</li>
+                <li>Press <kbd>ENTER</kbd> or <kbd>BACK</kbd> to return to the same score page.</li>
+              </ol>
+              <p class="guide-note">Set details are available for sessions newly saved with a version that supports them.<br>If detail data is unavailable, such as for history saved with an older version, <span translate="no">No details</span> appears. Missing heart rate values appear as <span translate="no">---</span> and are excluded from the summary averages.</p>
+            </section>
+
+            <section class="guide-section" id="fenix7-exit-menu">
+              <h3>Exit confirmation</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../../assets/images/sauna-timer/fenix7/Exitmenu.png?v=frames-1" alt="fēnix 7: Exit confirmation" width="382" height="519" loading="lazy">
+                    <figcaption>Exit confirmation</figcaption>
+                  </figure>
+                  <h4>On-screen information</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">Green frame</span> Score</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red frame</span> Selected item</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Use <kbd>UP</kbd> / <kbd>DOWN</kbd> to move between items, and <kbd>ENTER</kbd> to select one.<br>Select <span translate="no">NO</span> to return to the timer screen.</p>
+              <p>The overall <span translate="no">TotonoiScore</span> for the current session appears at the top.<br>If a score cannot be calculated for any set, <span translate="no">N/A</span> is shown.</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">NO</dt>
+                      <dd>Cancel exiting and return to the timer screen.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">YES</dt>
+                      <dd>End the session.<br>If the saving conditions are met, the app saves the session to its history. If <span translate="no">FIT Save</span> is on, it also saves a <span translate="no">FIT</span> file.</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">RESULT</dt>
+                      <dd>Show session results so far.<br>This does not exit the app.</dd>
+                    </div>
+                  </dl>
+                  <div class="guide-note">
+                    <p>On the <span translate="no">RESULT</span> screen, use <kbd>UP</kbd> / <kbd>DOWN</kbd> to switch pages, and <kbd>BACK</kbd> to return to exit confirmation.</p>
+                    <p>FIT files and in-app history are saved only if at least one set reached the rest phase after the sauna timer ran for 60 seconds or more. FIT files also require <span translate="no">FIT Save</span> to be on.</p>
+                    <p>If the app waits for 10 minutes after a phase ends or the timer is paused, it exits automatically.<br>When this happens, the session is not saved to the in-app history.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+              </div>
+            </div>
+
           </section>
 
           <section class="content-section" id="faq">
@@ -668,6 +1747,19 @@
             <p class="changelog-description">Updates to this page and major changes to the app.</p>
 
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-24">October 24, 2026</time></dt>
+                <dd>
+                  <p><strong>Sauna Timer v0.7.1 released</strong></p>
+                  <strong>Website updates</strong>
+                  <ul class="operation-list">
+                    <li>Added a Run History explanation.</li>
+                    <li>Added compatibility information for Forerunner, Fenix, and Instinct 3 AMOLED.</li>
+                    <li>Added operating instructions for Forerunner 965 and fēnix 7.</li>
+                    <li>Added the quick start guide.</li>
+                  </ul>
+                </dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-19">October 19, 2026</time></dt>
                 <dd>
@@ -729,6 +1821,7 @@
       </div>
     </footer>
 
+    <script src="../../assets/js/sauna-timer-guide.js" defer></script>
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
 
   </body>

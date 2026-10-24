@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sauna Timerのボタン位置、サウナ・水風呂・休憩の切り替え、終了、任意のFIT保存を短く案内します。">
+    <title>クイックスタートガイド | Sauna Timer | Lifunia</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/sauna-quick-start.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/quick-start/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/quick-start/">
+  </head>
+  <body>
+    <header class="site-header site-header-with-tabs">
+      <div class="container">
+        <div class="site-brand">
+          <a class="site-name" href="../../" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="言語"><span lang="ja" aria-current="page" translate="no">日本語</span><a href="../../en/sauna-timer/quick-start/" lang="en" hreflang="en" translate="no">English</a></nav>
+        </div>
+        <nav class="section-tabs" aria-label="ガイド内メニュー">
+          <a href="#buttons">ボタン</a>
+          <a href="#basics">基本操作</a>
+          <a href="#fit-save">FIT保存（任意）</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sauna-timer-hero quick-start-hero" aria-labelledby="page-title">
+        <div class="container content-container">
+          <p class="eyebrow" translate="no">Sauna Timer</p>
+          <h1 id="page-title">クイックスタートガイド</h1>
+          <p class="lead">サウナ・水風呂・休憩の計測から終了まで、基本の操作をまとめました。</p>
+          <p>各機能の詳しい説明は<a href="../">Sauna Timerページ</a>をご覧ください。</p>
+        </div>
+      </section>
+      <article class="quick-start-page">
+        <div class="container content-container">
+          <p class="quick-start-before"><strong>始める前に：</strong>Garmin Connectに記録する方は、<a href="#fit-save">FIT SaveをON</a>にしてください。計測開始後は変更できません。記録しない方はOFFのまま使えます。</p>
+          <div class="quick-start-basics">
+            <section class="content-section" id="buttons" aria-labelledby="buttons-title">
+              <h2 id="buttons-title">ボタンを確認</h2>
+              <label for="quick-device" data-quick-device-label hidden>お使いのシリーズ</label>
+              <select id="quick-device" data-quick-device hidden>
+                <option value="instinct">Instinct — Instinct 2</option>
+                <option value="forerunner">Forerunner — Forerunner 965</option>
+                <option value="fenix">fēnix — fēnix 7</option>
+              </select>
+              <div data-quick-panel="instinct">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/Buttons.png?v=button-positions-6" width="382" height="505" alt="Instinct 2: ENTER (右上), BACK (右下), UP (左中央), DOWN (左下)">
+                  <figcaption>Instinct 2 — ボタン位置</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤丸</span> <kbd>ENTER</kbd>: 右上 (GPS)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青丸</span> <kbd>BACK</kbd>: 右下 (SET)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫丸</span> <kbd>UP</kbd>: 左中央 (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジ丸</span> <kbd>DOWN</kbd>: 左下 (ABC)</li>
+                </ul>
+              </div>
+              <div data-quick-panel="forerunner">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/sauna-timer/fr965/Buttons.png?v=frames-1" width="382" height="509" alt="Forerunner 965: ENTER (右上), BACK (右下), UP (左中央), DOWN (左下)">
+                  <figcaption>Forerunner 965 — ボタン位置</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤丸</span> <kbd>ENTER</kbd>: 右上 (START / STOP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青丸</span> <kbd>BACK</kbd>: 右下 (BACK / LAP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫丸</span> <kbd>UP</kbd>: 左中央 (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジ丸</span> <kbd>DOWN</kbd>: 左下 (DOWN)</li>
+                </ul>
+              </div>
+              <div data-quick-panel="fenix">
+                <figure class="screen-figure">
+                  <img src="../../assets/images/sauna-timer/fenix7/Buttons.png?v=frames-1" width="382" height="519" alt="fēnix 7: ENTER (右上), BACK (右下), UP (左中央), DOWN (左下)">
+                  <figcaption>fēnix 7 — ボタン位置</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤丸</span> <kbd>ENTER</kbd>: 右上 (START / STOP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青丸</span> <kbd>BACK</kbd>: 右下 (BACK / LAP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫丸</span> <kbd>UP</kbd>: 左中央 (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジ丸</span> <kbd>DOWN</kbd>: 左下 (DOWN)</li>
+                </ul>
+              </div>
+              <p class="guide-note">図は代表機種です。ボタンの印字は機種によって異なります。このガイドではENTER／BACK／UP／DOWNと呼びます。</p>
+            </section>
+            <section class="content-section" id="basics" aria-labelledby="basics-title">
+              <h2 id="basics-title">切り替えて、終了する</h2>
+              <ol class="quick-start-steps">
+                <li><h3>開始する</h3><p>アプリの起動画面で<kbd>ENTER</kbd>を押すと、サウナの計測が始まります。</p></li>
+                <li><h3>サウナ → 水風呂 → 休憩</h3><p>時間が来て振動したら、少し待って<kbd>ENTER</kbd>。次の時間の計測が始まります。休憩後も同じ操作で次のセットへ進みます。</p>
+                  <aside class="guide-note"><strong>残り時間を短くしたいとき</strong><p>タイマー動作中に<kbd>DOWN</kbd>を素早く2回。サウナ・休憩は30秒、水風呂は10秒ずつ短縮します。いずれも残り10秒まで短縮できます。</p></aside>
+                </li>
+                <li><h3>終了する</h3><p><kbd>BACK</kbd>を素早く2回 → <kbd>UP</kbd>／<kbd>DOWN</kbd>で<strong>YES</strong> → <kbd>ENTER</kbd>。結果画面が出たら<kbd>ENTER</kbd>または<kbd>BACK</kbd>で閉じます。</p></li>
+              </ol>
+              <aside class="guide-note"><strong>時間前に切り替えたいとき</strong><p><kbd>ENTER</kbd>でTimer Menuを開き、<kbd>UP</kbd>／<kbd>DOWN</kbd>で<strong>Next Timer</strong>を選んで<kbd>ENTER</kbd>。</p></aside>
+            </section>
+          </div>
+          <section class="content-section" id="fit-save" aria-labelledby="fit-title">
+            <h2 id="fit-title">FIT保存する（任意）</h2>
+            <aside class="notice-box" aria-labelledby="fit-notice-title">
+              <h3 id="fit-notice-title">Garmin Connectの指標を厳密に管理している方へ</h3>
+              <p>FIT保存した記録は、同期するとGarmin Connectのアクティビティに登録されます。消費カロリーや、機種によってはトレーニング効果・負荷などの指標に影響する場合があります。</p>
+              <p><strong>影響を避けたい方は、FIT SaveをOFFにして使用してください。</strong>初期値はOFFです。設定は次回も引き継がれます。</p>
+            </aside>
+            <ol class="operation-list">
+              <li><strong>計測開始前</strong>に、起動画面で<kbd>DOWN</kbd> → <kbd>UP</kbd>／<kbd>DOWN</kbd>で<strong>Setting</strong>を選択 → <kbd>ENTER</kbd>。</li>
+              <li><kbd>UP</kbd>／<kbd>DOWN</kbd>で<strong>FIT Save</strong>を選び、<kbd>ENTER</kbd>で<strong>ON</strong>。<kbd>BACK</kbd>を2回押して起動画面へ戻ります。</li>
+              <li>基本操作に沿って計測し、終了時に<strong>YES</strong>を選びます。保存後、Garmin Connectと同期してください。</li>
+            </ol>
+            <p class="guide-note"><strong>保存条件：</strong>サウナを実際に60秒以上計測し、休憩まで進んだセットが1つ以上必要です。条件を満たさない場合は保存されません。</p>
+          </section>
+          <section class="quick-start-details" aria-labelledby="details-title">
+            <h2 id="details-title">各機能をもっと詳しく</h2>
+            <p>時間設定や通知など、各機能の詳しい説明はSauna Timerページをご覧ください。</p>
+            <a class="quick-start-details-link" href="../#how-to-use">詳しい使い方を見る</a>
+          </section>
+          <p>使用前に<a href="../#notes">対応機種・使用上の注意</a>をご確認ください。</p>
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">更新履歴</h2>
+            <dl class="changelog-list">
+              <div><dt><time datetime="2026-10-24">2026年10月24日</time></dt><dd>クイックスタートガイドを追加しました。</dd></div>
+            </dl>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="container"><small>&copy; Lifunia</small></div></footer>
+    <script src="../../assets/js/sauna-quick-start.js" defer></script>
+  </body>
+</html>

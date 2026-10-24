@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A short guide to Sauna Timer buttons, switching between sauna, cold bath and rest, ending a session, and optional FIT saving.">
+    <title>Quick start guide | Sauna Timer | Lifunia</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/sauna-quick-start.css">
+    <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/quick-start/">
+    <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/quick-start/">
+  </head>
+  <body>
+    <header class="site-header site-header-with-tabs">
+      <div class="container">
+        <div class="site-brand">
+          <a class="site-name" href="../../" translate="no">Lifunia</a>
+          <nav class="language-switch" aria-label="Language"><a href="../../../sauna-timer/quick-start/" lang="ja" hreflang="ja" translate="no">日本語</a><span lang="en" aria-current="page" translate="no">English</span></nav>
+        </div>
+        <nav class="section-tabs" aria-label="Quick start guide navigation">
+          <a href="#buttons">Buttons</a>
+          <a href="#basics">Basic steps</a>
+          <a href="#fit-save">FIT saving</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sauna-timer-hero quick-start-hero" aria-labelledby="page-title">
+        <div class="container content-container">
+          <p class="eyebrow" translate="no">Sauna Timer</p>
+          <h1 id="page-title">Quick start guide</h1>
+          <p class="lead">The basic steps for timing sauna, cold bath, and rest, through to ending your session.</p>
+          <p>For details on each feature, see the <a href="../">Sauna Timer page</a>.</p>
+        </div>
+      </section>
+      <article class="quick-start-page">
+        <div class="container content-container">
+          <p class="quick-start-before"><strong>Before you start:</strong> To record in Garmin Connect, <a href="#fit-save">turn FIT Save ON</a> before starting the timer. You cannot change it after starting. Leave it OFF if you do not want an activity record.</p>
+          <div class="quick-start-basics">
+            <section class="content-section" id="buttons" aria-labelledby="buttons-title">
+              <h2 id="buttons-title">Find your buttons</h2>
+              <label for="quick-device" data-quick-device-label hidden>Your watch series</label>
+              <select id="quick-device" data-quick-device hidden>
+                <option value="instinct">Instinct — Instinct 2</option>
+                <option value="forerunner">Forerunner — Forerunner 965</option>
+                <option value="fenix">fēnix — fēnix 7</option>
+              </select>
+              <div data-quick-panel="instinct">
+                <figure class="screen-figure">
+                  <img src="../../../assets/images/Buttons.png?v=button-positions-6" width="382" height="505" alt="Instinct 2: ENTER (Upper right), BACK (Lower right), UP (Middle left), DOWN (Lower left)">
+                  <figcaption>Instinct 2 — Button positions</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: Upper right (GPS)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: Lower right (SET)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: Middle left (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: Lower left (ABC)</li>
+                </ul>
+              </div>
+              <div data-quick-panel="forerunner">
+                <figure class="screen-figure">
+                  <img src="../../../assets/images/sauna-timer/fr965/Buttons.png?v=frames-1" width="382" height="509" alt="Forerunner 965: ENTER (Upper right), BACK (Lower right), UP (Middle left), DOWN (Lower left)">
+                  <figcaption>Forerunner 965 — Button positions</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: Upper right (START / STOP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: Lower right (BACK / LAP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: Middle left (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: Lower left (DOWN)</li>
+                </ul>
+              </div>
+              <div data-quick-panel="fenix">
+                <figure class="screen-figure">
+                  <img src="../../../assets/images/sauna-timer/fenix7/Buttons.png?v=frames-1" width="382" height="519" alt="fēnix 7: ENTER (Upper right), BACK (Lower right), UP (Middle left), DOWN (Lower left)">
+                  <figcaption>fēnix 7 — Button positions</figcaption>
+                </figure>
+                <ul class="display-legend">
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">Red circle</span> <kbd>ENTER</kbd>: Upper right (START / STOP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">Blue circle</span> <kbd>BACK</kbd>: Lower right (BACK / LAP)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">Purple circle</span> <kbd>UP</kbd>: Middle left (MENU)</li>
+                  <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">Orange circle</span> <kbd>DOWN</kbd>: Lower left (DOWN)</li>
+                </ul>
+              </div>
+              <p class="guide-note">These diagrams use representative models. Printed button names vary by model. This guide calls the buttons ENTER, BACK, UP, and DOWN.</p>
+            </section>
+            <section class="content-section" id="basics" aria-labelledby="basics-title">
+              <h2 id="basics-title">Switch phases and finish</h2>
+              <ol class="quick-start-steps">
+                <li><h3>Start</h3><p>Press <kbd>ENTER</kbd> on the app’s opening screen to start the sauna timer.</p></li>
+                <li><h3>Sauna → Cold bath → Rest</h3><p>When the timer ends and the watch vibrates, wait briefly and press <kbd>ENTER</kbd> to start the next phase. After rest, use the same action to start another set.</p>
+                  <aside class="guide-note"><strong>To shorten the remaining time</strong><p>While the timer is running, press <kbd>DOWN</kbd> twice quickly. Sauna and rest shorten by 30 seconds; cold bath by 10 seconds. All phases can be shortened to 10 seconds remaining.</p></aside>
+                </li>
+                <li><h3>Finish</h3><p>Press <kbd>BACK</kbd> twice quickly → select <strong>YES</strong> with <kbd>UP</kbd> / <kbd>DOWN</kbd> → <kbd>ENTER</kbd>. If results appear, close them with <kbd>ENTER</kbd> or <kbd>BACK</kbd>.</p></li>
+              </ol>
+              <aside class="guide-note"><strong>To switch before the timer ends</strong><p>Press <kbd>ENTER</kbd> to open Timer Menu, select <strong>Next Timer</strong> with <kbd>UP</kbd> / <kbd>DOWN</kbd>, then press <kbd>ENTER</kbd>.</p></aside>
+            </section>
+          </div>
+          <section class="content-section" id="fit-save" aria-labelledby="fit-title">
+            <h2 id="fit-title">Save a FIT activity (optional)</h2>
+            <aside class="notice-box" aria-labelledby="fit-notice-title">
+              <h3 id="fit-notice-title">If you closely track your Garmin Connect metrics</h3>
+              <p>Saved FIT records appear as activities in Garmin Connect after syncing. They may affect calorie figures and, depending on your watch, metrics such as Training Effect and training load.</p>
+              <p><strong>Keep FIT Save OFF if you want to avoid this impact.</strong> It is OFF by default. Your setting carries over to future sessions.</p>
+            </aside>
+            <ol class="operation-list">
+              <li><strong>Before starting the timer</strong>, press <kbd>DOWN</kbd> on the opening screen → select <strong>Setting</strong> with <kbd>UP</kbd> / <kbd>DOWN</kbd> → <kbd>ENTER</kbd>.</li>
+              <li>Select <strong>FIT Save</strong> with <kbd>UP</kbd> / <kbd>DOWN</kbd> and press <kbd>ENTER</kbd> to turn it <strong>ON</strong>. Press <kbd>BACK</kbd> twice to return to the opening screen.</li>
+              <li>Follow the basic steps and select <strong>YES</strong> when finishing. After saving, sync with Garmin Connect.</li>
+            </ol>
+            <p class="guide-note"><strong>Saving requirement:</strong> At least one set must include 60 seconds or more of actual sauna timing and reach the rest phase. No record is saved if this condition is not met.</p>
+          </section>
+          <section class="quick-start-details" aria-labelledby="details-title">
+            <h2 id="details-title">Explore the other features</h2>
+            <p>See the Sauna Timer page for timer settings, notifications, and detailed instructions for each feature.</p>
+            <a class="quick-start-details-link" href="../#how-to-use">Read the full user guide</a>
+          </section>
+          <p>Before use, check <a href="../#notes">compatible watches and important notes</a>.</p>
+          <section class="content-section" id="changelog" aria-labelledby="changelog-title">
+            <h2 id="changelog-title">Changelog</h2>
+            <dl class="changelog-list">
+              <div><dt><time datetime="2026-10-24">October 24, 2026</time></dt><dd>Added the quick start guide.</dd></div>
+            </dl>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="container"><small>&copy; Lifunia</small></div></footer>
+    <script src="../../../assets/js/sauna-quick-start.js" defer></script>
+  </body>
+</html>

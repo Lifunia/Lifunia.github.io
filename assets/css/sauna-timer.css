@@ -1,0 +1,110 @@
+.sauna-device-guide,
+.sauna-device-list {
+  margin-top: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  scroll-margin-top: 112px;
+}
+
+.sauna-device-list > summary {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: var(--color-surface);
+  border-radius: 8px;
+}
+
+.sauna-device-list > summary:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.sauna-device-picker-label {
+  display: block;
+  margin-top: 20px;
+}
+
+.sauna-device-picker {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font: inherit;
+}
+
+.sauna-device-picker:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.sauna-device-guide[hidden],
+.sauna-device-picker[hidden],
+.sauna-device-picker-label[hidden] {
+  display: none;
+}
+
+.sauna-device-list .notes-list {
+  margin: 16px 20px 20px;
+}
+
+.sauna-device-list + p {
+  margin-top: 20px;
+}
+
+.sauna-device-guide-body {
+  padding: 20px;
+  min-width: 0;
+}
+
+.sauna-device-guide .guide-section > h3 {
+  font-size: 1.2rem;
+}
+
+.sauna-timer-page #run-history {
+  scroll-margin-top: 112px;
+}
+
+@media (max-width: 600px) {
+  .sauna-timer-page .session-flow {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .sauna-timer-page .session-flow li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .sauna-timer-page .session-flow li::before {
+    flex: 0 0 1em;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .sauna-timer-header .section-tabs {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  .sauna-timer-header .section-tabs a {
+    padding: 0 8px;
+  }
+
+  .sauna-timer-page .content-section,
+  .sauna-timer-page .guide-section,
+  .sauna-timer-page .sauna-device-guide,
+  .sauna-timer-page #run-history {
+    scroll-margin-top: 156px;
+  }
+
+  .sauna-device-guide-body {
+    padding: 12px;
+  }
+}

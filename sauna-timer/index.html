@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sauna Timerは、対応するGarmin Instinctシリーズでサウナ、水風呂、休憩の時間を計測・記録するアプリです。">
+    <meta name="description" content="Sauna Timerは、対応するGarmin Instinct・Forerunner・Fenixシリーズでサウナ、水風呂、休憩の時間を計測・記録するアプリです。">
     <title>Sauna Timer | Lifunia</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sauna-timer.css">
     <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/sauna-timer/">
     <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/sauna-timer/">
   </head>
   <body>
-    <header class="site-header site-header-with-tabs">
+    <header class="site-header site-header-with-tabs sauna-timer-header">
       <div class="container">
         <div class="site-brand">
           <a class="site-name" href="../" aria-label="Lifunia トップページ" translate="no">Lifunia</a>
@@ -34,7 +35,8 @@
         <div class="container content-container">
           <p class="eyebrow" lang="en" translate="no">Garmin App</p>
           <h1 id="page-title" translate="no">Sauna Timer</h1>
-          <p class="lead">サウナ、水風呂、休憩の時間を計測し、一連のセットの記録を保存する<span translate="no">Garmin Instinct</span>シリーズ向けアプリです。</p>
+          <p class="lead">サウナ、水風呂、休憩の時間を計測し、一連のセットの記録を保存する<span translate="no">Garmin Instinct・Forerunner・Fenix</span>シリーズ向けアプリです。</p>
+          <p><strong><a href="quick-start/">クイックスタートガイドを見る</a></strong></p>
         </div>
       </section>
       <article class="page-content sauna-timer-page">
@@ -98,17 +100,49 @@
             <h2>注意事項</h2>
             <h3>対応機種</h3>
             <p>現在、次の機種に対応しています。</p>
-            <ul class="notes-list" translate="no">
+            <details class="sauna-device-list">
+              <summary>Instinctシリーズ</summary>
+              <ul class="notes-list" translate="no">
               <li>Instinct 2 / Solar / Dual Power / dezl Edition</li>
               <li>Instinct 2S / Solar / Dual Power</li>
               <li>Instinct 2X Solar</li>
               <li>Instinct 3 Solar 45mm / 50mm</li>
+              <li>Instinct 3 AMOLED 45mm / 50mm</li>
               <li>Instinct E 40mm / 45mm</li>
             </ul>
+            </details>
+            <details class="sauna-device-list">
+              <summary>Forerunnerシリーズ</summary>
+              <ul class="notes-list" translate="no">
+              <li>Forerunner 55 / 70</li>
+              <li>Forerunner 165 / 165 Music / 170 / 170 Music</li>
+              <li>Forerunner 245 / 245 Music</li>
+              <li>Forerunner 255 / 255 Music / 255S / 255S Music</li>
+              <li>Forerunner 265 / 265S</li>
+              <li>Forerunner 570 42mm / 47mm</li>
+              <li>Forerunner 745 / 945 / 945 LTE / 955 / 955 Solar / 965 / 970</li>
+            </ul>
+            </details>
+            <details class="sauna-device-list">
+              <summary>Fenixシリーズ</summary>
+              <ul class="notes-list" translate="no">
+              <li>fēnix 6 / 6S / 6 Pro / 6S Pro / 6X Pro</li>
+              <li>fēnix 7 / 7S / 7X / 7 Pro / 7S Pro / 7X Pro</li>
+              <li>fēnix 7 Pro / 7X Pro Solar Edition (no Wi-Fi)</li>
+              <li>fēnix 8 43mm / 47mm / 51mm</li>
+              <li>fēnix 8 Pro 47mm / 51mm / MicroLED</li>
+              <li>fēnix 8 Solar 47mm / 51mm</li>
+              <li>fēnix 9 43mm / 47mm / 51mm</li>
+              <li>fēnix 9 Pro 43mm / 47mm / 51mm</li>
+              <li>fēnix 9 Pro Solar 47mm / 51mm</li>
+              <li>fēnix E</li>
+            </ul>
+            </details>
             <p>初代<span translate="no">Garmin Instinct</span>には対応していません。</p>
 
             <h3>動作確認について</h3>
-            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。<br>その他の対応機種は、実機での動作を確認していません。</p>
+            <p><span translate="no">Instinct 2</span>で実機動作を確認しています。</p>
+            <p class="critical-note"><strong><span translate="no">Instinct 2</span>以外の対応機種は、シミュレーターでのみ動作確認しています。実機での動作確認は行っていません。</strong></p>
 
             <p class="critical-note"><strong>高温環境でのスマートウォッチの使用は推奨されていません。<br>使用によるスマートウォッチの故障や破損について、一切の責任を負いません。</strong></p>
 
@@ -146,7 +180,17 @@
 
           <section class="content-section" id="how-to-use">
             <h2>使い方</h2>
+            <p><strong><a href="quick-start/">初めて使う方へ：クイックスタートガイド</a></strong></p>
             <p><span translate="no">Garmin</span>ウォッチの物理ボタンを使って操作します。<br>はじめにボタンの呼び方を確認し、その後、各画面の説明に沿って操作してください。</p>
+            <p>お使いのシリーズを選び、各画面の説明をご覧ください。ForerunnerとFenixは代表機種の画像を掲載しています。機種によって表示サイズや配置が異なります。</p>
+            <label class="sauna-device-picker-label" for="guide-device" hidden>お使いのシリーズ</label>
+            <select class="sauna-device-picker" id="guide-device" hidden>
+              <option value="instinct-guide">Instinct — Instinct 2</option>
+              <option value="forerunner-guide">Forerunner — Forerunner 965</option>
+              <option value="fenix-guide">fēnix — fēnix 7</option>
+            </select>
+            <div class="sauna-device-guide" id="instinct-guide" role="region" aria-label="Instinctシリーズ">
+              <div class="sauna-device-guide-body">
             <p class="guide-note">History・セット終了時・セット別Resultの画像は<span translate="no">Sauna Timer 0.6.2</span>、その他の画像は<span translate="no">Sauna Timer 0.6.1</span>を<span translate="no">Instinct 2</span>のシミュレーターで撮影したものです。<br>色付きの枠は説明用に追加しています。<br>心拍数、スコア、日時はサンプルです。<br>各画像の下に、色付きラベルで枠の意味を記載しています。</p>
 
             <nav class="guide-index" aria-label="使い方の目次">
@@ -241,7 +285,7 @@
                     <li><kbd>BACK</kbd> を素早く2回押すと、タイマーを止めずに終了確認画面を開きます。</li>
                   </ul>
                   <div class="guide-note">
-                    <p>短縮後の最小残り時間は、サウナと休憩が30秒、水風呂が10秒です。</p>
+                    <p>短縮後の最小残り時間は、サウナ・水風呂・休憩すべて10秒です。</p>
                     <p>タイマー停止中と、フェーズ終了直後の待機中は短縮できません。</p>
                   </div>
                 </div>
@@ -398,7 +442,7 @@
                 </div>
               </div>
               <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><kbd>BACK</kbd>でタイマー画面に戻ります。</p>
-              <p>選択中の項目が先頭に表示されます。4つの項目は、最後まで進むと先頭に戻ります。<br>下部の黄色枠のマークは、ほかにも項目があることを示します。</p>
+              <p>選択中の項目が先頭に表示されます。4つの項目は、最後まで進むと先頭に戻ります。<br>下部の黄色枠のマークは、ほかにも項目があることを示します。<br>Instinct 2／2S／2Xでは、Run HistoryがOFFの場合、計測開始後はHistoryが非表示になり、3項目になります。</p>
               <dl class="menu-list">
                 <div>
                   <dt translate="no">Preset Timer</dt>
@@ -504,7 +548,7 @@
                 </div>
                 <div>
                   <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<br><kbd>BACK</kbd>で前の画面に戻ります。<br>設定した値は次回起動時にも引き継がれます。</p>
-                  <p><span translate="no">Instinct 2</span>では、選択中の項目を先頭に3項目が表示されます。<br><kbd>UP</kbd>／<kbd>DOWN</kbd>で4つの設定を切り替えられます。最後まで進むと先頭に戻ります。</p>
+                  <p><span translate="no">Instinct 2</span>では、選択中の項目を先頭に3項目が表示されます。<br><kbd>UP</kbd>／<kbd>DOWN</kbd>で5つの設定を切り替えられます。最後まで進むと先頭に戻ります。</p>
                   <dl class="menu-list">
                     <div>
                       <dt translate="no">30sec Alert</dt>
@@ -528,6 +572,11 @@
                         <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
                       </dd>
                     </div>
+                    <div>
+                      <dt translate="no" id="run-history">Run History</dt>
+                      <dd>Instinct 2／2S／2Xで、セッション中にHistoryを閲覧するかどうかを切り替えます。初期値はONです。<br>OFFにすると、計測開始後は一時停止中・アウフグース中・次のフェーズの開始待ちも含め、Main MenuのHistoryが非表示になります。</dd>
+                      <dd class="guide-note"><p>OFFでも履歴は保存され、計測開始前には閲覧できます。計測中の変更はMain Menuに戻ると反映され、次回起動時にも引き継がれます。<br>履歴を開くとアプリが終了する場合は、再起動後にOFFへ変更してください。その他の対応機種にはこの設定は表示されず、計測中も履歴を閲覧できます。</p></dd>
+                    </div>
                   </dl>
                 </div>
               </div>
@@ -535,6 +584,7 @@
 
             <section class="guide-section" id="history">
               <h3 translate="no">History</h3>
+              <p class="guide-note">Instinct 2／2S／2Xでは、計測中の閲覧に<a href="#run-history" translate="no">Run History</a>をONにする必要があります。</p>
               <p class="guide-note">操作説明と画像は<span translate="no">v0.6.2</span>の内容です。<br>心拍数、スコア、日時は撮影用のサンプルです。</p>
               <div class="guide-images guide-images-two">
                 <div class="sauna-timer-screen-media">
@@ -656,6 +706,1035 @@
                 </div>
               </div>
             </section>
+              </div>
+            </div>
+            <div class="sauna-device-guide" id="forerunner-guide" role="region" aria-label="Forerunnerシリーズ">
+              <div class="sauna-device-guide-body">
+            <p class="guide-note">Forerunner 965のシミュレーターでSauna Timer v0.7.1を撮影しています。色付きの枠は説明用に追加しています。各画像の下に、枠の意味を色付きラベルで示しています。心拍数、スコア、日時はサンプルです。操作は物理ボタンのみで、タッチ操作には対応していません。</p>
+            <nav class="guide-index" aria-label="使い方の目次">
+              <a href="#fr965-buttons">ボタン</a>
+              <a href="#fr965-top-screen">起動画面</a>
+              <a href="#fr965-run-screen">タイマー動作中</a>
+              <a href="#fr965-results">セットリザルト</a>
+              <a href="#fr965-overall-results">全体リザルト</a>
+              <a href="#fr965-timer-menu" translate="no">Timer Menu</a>
+              <a href="#fr965-aufguss-mode" translate="no">Aufguss</a>
+              <a href="#fr965-main-menu" translate="no">Main Menu</a>
+              <a href="#fr965-preset-timer" translate="no">Preset Timer</a>
+              <a href="#fr965-timer-edit" translate="no">Timer Edit</a>
+              <a href="#fr965-settings" translate="no">Setting</a>
+              <a href="#fr965-history" translate="no">History</a>
+              <a href="#fr965-exit-menu">終了確認</a>
+            </nav>
+
+            <section class="guide-section" id="fr965-buttons">
+              <h3>各種ボタン</h3>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../assets/images/sauna-timer/fr965/Buttons.png?v=frames-1" alt="Forerunner 965のボタンの位置（Forerunner 965）" width="382" height="509" loading="lazy">
+                  <figcaption>ボタンの位置（Forerunner 965）</figcaption>
+                </figure>
+                <div>
+                  <p>画像の色付きの丸は、操作に使うボタンの位置を示しています。</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤の丸</span> <kbd>ENTER</kbd>：右上のSTART／STOPボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青の丸</span> <kbd>BACK</kbd>：右下のBACK／LAPボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫の丸</span> <kbd>UP</kbd>：左中央のMENUボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジの丸</span> <kbd>DOWN</kbd>：左下のDOWNボタン</li>
+                  </ul>
+                  <p class="guide-note">このページでは、ボタンをENTER／BACK／UP／DOWNと表記します。<br>ウォッチ本体の印字は機種によって異なります。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-top-screen">
+              <h3>起動画面</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/TOP.png?v=frames-1" alt="Forerunner 965の起動画面" width="382" height="509" loading="lazy">
+                    <figcaption>起動画面</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> タイマーの残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>アプリを起動したときに表示される画面です。</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> タイマーを開始します。</li>
+                    <li><kbd>DOWN</kbd> メインメニューを開きます。</li>
+                    <li><kbd>BACK</kbd> タイマー開始前であれば、アプリをすぐに終了します。</li>
+                  </ul>
+                  <p class="guide-note">最後に選択したプリセット、または<span translate="no">Timer Edit</span>で保存した設定が読み込まれます。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-run-screen">
+              <h3>タイマー動作中</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Run.png?v=frames-1" alt="Forerunner 965のタイマー動作中" width="382" height="509" loading="lazy">
+                    <figcaption>タイマー動作中</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> タイマーの残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>現在のフェーズと残り時間を確認しながら、セッションを進める画面です。</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> <span translate="no">Timer Menu</span>を開きます。<br>このメニューを開いている間、タイマーは停止します。</li>
+                    <li><kbd>DOWN</kbd> メインメニューを開きます。<br>メニューを開いている間もタイマーは動き続けます。</li>
+                    <li><kbd>UP</kbd> 現在のフェーズを延長します。<br>サウナと休憩は1分ずつ、最大5分まで延長できます。<br>水風呂は30秒ずつ、最大2分まで延長できます。</li>
+                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。<br>サウナと休憩は30秒ずつ、水風呂は10秒ずつ短縮できます。</li>
+                    <li><kbd>BACK</kbd> を素早く2回押すと、タイマーを止めずに終了確認画面を開きます。</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>短縮後の最小残り時間は、サウナ・水風呂・休憩すべて10秒です。</p>
+                    <p>タイマー停止中と、フェーズ終了直後の待機中は短縮できません。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-results">
+              <h3>セットリザルト</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Result_set.png?v=frames-1" alt="Forerunner 965のセットリザルト" width="382" height="509" loading="lazy">
+                    <figcaption>セットリザルト</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 操作ヒント</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>セットが終わり、次のセットを開始する際に、そのセットの<span translate="no">TotonoiScore</span>と各フェーズの最大・最小心拍数が表示されます。</p>
+                  <p>サウナのタイマーを60秒以上動かしたセットが表示の対象です。</p>
+                  <p>10秒経過するか、いずれかのボタンを押すと元の画面に戻ります。</p>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="guide-section" id="fr965-overall-results">
+              <h3>全体リザルト</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Result_all.png?v=frames-1" alt="Forerunner 965の全体リザルト（トータル）" width="382" height="509" loading="lazy">
+                    <figcaption>全体リザルト（トータル）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> トータルスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Result.png?v=frames-1" alt="Forerunner 965の全体リザルト（セット詳細）" width="382" height="509" loading="lazy">
+                    <figcaption>全体リザルト（セット詳細）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+              </div>
+              <p>セッション終了時、または終了確認画面で「<span translate="no">RESULT</span>」を選択すると、今回のリザルトを表示します。<br>トータル<span translate="no">TotonoiScore</span>、各セットの<span translate="no">TotonoiScore</span>、各フェーズの最大・最小心拍数を確認できます。</p>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替えられます。<br>確認が終わったら<kbd>ENTER</kbd>または<kbd>BACK</kbd>で画面を閉じてください。</p>
+              <p>セッション終了時に開いた場合は、そのままアプリを終了します。<br>「<span translate="no">RESULT</span>」から開いた場合は、終了確認画面に戻ります。</p>
+            </section>
+
+            <section class="guide-section" id="fr965-timer-menu">
+              <h3 translate="no">Timer Menu</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Timermenu.png?v=frames-1" alt="Forerunner 965のTimer Menu" width="382" height="509" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 停止中のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><span translate="no">Timer Menu</span>を開いている間、タイマーは停止します。</p>
+                  <p><kbd>BACK</kbd>でタイマーを再開し、タイマー画面に戻ります。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">Resume</dt>
+                      <dd>タイマーを再開して、タイマー画面に戻ります。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。<br>たとえば、サウナ中に選択すると水風呂へ進みます。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>アウフグースモードのON／OFFを切り替えます。<br>この項目は、サウナのフェーズ中だけ表示されます。</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-aufguss-mode">
+              <h3><span translate="no">Aufguss</span>モード</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/AUFmode.png?v=frames-1" alt="Forerunner 965のAufgussモード" width="382" height="509" loading="lazy">
+                    <figcaption>Aufgussモード</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> サウナ開始からの経過時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。<br>このモードでは通常のカウントダウンを行いません。<br>サウナを開始してからの経過時間を、0から数え上げます。</p>
+                  <p><kbd>ENTER</kbd>を素早く2回押すか、<span translate="no">Timer Menu</span>で再度「<span translate="no">Aufguss</span>」を選ぶと、通常モードへ戻ります。</p>
+                  <ul>
+                    <li>設定時間が残っている場合は、その残り時間からカウントダウンを再開します。</li>
+                    <li>設定時間を過ぎている場合は、残り5秒からカウントダウンを再開します。</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>設定が7分の場合、経過時間6分で解除すると残り1分、経過時間10分で解除すると残り5秒から再開します。</p>
+                    <p>経過時間が10分に達した後は、5分ごとの区切りでウォッチが振動します。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-main-menu">
+              <h3 translate="no">Main Menu</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/menu.png?v=frames-1" alt="Forerunner 965のMain Menu（Preset Timer選択中）" width="382" height="509" loading="lazy">
+                    <figcaption>Main Menu（Preset Timer選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/menu2.png?v=frames-1" alt="Forerunner 965のMain Menu（History選択中）" width="382" height="509" loading="lazy">
+                    <figcaption>Main Menu（History選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
+              </div>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><kbd>BACK</kbd>でタイマー画面に戻ります。</p>
+              <p>選択中の項目が先頭に表示されます。4つの項目は、最後まで進むと先頭に戻ります。<br>下部の黄色枠は、選択中の項目番号と項目数を示します。</p>
+              <dl class="menu-list">
+                <div>
+                  <dt translate="no">Preset Timer</dt>
+                  <dd>用意されているプリセットからタイマー設定を選びます。</dd>
+                </div>
+                <div>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>サウナ、水風呂、休憩の時間を個別に設定します。<br>保存した値は「<span translate="no">Edit Timer</span>」プリセットとして選択できます。</dd>
+                </div>
+                <div>
+                  <dt translate="no">Setting</dt>
+                  <dd>通知、省電力、<span translate="no">FIT</span>ファイルの保存に関する設定を変更します。</dd>
+                </div>
+                <div>
+                  <dt translate="no">History</dt>
+                  <dd>過去のセッション結果を確認します。</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="guide-section" id="fr965-preset-timer">
+              <h3 translate="no">Preset Timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/PresetTimer.png?v=frames-1" alt="Forerunner 965のPreset Timer" width="382" height="509" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> プリセット名</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの設定時間</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でプリセットを切り替え、<kbd>ENTER</kbd>で適用します。<br><kbd>BACK</kbd>で前の画面に戻ります。</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="プリセットタイマー一覧">
+                    <table>
+                      <thead>
+                        <tr><th>プリセット</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Preset 1</th><td>7分</td><td>30秒</td><td>7分</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10分</td><td>60秒</td><td>8分</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5分</td><td>20秒</td><td>10分</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3"><span translate="no">Timer Edit</span>で最後に保存した値</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="guide-note"><span translate="no">Edit Timer</span>の初期値は<span translate="no">Preset 1</span>と同じです。<br>最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-timer-edit">
+              <h3 translate="no">Timer Edit</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/EditTimer.png?v=frames-1" alt="Forerunner 965のTimer Edit" width="382" height="509" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 編集項目と値</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ENTERの操作ヒント</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で表示中の値を増減し、<kbd>ENTER</kbd>で次の項目へ進みます。<br><kbd>BACK</kbd>を押すと編集をキャンセルして前の画面に戻ります。</p>
+                  <p>設定項目は、サウナ、水風呂、休憩の順に切り替わります。<br>休憩の時間を設定した後に<kbd>ENTER</kbd>を押すと、設定値を保存してタイマー画面へ戻ります。<br>画像の黄色枠には、サウナ・水風呂の編集中は「<span translate="no">Enter: Next</span>」、休憩の編集中は「<span translate="no">Enter: Save</span>」と表示されます。</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="タイマー設定可能範囲">
+                    <table>
+                      <thead>
+                        <tr><th>項目</th><th>設定範囲</th><th>単位</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Sauna</th><td>1～15分</td><td>1分</td></tr>
+                        <tr><th translate="no">WBath</th><td>10～120秒</td><td>10秒</td></tr>
+                        <tr><th translate="no">Rest</th><td>1～15分</td><td>1分</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-settings">
+              <h3 translate="no">Setting</h3>
+              <div class="guide-layout">
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../assets/images/sauna-timer/fr965/Setting.png?v=frames-1" alt="Forerunner 965のSetting" width="382" height="509" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>画面に表示される情報</h4>
+                    <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の設定</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも設定があることを示すマーク</li>
+                  </ul>
+                  </div>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<br><kbd>BACK</kbd>で前の画面に戻ります。<br>設定した値は次回起動時にも引き継がれます。</p>
+                  <p><span translate="no">Forerunner 965</span>では、選択中の項目を先頭に3項目が表示されます。<br><kbd>UP</kbd>／<kbd>DOWN</kbd>で4つの設定を切り替えられます。最後まで進むと先頭に戻ります。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">30sec Alert</dt>
+                      <dd>各フェーズの終了30秒前に、短いバイブレーションで通知します。</dd>
+                      <dd class="guide-note">
+                        <p>水風呂を30秒以下で開始した場合、<span translate="no">30sec Alert</span>はウォッチを振動させません。<br>ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Stop Alert</dt>
+                      <dd>タイマーの停止状態が続いている場合、2分ごとにバイブレーションで通知します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Power Save</dt>
+                      <dd>操作していないときの画面更新頻度を抑えます。<br>タイマーの内部カウントと通知は継続します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期値はOFFです。<br>保存する場合は、セッション開始前にONへ変更してください。</dd>
+                      <dd class="guide-note">
+                        <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fr965-history">
+              <h3 translate="no">History</h3>
+
+
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/History.png?v=frames-1" alt="Forerunner 965のHistory一覧" width="382" height="509" loading="lazy">
+                    <figcaption>History一覧</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の履歴</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 選択中の履歴番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/history1.png?v=frames-1" alt="Forerunner 965のHistory概要" width="382" height="509" loading="lazy">
+                    <figcaption>History概要</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 開始日時</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 全体のスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大心拍数の平均／最小心拍数の平均</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> セット数とページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/HistoryScore.png?v=frames-1" alt="Forerunner 965のセット別スコア" width="382" height="509" loading="lazy">
+                    <figcaption>セット別スコア</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 詳細を開く操作案内</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/HistorySetDetail.png?v=frames-1" alt="Forerunner 965のセット詳細" width="382" height="509" loading="lazy">
+                    <figcaption>セット詳細</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 前のスコアページへ戻る案内</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/HistoryNoDetails.png?v=frames-1" alt="Forerunner 965の詳細データがない場合" width="382" height="509" loading="lazy">
+                    <figcaption>詳細データがない場合</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 詳細データがないことを示す表示</li>
+                  </ul>
+                </div>
+              </div>
+              <p>過去のセッション結果を最大10件まで確認できます。<br>新しい履歴が追加されると、古い履歴から順に上書きされます。</p>
+              <p><span translate="no">FIT Save</span>がOFFでも、アプリ内の履歴は保存されます。<br>ただし、<span translate="no">Garmin Connect</span>には送信されません。</p>
+              <ul class="operation-list">
+                <li><kbd>UP</kbd>／<kbd>DOWN</kbd> 履歴や詳細ページを移動します。</li>
+                <li><kbd>ENTER</kbd> 一覧では選択した履歴を開きます。<br>セット別のスコアページでは、そのセットの詳細を開きます。概要ページでは履歴の削除確認を開きます。</li>
+                <li><kbd>BACK</kbd> 前の画面へ戻ります。</li>
+              </ul>
+              <h4>概要画面の見方</h4>
+              <p>最初のページには、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数と、各フェーズの最大心拍数の平均／最小心拍数の平均が表示されます。<br>全体のスコアは画面中央、セット数とページ番号は画面下部に表示されます。</p>
+              <p>たとえば「<span translate="no">Sauna 138/111</span>」は、各セットのサウナ中の最大心拍数を平均した値が138、最小心拍数を平均した値が111という意味です（単位：bpm）。</p>
+              <h4>セットごとの詳細を開く</h4>
+              <ol class="operation-list">
+                <li><kbd>UP</kbd>／<kbd>DOWN</kbd>で、確認したいセットのスコアページへ移動します。<br>最終ページからさらに進むと、概要ページに戻ります。</li>
+                <li>「<span translate="no">Enter to Detail</span>」が表示されたページで<kbd>ENTER</kbd>を押します。<br>セット番号、スコア、サウナ・水風呂・休憩の最大／最小心拍数を確認できます。</li>
+                <li><kbd>ENTER</kbd>または<kbd>BACK</kbd>で、元のスコアページに戻ります。</li>
+              </ol>
+              <p class="guide-note">セットの詳細は、対応版で新しく保存したセッションから確認できます。<br>旧バージョンの履歴など、詳細データがない場合は「<span translate="no">No details</span>」と表示されます。取得できない心拍数は「<span translate="no">---</span>」と表示され、概要画面の平均計算から除かれます。</p>
+            </section>
+
+            <section class="guide-section" id="fr965-exit-menu">
+              <h3>終了確認</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fr965/Exitmenu.png?v=frames-1" alt="Forerunner 965の終了確認" width="382" height="509" loading="lazy">
+                    <figcaption>終了確認</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> スコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br>「<span translate="no">NO</span>」を選択すると、タイマー画面へ戻ります。</p>
+                  <p>画面上部には、今回のセッション全体の<span translate="no">TotonoiScore</span>が表示されます。<br>スコアを算出できるセットがない場合は、<span translate="no">N/A</span>と表示されます。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">NO</dt>
+                      <dd>終了をキャンセルし、タイマー画面へ戻ります。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">YES</dt>
+                      <dd>セッションを終了します。<br>保存条件を満たしている場合はアプリ内の履歴を保存し、<span translate="no">FIT Save</span>がONであれば<span translate="no">FIT</span>ファイルも保存します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">RESULT</dt>
+                      <dd>現在までのセッション結果を表示します。<br>アプリは終了しません。</dd>
+                    </div>
+                  </dl>
+                  <div class="guide-note">
+                    <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻れます。</p>
+                    <p>サウナのタイマーを60秒以上動かし、休憩まで進んだセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。<br><span translate="no">FIT</span>ファイルの保存には、<span translate="no">FIT Save</span>をONにする必要があります。</p>
+                    <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。<br>自動終了した場合は、アプリ内の履歴を保存しません。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+              </div>
+            </div>
+            <div class="sauna-device-guide" id="fenix-guide" role="region" aria-label="Fenixシリーズ">
+              <div class="sauna-device-guide-body">
+            <p class="guide-note">fēnix 7のシミュレーターでSauna Timer v0.7.1を撮影しています。色付きの枠は説明用に追加しています。各画像の下に、枠の意味を色付きラベルで示しています。心拍数、スコア、日時はサンプルです。操作は物理ボタンのみで、タッチ操作には対応していません。</p>
+            <nav class="guide-index" aria-label="使い方の目次">
+              <a href="#fenix7-buttons">ボタン</a>
+              <a href="#fenix7-top-screen">起動画面</a>
+              <a href="#fenix7-run-screen">タイマー動作中</a>
+              <a href="#fenix7-results">セットリザルト</a>
+              <a href="#fenix7-overall-results">全体リザルト</a>
+              <a href="#fenix7-timer-menu" translate="no">Timer Menu</a>
+              <a href="#fenix7-aufguss-mode" translate="no">Aufguss</a>
+              <a href="#fenix7-main-menu" translate="no">Main Menu</a>
+              <a href="#fenix7-preset-timer" translate="no">Preset Timer</a>
+              <a href="#fenix7-timer-edit" translate="no">Timer Edit</a>
+              <a href="#fenix7-settings" translate="no">Setting</a>
+              <a href="#fenix7-history" translate="no">History</a>
+              <a href="#fenix7-exit-menu">終了確認</a>
+            </nav>
+
+            <section class="guide-section" id="fenix7-buttons">
+              <h3>各種ボタン</h3>
+              <div class="guide-layout">
+                <figure class="screen-figure">
+                  <img src="../assets/images/sauna-timer/fenix7/Buttons.png?v=frames-1" alt="fēnix 7のボタンの位置（fēnix 7）" width="382" height="519" loading="lazy">
+                  <figcaption>ボタンの位置（fēnix 7）</figcaption>
+                </figure>
+                <div>
+                  <p>画像の色付きの丸は、操作に使うボタンの位置を示しています。</p>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤の丸</span> <kbd>ENTER</kbd>：右上のSTART／STOPボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青の丸</span> <kbd>BACK</kbd>：右下のBACK／LAPボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-purple">紫の丸</span> <kbd>UP</kbd>：左中央のMENUボタン</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-orange">オレンジの丸</span> <kbd>DOWN</kbd>：左下のDOWNボタン</li>
+                  </ul>
+                  <p class="guide-note">このページでは、ボタンをENTER／BACK／UP／DOWNと表記します。<br>ウォッチ本体の印字は機種によって異なります。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-top-screen">
+              <h3>起動画面</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/TOP.png?v=frames-1" alt="fēnix 7の起動画面" width="382" height="519" loading="lazy">
+                    <figcaption>起動画面</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> タイマーの残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>アプリを起動したときに表示される画面です。</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> タイマーを開始します。</li>
+                    <li><kbd>DOWN</kbd> メインメニューを開きます。</li>
+                    <li><kbd>BACK</kbd> タイマー開始前であれば、アプリをすぐに終了します。</li>
+                  </ul>
+                  <p class="guide-note">最後に選択したプリセット、または<span translate="no">Timer Edit</span>で保存した設定が読み込まれます。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-run-screen">
+              <h3>タイマー動作中</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Run.png?v=frames-1" alt="fēnix 7のタイマー動作中" width="382" height="519" loading="lazy">
+                    <figcaption>タイマー動作中</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> タイマーの残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>現在のフェーズと残り時間を確認しながら、セッションを進める画面です。</p>
+                  <ul class="operation-list">
+                    <li><kbd>ENTER</kbd> <span translate="no">Timer Menu</span>を開きます。<br>このメニューを開いている間、タイマーは停止します。</li>
+                    <li><kbd>DOWN</kbd> メインメニューを開きます。<br>メニューを開いている間もタイマーは動き続けます。</li>
+                    <li><kbd>UP</kbd> 現在のフェーズを延長します。<br>サウナと休憩は1分ずつ、最大5分まで延長できます。<br>水風呂は30秒ずつ、最大2分まで延長できます。</li>
+                    <li><kbd>DOWN</kbd> を素早く2回押すと、残り時間を短縮します。<br>サウナと休憩は30秒ずつ、水風呂は10秒ずつ短縮できます。</li>
+                    <li><kbd>BACK</kbd> を素早く2回押すと、タイマーを止めずに終了確認画面を開きます。</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>短縮後の最小残り時間は、サウナ・水風呂・休憩すべて10秒です。</p>
+                    <p>タイマー停止中と、フェーズ終了直後の待機中は短縮できません。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-results">
+              <h3>セットリザルト</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Result_set.png?v=frames-1" alt="fēnix 7のセットリザルト" width="382" height="519" loading="lazy">
+                    <figcaption>セットリザルト</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 操作ヒント</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>セットが終わり、次のセットを開始する際に、そのセットの<span translate="no">TotonoiScore</span>と各フェーズの最大・最小心拍数が表示されます。</p>
+                  <p>サウナのタイマーを60秒以上動かしたセットが表示の対象です。</p>
+                  <p>10秒経過するか、いずれかのボタンを押すと元の画面に戻ります。</p>
+                </div>
+              </div>
+
+            </section>
+
+            <section class="guide-section" id="fenix7-overall-results">
+              <h3>全体リザルト</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Result_all.png?v=frames-1" alt="fēnix 7の全体リザルト（トータル）" width="382" height="519" loading="lazy">
+                    <figcaption>全体リザルト（トータル）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> トータルスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Result.png?v=frames-1" alt="fēnix 7の全体リザルト（セット詳細）" width="382" height="519" loading="lazy">
+                    <figcaption>全体リザルト（セット詳細）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+              </div>
+              <p>セッション終了時、または終了確認画面で「<span translate="no">RESULT</span>」を選択すると、今回のリザルトを表示します。<br>トータル<span translate="no">TotonoiScore</span>、各セットの<span translate="no">TotonoiScore</span>、各フェーズの最大・最小心拍数を確認できます。</p>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替えられます。<br>確認が終わったら<kbd>ENTER</kbd>または<kbd>BACK</kbd>で画面を閉じてください。</p>
+              <p>セッション終了時に開いた場合は、そのままアプリを終了します。<br>「<span translate="no">RESULT</span>」から開いた場合は、終了確認画面に戻ります。</p>
+            </section>
+
+            <section class="guide-section" id="fenix7-timer-menu">
+              <h3 translate="no">Timer Menu</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Timermenu.png?v=frames-1" alt="fēnix 7のTimer Menu" width="382" height="519" loading="lazy">
+                    <figcaption>Timer Menu</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 停止中のタイマー残り時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><span translate="no">Timer Menu</span>を開いている間、タイマーは停止します。</p>
+                  <p><kbd>BACK</kbd>でタイマーを再開し、タイマー画面に戻ります。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">Resume</dt>
+                      <dd>タイマーを再開して、タイマー画面に戻ります。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Next Timer</dt>
+                      <dd>現在のフェーズを終了し、次のフェーズへ進みます。<br>たとえば、サウナ中に選択すると水風呂へ進みます。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Aufguss</dt>
+                      <dd>アウフグースモードのON／OFFを切り替えます。<br>この項目は、サウナのフェーズ中だけ表示されます。</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-aufguss-mode">
+              <h3><span translate="no">Aufguss</span>モード</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/AUFmode.png?v=frames-1" alt="fēnix 7のAufgussモード" width="382" height="519" loading="lazy">
+                    <figcaption>Aufgussモード</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 左上のセット数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 現在の心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 現在のフェーズ</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> サウナ開始からの経過時間</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 現在時刻</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>アウフグースモードは、サウナのフェーズ中だけ使用できます。<br>このモードでは通常のカウントダウンを行いません。<br>サウナを開始してからの経過時間を、0から数え上げます。</p>
+                  <p><kbd>ENTER</kbd>を素早く2回押すか、<span translate="no">Timer Menu</span>で再度「<span translate="no">Aufguss</span>」を選ぶと、通常モードへ戻ります。</p>
+                  <ul>
+                    <li>設定時間が残っている場合は、その残り時間からカウントダウンを再開します。</li>
+                    <li>設定時間を過ぎている場合は、残り5秒からカウントダウンを再開します。</li>
+                  </ul>
+                  <div class="guide-note">
+                    <p>設定が7分の場合、経過時間6分で解除すると残り1分、経過時間10分で解除すると残り5秒から再開します。</p>
+                    <p>経過時間が10分に達した後は、5分ごとの区切りでウォッチが振動します。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-main-menu">
+              <h3 translate="no">Main Menu</h3>
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/menu.png?v=frames-1" alt="fēnix 7のMain Menu（Preset Timer選択中）" width="382" height="519" loading="lazy">
+                    <figcaption>Main Menu（Preset Timer選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/menu2.png?v=frames-1" alt="fēnix 7のMain Menu（History選択中）" width="382" height="519" loading="lazy">
+                    <figcaption>Main Menu（History選択中）</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも項目があることを示すマーク</li>
+                  </ul>
+                </div>
+              </div>
+              <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br><kbd>BACK</kbd>でタイマー画面に戻ります。</p>
+              <p>選択中の項目が先頭に表示されます。4つの項目は、最後まで進むと先頭に戻ります。<br>下部の黄色枠は、選択中の項目番号と項目数を示します。</p>
+              <dl class="menu-list">
+                <div>
+                  <dt translate="no">Preset Timer</dt>
+                  <dd>用意されているプリセットからタイマー設定を選びます。</dd>
+                </div>
+                <div>
+                  <dt translate="no">Timer Edit</dt>
+                  <dd>サウナ、水風呂、休憩の時間を個別に設定します。<br>保存した値は「<span translate="no">Edit Timer</span>」プリセットとして選択できます。</dd>
+                </div>
+                <div>
+                  <dt translate="no">Setting</dt>
+                  <dd>通知、省電力、<span translate="no">FIT</span>ファイルの保存に関する設定を変更します。</dd>
+                </div>
+                <div>
+                  <dt translate="no">History</dt>
+                  <dd>過去のセッション結果を確認します。</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="guide-section" id="fenix7-preset-timer">
+              <h3 translate="no">Preset Timer</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/PresetTimer.png?v=frames-1" alt="fēnix 7のPreset Timer" width="382" height="519" loading="lazy">
+                    <figcaption>Preset Timer</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> プリセット名</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの設定時間</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>でプリセットを切り替え、<kbd>ENTER</kbd>で適用します。<br><kbd>BACK</kbd>で前の画面に戻ります。</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="プリセットタイマー一覧">
+                    <table>
+                      <thead>
+                        <tr><th>プリセット</th><th translate="no">Sauna</th><th translate="no">WB</th><th translate="no">Rest</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Preset 1</th><td>7分</td><td>30秒</td><td>7分</td></tr>
+                        <tr><th translate="no">Preset 2</th><td>10分</td><td>60秒</td><td>8分</td></tr>
+                        <tr><th translate="no">Preset 3</th><td>5分</td><td>20秒</td><td>10分</td></tr>
+                        <tr><th translate="no">Edit Timer</th><td colspan="3"><span translate="no">Timer Edit</span>で最後に保存した値</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="guide-note"><span translate="no">Edit Timer</span>の初期値は<span translate="no">Preset 1</span>と同じです。<br>最後に選択したプリセットは保存され、次回起動時にも使用されます。</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-timer-edit">
+              <h3 translate="no">Timer Edit</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/EditTimer.png?v=frames-1" alt="fēnix 7のTimer Edit" width="382" height="519" loading="lazy">
+                    <figcaption>Timer Edit</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 編集項目と値</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ENTERの操作ヒント</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で表示中の値を増減し、<kbd>ENTER</kbd>で次の項目へ進みます。<br><kbd>BACK</kbd>を押すと編集をキャンセルして前の画面に戻ります。</p>
+                  <p>設定項目は、サウナ、水風呂、休憩の順に切り替わります。<br>休憩の時間を設定した後に<kbd>ENTER</kbd>を押すと、設定値を保存してタイマー画面へ戻ります。<br>画像の黄色枠には、サウナ・水風呂の編集中は「<span translate="no">Enter: Next</span>」、休憩の編集中は「<span translate="no">Enter: Save</span>」と表示されます。</p>
+                  <div class="table-scroll" tabindex="0" role="region" aria-label="タイマー設定可能範囲">
+                    <table>
+                      <thead>
+                        <tr><th>項目</th><th>設定範囲</th><th>単位</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><th translate="no">Sauna</th><td>1～15分</td><td>1分</td></tr>
+                        <tr><th translate="no">WBath</th><td>10～120秒</td><td>10秒</td></tr>
+                        <tr><th translate="no">Rest</th><td>1～15分</td><td>1分</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-settings">
+              <h3 translate="no">Setting</h3>
+              <div class="guide-layout">
+                <div class="guide-images">
+                  <div class="sauna-timer-screen-media">
+                    <figure class="screen-figure">
+                      <img src="../assets/images/sauna-timer/fenix7/Setting.png?v=frames-1" alt="fēnix 7のSetting" width="382" height="519" loading="lazy">
+                      <figcaption>Setting</figcaption>
+                    </figure>
+                    <h4>画面に表示される情報</h4>
+                    <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の設定</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ほかにも設定があることを示すマーク</li>
+                  </ul>
+                  </div>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>でON／OFFを切り替えます。<br><kbd>BACK</kbd>で前の画面に戻ります。<br>設定した値は次回起動時にも引き継がれます。</p>
+                  <p><span translate="no">fēnix 7</span>では、選択中の項目を先頭に3項目が表示されます。<br><kbd>UP</kbd>／<kbd>DOWN</kbd>で4つの設定を切り替えられます。最後まで進むと先頭に戻ります。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">30sec Alert</dt>
+                      <dd>各フェーズの終了30秒前に、短いバイブレーションで通知します。</dd>
+                      <dd class="guide-note">
+                        <p>水風呂を30秒以下で開始した場合、<span translate="no">30sec Alert</span>はウォッチを振動させません。<br>ただし、延長によって残り時間が30秒以上になった場合は通知の対象になります。</p>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Stop Alert</dt>
+                      <dd>タイマーの停止状態が続いている場合、2分ごとにバイブレーションで通知します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">Power Save</dt>
+                      <dd>操作していないときの画面更新頻度を抑えます。<br>タイマーの内部カウントと通知は継続します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">FIT Save</dt>
+                      <dd>セッションを<span translate="no">FIT</span>形式のアクティビティとして保存します。初期値はOFFです。<br>保存する場合は、セッション開始前にONへ変更してください。</dd>
+                      <dd class="guide-note">
+                        <p><span translate="no">FIT Save</span>は、タイマーを開始する前にだけ変更できます。<br>タイマーを開始した後は設定を変更できません。</p>
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-section" id="fenix7-history">
+              <h3 translate="no">History</h3>
+
+
+              <div class="guide-images guide-images-two">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/History.png?v=frames-1" alt="fēnix 7のHistory一覧" width="382" height="519" loading="lazy">
+                    <figcaption>History一覧</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の履歴</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> 選択中の履歴番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/history1.png?v=frames-1" alt="fēnix 7のHistory概要" width="382" height="519" loading="lazy">
+                    <figcaption>History概要</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 開始日時</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 全体のスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大心拍数の平均／最小心拍数の平均</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> セット数とページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/HistoryScore.png?v=frames-1" alt="fēnix 7のセット別スコア" width="382" height="519" loading="lazy">
+                    <figcaption>セット別スコア</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-lime">黄緑枠</span> セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> 詳細を開く操作案内</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> ページ番号</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/HistorySetDetail.png?v=frames-1" alt="fēnix 7のセット詳細" width="382" height="519" loading="lazy">
+                    <figcaption>セット詳細</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-blue">青枠</span> セット番号</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> セットのスコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> 各フェーズの最大／最小心拍数</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-yellow">黄色枠</span> 前のスコアページへ戻る案内</li>
+                  </ul>
+                </div>
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/HistoryNoDetails.png?v=frames-1" alt="fēnix 7の詳細データがない場合" width="382" height="519" loading="lazy">
+                    <figcaption>詳細データがない場合</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 詳細データがないことを示す表示</li>
+                  </ul>
+                </div>
+              </div>
+              <p>過去のセッション結果を最大10件まで確認できます。<br>新しい履歴が追加されると、古い履歴から順に上書きされます。</p>
+              <p><span translate="no">FIT Save</span>がOFFでも、アプリ内の履歴は保存されます。<br>ただし、<span translate="no">Garmin Connect</span>には送信されません。</p>
+              <ul class="operation-list">
+                <li><kbd>UP</kbd>／<kbd>DOWN</kbd> 履歴や詳細ページを移動します。</li>
+                <li><kbd>ENTER</kbd> 一覧では選択した履歴を開きます。<br>セット別のスコアページでは、そのセットの詳細を開きます。概要ページでは履歴の削除確認を開きます。</li>
+                <li><kbd>BACK</kbd> 前の画面へ戻ります。</li>
+              </ul>
+              <h4>概要画面の見方</h4>
+              <p>最初のページには、開始日時、全体の<span translate="no">TotonoiScore</span>、セット数と、各フェーズの最大心拍数の平均／最小心拍数の平均が表示されます。<br>全体のスコアは画面中央、セット数とページ番号は画面下部に表示されます。</p>
+              <p>たとえば「<span translate="no">Sauna 138/111</span>」は、各セットのサウナ中の最大心拍数を平均した値が138、最小心拍数を平均した値が111という意味です（単位：bpm）。</p>
+              <h4>セットごとの詳細を開く</h4>
+              <ol class="operation-list">
+                <li><kbd>UP</kbd>／<kbd>DOWN</kbd>で、確認したいセットのスコアページへ移動します。<br>最終ページからさらに進むと、概要ページに戻ります。</li>
+                <li>「<span translate="no">Enter to Detail</span>」が表示されたページで<kbd>ENTER</kbd>を押します。<br>セット番号、スコア、サウナ・水風呂・休憩の最大／最小心拍数を確認できます。</li>
+                <li><kbd>ENTER</kbd>または<kbd>BACK</kbd>で、元のスコアページに戻ります。</li>
+              </ol>
+              <p class="guide-note">セットの詳細は、対応版で新しく保存したセッションから確認できます。<br>旧バージョンの履歴など、詳細データがない場合は「<span translate="no">No details</span>」と表示されます。取得できない心拍数は「<span translate="no">---</span>」と表示され、概要画面の平均計算から除かれます。</p>
+            </section>
+
+            <section class="guide-section" id="fenix7-exit-menu">
+              <h3>終了確認</h3>
+              <div class="guide-layout">
+                <div class="sauna-timer-screen-media">
+                  <figure class="screen-figure">
+                    <img src="../assets/images/sauna-timer/fenix7/Exitmenu.png?v=frames-1" alt="fēnix 7の終了確認" width="382" height="519" loading="lazy">
+                    <figcaption>終了確認</figcaption>
+                  </figure>
+                  <h4>画面に表示される情報</h4>
+                  <ul class="display-legend">
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-green">緑枠</span> スコア</li>
+                    <li><span class="sauna-timer-guide-label sauna-timer-guide-label-red">赤枠</span> 選択中の項目</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><kbd>UP</kbd>／<kbd>DOWN</kbd>で項目を移動し、<kbd>ENTER</kbd>で選択します。<br>「<span translate="no">NO</span>」を選択すると、タイマー画面へ戻ります。</p>
+                  <p>画面上部には、今回のセッション全体の<span translate="no">TotonoiScore</span>が表示されます。<br>スコアを算出できるセットがない場合は、<span translate="no">N/A</span>と表示されます。</p>
+                  <dl class="menu-list">
+                    <div>
+                      <dt translate="no">NO</dt>
+                      <dd>終了をキャンセルし、タイマー画面へ戻ります。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">YES</dt>
+                      <dd>セッションを終了します。<br>保存条件を満たしている場合はアプリ内の履歴を保存し、<span translate="no">FIT Save</span>がONであれば<span translate="no">FIT</span>ファイルも保存します。</dd>
+                    </div>
+                    <div>
+                      <dt translate="no">RESULT</dt>
+                      <dd>現在までのセッション結果を表示します。<br>アプリは終了しません。</dd>
+                    </div>
+                  </dl>
+                  <div class="guide-note">
+                    <p><span translate="no">RESULT</span>画面では<kbd>UP</kbd>／<kbd>DOWN</kbd>でページを切り替え、<kbd>BACK</kbd>で終了確認画面に戻れます。</p>
+                    <p>サウナのタイマーを60秒以上動かし、休憩まで進んだセットが1つもない場合は、<span translate="no">FIT</span>ファイルとアプリ内の履歴を保存しません。<br><span translate="no">FIT</span>ファイルの保存には、<span translate="no">FIT Save</span>をONにする必要があります。</p>
+                    <p>フェーズ終了後、またはタイマー停止後の待機状態が10分間続くと、アプリは自動で終了します。<br>自動終了した場合は、アプリ内の履歴を保存しません。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+              </div>
+            </div>
+
           </section>
 
           <section class="content-section" id="faq">
@@ -668,6 +1747,19 @@
             <p class="changelog-description">このページの更新内容と、アプリの主な変更を掲載しています。</p>
             <!-- 更新時は日付と変更内容を先頭に追加します。 -->
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-10-24">2026年10月24日</time></dt>
+                <dd>
+                  <p><strong>Sauna Timer v0.7.1リリース</strong></p>
+                  <strong>Webページの更新</strong>
+                  <ul class="operation-list">
+                    <li>Run Historyの説明を追加しました。</li>
+                    <li>Forerunner・FenixとInstinct 3 AMOLEDの対応情報を追加しました。</li>
+                    <li>Forerunner 965・fēnix 7の操作説明を追加しました。</li>
+                    <li>クイックスタートガイドを追加しました。</li>
+                  </ul>
+                </dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-19">2026年10月19日</time></dt>
                 <dd>
@@ -728,6 +1820,7 @@
         <small>&copy; Lifunia</small>
       </div>
     </footer>
+    <script src="../assets/js/sauna-timer-guide.js" defer></script>
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f4ab082f7ac24d65a5237a328bd618d1"}'></script>
     <!-- End Cloudflare Web Analytics -->
