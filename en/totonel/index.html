@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/totonel/">
     <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/totonel/">
   </head>
-  <body>
+  <body class="totonel-site">
     <header class="site-header site-header-with-tabs">
       <div class="container">
         <div class="site-brand">
@@ -25,6 +25,7 @@
         </div>
         <nav class="section-tabs" aria-label="Totonel page navigation">
           <a href="#overview">Overview</a>
+          <a href="#totonoi">What is Totonoi?</a>
           <a href="#features">Features</a>
           <a href="#download">Download</a>
           <a href="#how-to-use">User guide</a>
@@ -32,6 +33,17 @@
           <a href="#notes">Usage notes</a>
           <a href="#changelog">Changelog</a>
         </nav>
+        <select class="section-select" aria-label="Page menu">
+          <option value="">Page menu</option>
+          <option value="#overview">Overview</option>
+          <option value="#totonoi">What is Totonoi?</option>
+          <option value="#features">Features</option>
+          <option value="#download">Download</option>
+          <option value="#how-to-use">User guide</option>
+          <option value="#screens">Screen guide</option>
+          <option value="#notes">Usage notes</option>
+          <option value="#changelog">Changelog</option>
+        </select>
       </div>
     </header>
     <main>
@@ -40,7 +52,7 @@
           <p class="eyebrow" lang="en" translate="no">Android App</p>
           <h1 id="page-title">Totonel</h1>
           <p class="lead">Review your sauna sessions and heart rate trends with lists, graphs, and scores on Android.</p>
-          <p class="guide-note">The Totonel app is currently available in Japanese only.</p>
+          <p class="guide-note">Available in English and Japanese. Choose your language in Settings.</p>
         </div>
       </section>
       <article class="page-content totonel-page">
@@ -50,6 +62,21 @@
             <p>Totonel is an Android app for reviewing activities saved with <a href="../sauna-timer/" translate="no">Sauna Timer</a>.</p>
             <p>Review heart rate changes and trends for each set.<br>Look back at past sessions to review your rest times and the way you plan your sets.</p>
             <p class="guide-note">To use Totonel, you need an account on <a href="https://intervals.icu/" translate="no">Intervals.icu</a>.<br>Turn on <a href="../sauna-timer/#settings" translate="no">FIT Save</a> in the <span translate="no">Sauna Timer</span> settings.</p>
+          </section>
+          <section class="content-section" id="totonoi">
+            <h2>What is Totonoi?</h2>
+            <p><span translate="no">Totonoi</span> (ととのい) is a Japanese sauna term for a pleasant sense of physical relaxation and mental clarity, often experienced while resting after a sauna and cold bath. The feeling is personal and can vary from one session to the next.</p>
+            <dl class="feature-list">
+              <div>
+                <dt>Totonoi Score: your recorded data</dt>
+                <dd>Totonel's own score summarizes heart rate patterns during your session, including how far and how quickly your heart rate drops and how steady it is during rest.<br>Use it to compare patterns across your own records. It does not measure how good you felt.</dd>
+              </div>
+              <div>
+                <dt>Rating: your personal experience</dt>
+                <dd>Record how the session felt to you with a star rating. Your Rating is kept separate from the standard Totonoi Score calculation.<br>A higher Score does not guarantee a more enjoyable session.</dd>
+              </div>
+            </dl>
+            <p class="guide-note">Labels such as Light Totonoi and Deep Totonoi describe the app's score bands. They do not confirm that you reached a particular physical or mental state. Scores are for reviewing your records, not for assessing health or safety.</p>
           </section>
           <section class="content-section" id="features">
             <h2>Features</h2>
@@ -88,21 +115,32 @@
           <section class="content-section" id="how-to-use">
             <h2>User guide</h2>
             <details class="totonel-howto-item">
+              <summary>Choose your language</summary>
+              <div class="totonel-howto-content">
+                <ol class="operation-list">
+                  <li>Open <strong>Settings</strong> using the gear icon on the home screen.</li>
+                  <li>Under <strong>Language</strong>, choose <strong>Follow system</strong>, <strong>Japanese</strong>, or <strong>English</strong>.</li>
+                </ol>
+                <p>Your choice takes effect immediately and is kept after restarting the app. Follow system uses Japanese when your system language is Japanese, and English for other languages. Region settings do not change this choice.</p>
+                <p class="guide-note">Facility names and other text you enter are not translated. Dates, JST, and measurement units keep their existing formats.</p>
+              </div>
+            </details>
+            <details class="totonel-howto-item">
               <summary>Review your records</summary>
               <div class="totonel-howto-content">
                 <ol class="operation-list">
                   <li>Select a session from the list on the home screen.<br>In calendar view, select a date and tap that day's record.</li>
                   <li>Check the rating, location, date and time, score, and heart rate in <strong>Overview</strong>.</li>
-                  <li>Review heart rate trends, set details, and tips for next time in <strong>Analysis and graphs</strong>.</li>
+                  <li>Review heart rate trends, set details, and tips for next time in <strong>Analysis &amp; chart</strong>.</li>
                 </ol>
-                <p class="guide-note">If Hide Score until rated is on, Score is hidden until you enter a Rating.</p>
+                <p class="guide-note">If Hide scores before rating is on, Score is hidden until you enter a Rating.</p>
               </div>
             </details>
             <details class="totonel-howto-item">
               <summary>Sync sessions</summary>
               <div class="totonel-howto-content">
                 <ol class="operation-list">
-                  <li>To sync automatically at startup, enable <strong>Sync automatically at startup</strong> in Settings.</li>
+                  <li>To sync automatically at startup, enable <strong>Sync automatically on startup</strong> in Settings.</li>
                   <li>To sync manually, swipe down on the home screen.</li>
                   <li>Check the sync result in notifications or <strong>Sync status</strong> at the top of the home screen.</li>
                 </ol>
@@ -153,7 +191,7 @@
                     <figure class="screen-figure">
                       <div class="totonel-screen-image">
                         <button class="totonel-image-zoom" type="button" aria-label="Enlarge the list view screenshot">
-                          <img src="../../assets/images/totonel-list.svg" alt="Totonel session list showing date and time, duration, location, and rating" width="1080" height="2188">
+                          <img src="../../assets/images/totonel/en/totonel-list.svg" alt="Totonel session list showing date and time, duration, location, and rating" width="1080" height="1300">
                         </button>
                       </div>
                       <figcaption>List view</figcaption>
@@ -186,7 +224,7 @@
                     <figure class="screen-figure">
                       <div class="totonel-screen-image">
                         <button class="totonel-image-zoom" type="button" aria-label="Enlarge the calendar view screenshot">
-                          <img src="../../assets/images/totonel-calendar.svg" alt="Totonel calendar showing monthly session records and logs for the selected day" width="1080" height="2188">
+                          <img src="../../assets/images/totonel/en/totonel-calendar.svg" alt="Totonel calendar showing monthly session records and logs for the selected day" width="1080" height="1770">
                         </button>
                       </div>
                       <figcaption>Calendar view</figcaption>
@@ -201,7 +239,7 @@
                       </div>
                       <div>
                         <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Overview</dt>
-                        <dd>Tap a date to see an overview of that day's record.<br>Rating stars are hidden if no Rating has been entered.<br>If Hide Score until rated is on, Score is hidden until you enter a Rating.<br>Tap the overview to open the detail screen.</dd>
+                        <dd>Tap a date to see an overview of that day's record.<br>Rating stars are hidden if no Rating has been entered.<br>If Hide scores before rating is on, Score is hidden until you enter a Rating.<br>Tap the overview to open the detail screen.</dd>
                       </div>
                     </dl>
                   </div>
@@ -212,7 +250,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the session details screenshot">
-                        <img src="../../assets/images/totonel-detail.svg" alt="Totonel 0.1.2 session details showing Totonoi Score, rating, heart rate highlights, and the Delete sets button at the bottom" width="1080" height="2220">
+                        <img src="../../assets/images/totonel/en/totonel-detail.svg" alt="Totonel 0.1.4 session details showing Totonoi Score, rating, heart rate highlights, and the Delete sets button at the bottom" width="1080" height="1800">
                       </button>
                     </div>
                     <figcaption>Session details</figcaption>
@@ -230,8 +268,8 @@
                       <dd>Review an overview of the session.</dd>
                     </div>
                     <div>
-                      <dt>Analysis and graphs</dt>
-                      <dd>View session details and tips for your next session in the Today's improvement insights section.</dd>
+                      <dt>Analysis &amp; chart</dt>
+                      <dd>View heart rate graphs, set details, and Today’s improvement insights.</dd>
                     </div>
                     <div>
                       <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Score switch</dt>
@@ -248,7 +286,7 @@
                       <dd>
                         Choose whether graphs and Score use raw or corrected heart rate data.
                         <ul class="totonel-switch-options">
-                          <li><strong>Raw data:</strong> Heart rate data as imported.</li>
+                          <li><strong>Original data:</strong> Heart rate data as imported.</li>
                           <li><strong>Corrected data:</strong> Heart rate data adjusted to account for gaps and clearly implausible readings.</li>
                         </ul>
                         <p>The selected data type appears beside the switch.</p>
@@ -268,12 +306,12 @@
                       <dd>View explanations of each item.</dd>
                     </div>
                     <div>
-                      <dt><span class="totonel-guide-label totonel-guide-label-pink">Pink frame</span>Actions button</dt>
+                      <dt><span class="totonel-guide-label totonel-guide-label-pink">Pink frame</span>Session actions</dt>
                       <dd>
                         Recalculate the score, exclude the session from Rating+ learning, or delete session data or sets.
                         <ul class="totonel-switch-options">
                           <li><strong>Recalculate:</strong> Recalculate the score after changing the Rating.</li>
-                          <li><strong>Exclude from Rating+ learning:</strong> Exclude this session from Rating+ learning.</li>
+                          <li><strong>Exclude from Rating+ training:</strong> Exclude this session from Rating+ learning.</li>
                           <li><strong>Delete:</strong> Delete the session data from the app.<br>If the data still exists on Intervals.icu, it will be imported again on the next sync.</li>
                           <li><strong>Delete sets:</strong> Open the screen for selecting sets to delete.<br>You can delete several sets at once. The app then recalculates the score using the remaining sets.<br>After deletion, future syncs will not update that session. See <a href="#delete-sets">how to delete sets</a>.</li>
                         </ul>
@@ -287,7 +325,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the set deletion screenshot">
-                        <img src="../../assets/images/totonel-set-delete.svg" alt="Totonel set deletion screen with sample Set1 and Set3 selected, a note about sync after deletion, and Cancel and Delete buttons" width="1080" height="2220" loading="lazy">
+                        <img src="../../assets/images/totonel/en/totonel-set-delete.svg" alt="Totonel set deletion screen with sample Set1 and Set3 selected, a note about sync after deletion, and Cancel and Delete buttons" width="1080" height="1800" loading="lazy">
                       </button>
                     </div>
                     <figcaption>Delete sets: example with Set1 and Set3 selected</figcaption>
@@ -312,7 +350,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image totonel-edit-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the basic information editing screenshot">
-                        <img src="../../assets/images/totonel_edit.svg" alt="Basic information editor showing Rating in a red frame and Location in a blue frame" width="954" height="736">
+                        <img src="../../assets/images/totonel/en/totonel_edit.svg" alt="Basic information editor showing Rating in a red frame and Location in a blue frame" width="720" height="600">
                       </button>
                     </div>
                     <figcaption>Edit basic information</figcaption>
@@ -337,10 +375,10 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the analysis and graphs screenshot">
-                        <img src="../../assets/images/totonel-analysis.svg" alt="Totonel analysis and graphs screen showing a heart rate graph and set selector" width="1080" height="2188">
+                        <img src="../../assets/images/totonel/en/totonel-analysis.svg" alt="Totonel analysis and graphs screen showing a heart rate graph and set selector" width="1080" height="1860">
                       </button>
                     </div>
-                    <figcaption>Analysis and graphs</figcaption>
+                    <figcaption>Analysis &amp; chart</figcaption>
                   </figure>
                 </div>
                 <div class="totonel-operation-guide">
@@ -355,12 +393,12 @@
                     <dd>Heart rate data adjusted to account for gaps and implausible readings.</dd>
                   </div>
                   <div>
-                    <dt>Raw data</dt>
+                    <dt>Original data</dt>
                     <dd>Heart rate data as imported.</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-blue">Blue frame</span>Set selector</dt>
-                    <dd>Select a set to view its graph.<br>Select All to view the graph for the entire session.<br>Choose which range to show by default in Settings.</dd>
+                    <dd>Select a set to view its graph.<br>Select All to view the graph for the entire session.<br>The selected range stays selected while you scroll.</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Help (?) button</dt>
@@ -374,7 +412,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the set details screenshot">
-                        <img src="../../assets/images/totonel-set-details.svg" alt="Totonel set details showing Set Score, Depth, Speed, Stability, and duration and heart rate for each phase" width="1080" height="2188">
+                        <img src="../../assets/images/totonel/en/totonel-set-details.svg" alt="Totonel set details showing Set Score, Depth, Speed, Stability, and duration and heart rate for each phase" width="1080" height="1920">
                       </button>
                     </div>
                     <figcaption>Set details</figcaption>
@@ -407,15 +445,19 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the upper Settings screenshot">
-                        <img src="../../assets/images/totonel-settings.svg" alt="Upper part of Totonel Settings showing home screen and Score display options, default heart rate and Score views, and backup settings" width="1080" height="2188">
+                        <img src="../../assets/images/totonel/en/totonel-settings.svg" alt="Upper part of Totonel Settings showing Language, home screen and Score display options, default heart rate and Score views, and backup settings" width="1080" height="1700">
                       </button>
                     </div>
-                    <figcaption>Settings: display and backup (API key configured)</figcaption>
+                    <figcaption>Settings: language, display and backup (API key configured)</figcaption>
                   </figure>
                 </div>
                 <div class="totonel-operation-guide">
-                <h3>Settings: display and backup</h3>
+                <h3>Settings: language, display and backup</h3>
                 <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-cyan">Cyan frame</span>Language</dt>
+                    <dd>Choose Follow system, Japanese, or English. Changes take effect immediately and are kept after restarting the app.</dd>
+                  </div>
                   <div>
                     <dt>Intervals.icu API key setup</dt>
                     <dd>Setup instructions appear if an API key has not been entered.<br>In this screenshot, the API key is already set up.</dd>
@@ -426,11 +468,11 @@
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-orange">Orange frame</span>Score visibility before rating</dt>
-                    <dd>Hide Score until rated is on by default.<br>ON: Show Score after a Rating is entered.<br>OFF: Show Score even before a Rating is entered.</dd>
+                    <dd>Hide scores before rating is on by default.<br>ON: Show Score after a Rating is entered.<br>OFF: Show Score even before a Rating is entered.</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-green">Green frame</span>Default heart rate data</dt>
-                    <dd>Choose which heart rate data to show by default: raw or corrected.<br>Raw data is the default.<br>The selected data type appears below the switch.</dd>
+                    <dd>Choose which heart rate data to show by default: Original data or Corrected data.<br>Original data is the default.<br>The selected data type appears below the switch.</dd>
                   </div>
                   <div>
                     <dt><span class="totonel-guide-label totonel-guide-label-pink">Pink frame</span>Default Score</dt>
@@ -448,7 +490,7 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Enlarge the lower Settings screenshot">
-                        <img src="../../assets/images/totonel-settings-lower.svg" alt="Lower part of Totonel Settings showing automatic sync, sync date range, API connection, and local data deletion" width="1080" height="2188">
+                        <img src="../../assets/images/totonel/en/totonel-settings-lower.svg" alt="Lower part of Totonel Settings showing automatic sync, sync date range, API connection, and local data deletion" width="1080" height="1280">
                       </button>
                     </div>
                     <figcaption>Settings: sync and data management</figcaption>
@@ -458,7 +500,7 @@
                 <h3>Settings: sync and data management</h3>
                 <dl>
                   <div>
-                    <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Sync automatically at startup</dt>
+                    <dt><span class="totonel-guide-label totonel-guide-label-red">Red frame</span>Sync automatically on startup</dt>
                     <dd>When enabled, the app syncs with Intervals.icu at startup.</dd>
                   </div>
                   <div>
@@ -496,6 +538,10 @@
             <p class="changelog-description">Updates to this page and major changes to the app.</p>
 
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-11-06">November 6, 2026</time></dt>
+                <dd><strong>Totonel v0.1.4 released:</strong> added English display and a persistent language setting.<br>Replaced the screen guide images with English screenshots and added an explanation of Totonoi, Score, and Rating.<br>Widened the page layout and added a page menu for mobile navigation.</dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-12">October 12, 2026</time></dt>
                 <dd>

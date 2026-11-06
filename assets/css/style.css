@@ -118,6 +118,50 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+/* Totonel has more section links; widen only its pages and wrap links
+   instead of clipping destinations or showing a desktop scrollbar. */
+.totonel-site {
+  --content-width: 1200px;
+}
+
+.totonel-site .section-tabs {
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  overflow-x: visible;
+}
+
+.totonel-site .section-tabs a {
+  min-height: 44px;
+  padding-inline: 10px;
+}
+
+.section-select {
+  display: none;
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .totonel-site .site-header-with-tabs .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 8px;
+  }
+
+  .totonel-site .site-brand {
+    min-height: 38px;
+  }
+
+  .totonel-site .section-tabs {
+    justify-content: flex-start;
+  }
+
+  /* Leave room for the two-line menu when jumping to a section. */
+  .totonel-site :is(.content-section, .totonel-howto-item, #set-delete-screen) {
+    scroll-margin-top: 156px;
+  }
+}
+
 .section-tabs a:hover,
 .section-tabs a:focus-visible {
   border-bottom-color: var(--color-accent);
@@ -220,7 +264,7 @@ h4 {
 
 .totonel-hero .content-container,
 .totonel-page .content-container {
-  max-width: 960px;
+  max-width: var(--content-width);
 }
 
 .totonel-page :is(p, li, dd, dt) {
@@ -1376,6 +1420,29 @@ tbody th {
   .section-tabs a {
     min-height: 44px;
     padding: 0 14px;
+  }
+
+  /* The mobile selector adds header height; keep linked headings clear of it. */
+  .totonel-site :is(.content-section, .totonel-howto-item, #set-delete-screen) {
+    scroll-margin-top: 128px;
+  }
+
+  /* Native select keeps all destinations reachable without a horizontal bar. */
+  .totonel-site .section-tabs {
+    display: none;
+  }
+
+  .totonel-site .section-select {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin: 8px 0 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-text);
+    background: var(--color-surface);
+    font: inherit;
   }
 
   .content-section,

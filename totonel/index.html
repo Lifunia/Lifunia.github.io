@@ -13,7 +13,7 @@
     <link rel="alternate" hreflang="ja" href="https://lifunia.github.io/totonel/">
     <link rel="alternate" hreflang="en" href="https://lifunia.github.io/en/totonel/">
   </head>
-  <body>
+  <body class="totonel-site">
     <header class="site-header site-header-with-tabs">
       <div class="container">
         <div class="site-brand">
@@ -32,6 +32,16 @@
           <a href="#notes">利用について</a>
           <a href="#changelog">更新履歴</a>
         </nav>
+        <select class="section-select" aria-label="ページ内メニュー">
+          <option value="">ページ内メニュー</option>
+          <option value="#overview">アプリ概要</option>
+          <option value="#features">主な機能</option>
+          <option value="#download">ダウンロード</option>
+          <option value="#how-to-use">使い方</option>
+          <option value="#screens">画面紹介</option>
+          <option value="#notes">利用について</option>
+          <option value="#changelog">更新履歴</option>
+        </select>
       </div>
     </header>
     <main>
@@ -406,15 +416,19 @@
                   <figure class="screen-figure">
                     <div class="totonel-screen-image">
                       <button class="totonel-image-zoom" type="button" aria-label="Settings上部の画像を拡大">
-                        <img src="../assets/images/totonel-settings.svg" alt="ととねるのSettings上部。ホーム画面やScoreの表示設定、心拍とScoreの初期表示、バックアップの項目を表示している画面" width="1080" height="2188">
+                        <img src="../assets/images/totonel/ja/totonel-settings.svg" alt="ととねる0.1.4の日本語Settings上部。言語設定、ホーム画面、Score表示、心拍とScoreの初期表示、バックアップの項目を表示している画面" width="1080" height="1700">
                       </button>
                     </div>
-                    <figcaption>Settings：表示とバックアップ（APIキー設定済み）</figcaption>
+                    <figcaption>Settings：言語・表示とバックアップ（APIキー設定済み）</figcaption>
                   </figure>
                 </div>
                 <div class="totonel-operation-guide">
-                <h3>Settings：表示とバックアップ</h3>
+                <h3>Settings：言語・表示とバックアップ</h3>
                 <dl>
+                  <div>
+                    <dt><span class="totonel-guide-label totonel-guide-label-cyan">水色枠</span>言語設定</dt>
+                    <dd>「システムに従う」（初期値）・「日本語」・「英語」から選べます。<br>変更はすぐに反映され、アプリを再起動しても保持されます。<br>「システムに従う」では、システム言語が日本語なら日本語、それ以外は英語になります。</dd>
+                  </div>
                   <div>
                     <dt>Intervals.icuのAPIキー設定</dt>
                     <dd>APIキーが未設定の場合は設定案内が表示されます。<br>この画像は設定済みの状態です。</dd>
@@ -495,6 +509,10 @@
             <p class="changelog-description">このページの更新内容と、アプリの主な変更を掲載しています。</p>
             <!-- 更新時は日付と変更内容を先頭に追加します。 -->
             <dl class="changelog-list">
+              <div>
+                <dt><time datetime="2026-11-06">2026年11月6日</time></dt>
+                <dd><strong>ととねる v0.1.4 リリース：</strong>英語表示と言語設定を追加しました。<br>ととねるページの横幅と上部メニューを調整しました。スマートフォンではプルダウンからページ内を移動できます。</dd>
+              </div>
               <div>
                 <dt><time datetime="2026-10-12">2026年10月12日</time></dt>
                 <dd>

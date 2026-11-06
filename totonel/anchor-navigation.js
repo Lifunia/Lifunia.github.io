@@ -25,3 +25,31 @@ window.addEventListener('hashchange', () => {
 });
 
 openLinkedDetails(window.location.hash);
+
+// Mobile navigation uses the same section IDs and details-opening behavior.
+for (const menu of document.querySelectorAll('.section-select')) {
+  menu.addEventListener('change', () => {
+    const hash = menu.value;
+    const target = document.getElementById(hash.slice(1));
+    if (!hash.startsWith('#') || !target) {
+      return;
+    }
+    openLinkedDetails(hash);
+    window.location.hash = hash;
+    // Also jump when the user chooses the section already in the URL.
+    target.scrollIntoView({ block: 'start' });
+  });
+
+  function updateSelectedSection() {
+    for (const option of menu.options) {
+      if (option.value === window.location.hash) {
+        menu.value = option.value;
+        return;
+      }
+    }
+    menu.value = '';
+  }
+
+  window.addEventListener('hashchange', updateSelectedSection);
+  updateSelectedSection();
+}
